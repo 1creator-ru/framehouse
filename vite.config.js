@@ -4,18 +4,16 @@ export default {
     build: {
         minify: false,
         rollupOptions: {
-            input: {
-                main: resolve(__dirname, 'index.html'),
-                nested: resolve(__dirname, 'test/index.html')
-            },
+            input: require('fast-glob').sync([
+                './**/*.html', '!node_modules', '!dist', '!assets',
+            ]).map(entry => resolve(__dirname, entry)),
             output: {
                 assetFileNames: `assets/[name].[ext]`,
-                // vendor: ['vendor', 'bootstrap', 'swiper'],
                 manualChunks(id) {
                     if (id.includes('vendor')) {
                         return 'vendor';
                     }
-                }
+                },
             },
         },
     }

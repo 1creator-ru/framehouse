@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="/assets/sass/vendor.scss">
+    <link type="text/css" rel="stylesheet" href="/assets/sass/app.scss">
+    <title>Главная</title>
+</head>
+<body>
+<nav class="navbar">
+    <div class="navbar__top">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-end"><i class="icon-location-pin"></i> <a
+                    href="#" class="navbar__top-link">
+                Карта строящихся объектов
+            </a></div>
+        </div>
+    </div>
+    <div class="navbar__middle">
+        <div class="container">
+            <div class="navbar__middle-content">
+                <button class="button d-block d-lg-none me-2 button_navbar-sm"><i class="icon-menu-btn"></i>
+                </button>
+                <a href="/" aria-current="page"
+                   class="navbar__logo nuxt-link-exact-active nuxt-link-active"><img src="/assets/logo.svg" alt="">
+                    <div class="navbar__logo-text">
+                        <div>Строительство каркасных домов</div>
+                        <div>ДОСТУПНО И КАЧЕСТВЕННО</div>
+                    </div>
+                </a>
+                <div class="navbar__middle-btns-sm">
+                    <button type="button" class="button me-2 button_navbar-sm"><i
+                            class="icon-calculator"></i></button>
+                    <button type="button" class="button button_navbar-sm"><i class="icon-find-house"></i>
+                    </button>
+                </div>
+                <div class="navbar__middle-btns">
+                    <button type="button" class="button me-xl-2 mb-2 mb-xl-0 button_primary">
+                        Расчет Вашего проекта
+                    </button>
+                    <button type="button" class="button button_outline">
+                        Посмотреть строящийся объект
+                    </button>
+                </div>
+                <div class="navbar__middle-phone"><a href="#"
+                                                     class="link link_gray navbar__middle-phone-link">
+                    +7 (812) 123 45 67
+                </a>
+                    <button class="button button_link">
+                        Заказать звонок
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar__bottom">
+        <div class="container">
+            <button type="button" class="button button_navbar-close"><i class="icon-close"></i></button>
+            <ul class="navbar__bottom-content">
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown__toggle dropdown__toggle_caret"><a href="/about-company"
+                                                                                class="navbar__bottom-link link link_dark">
+                            О компании
+                        </a></div> <!----></div>
+                </li>
+                <li><a href="/catalogue" class="navbar__bottom-link link link_dark">
+                    Проекты
+                </a></li>
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown__toggle dropdown__toggle_caret"><a href="/for-client"
+                                                                                class="navbar__bottom-link link link_dark">
+                            Клиенту
+                        </a></div> <!----></div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown__toggle dropdown__toggle_caret"><a href="/prices"
+                                                                                class="navbar__bottom-link link link_dark">
+                            Цены
+                        </a></div> <!----></div>
+                </li>
+                <li><a href="/about-company/completed-projects" class="navbar__bottom-link link link_dark">
+                    Реализованные проекты
+                </a></li>
+                <li><a href="/blog" class="navbar__bottom-link link link_dark">
+                    Блог
+                </a></li>
+                <li><a href="/promotions" class="navbar__bottom-link link link_dark">
+                    Акции
+                </a></li>
+                <li><a href="/contacts" class="navbar__bottom-link link link_dark">
+                    Контакты
+                </a></li>
+            </ul>
+            <button type="button" class="button mb-2 button_navbar-primary"><i
+                    class="icon-location-pin"></i>
+                Карта строящихся объектов
+            </button>
+            <a href="#" class="button button_navbar-secondary mb-2"><i class="icon-phone-in-talk"></i>
+                +7 (812) 123 45 67
+            </a>
+            <button type="button" class="button mb-2 button_navbar-primary"><i
+                    class="icon-phone-missed"></i>
+                Заказать звонок
+            </button>
+        </div>
+    </div>
+</nav>
+<div class="catalogue">
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">
+                Главная
+            </a></li>
+            <li class="breadcrumbs__item">
+                Проекты
+            </li>
+        </ul>
+        <div class="d-flex justify-content-between align-items-center mb-4"><h1 class="m-0 h2">
+            Проекты
+        </h1>
+            <div class="catalogue__carcass"><a href="/">Подробнее о каркасной <br>технологии</a> <img
+                    src="/assets/images/site/catalogue/carcass.jpg" alt></div>
+        </div>
+        <div class="catalogue__wrapper">
+            <div class="catalogue__item-promo">
+                <div class="item-promo">
+                    Скидка 7% <br>до конца июля
+                    <span class="item-promo__box"></span> <span class="item-promo__percent">%</span></div>
+                <div class="item-promo">
+                    Скидка 7% <br>до конца июля
+                    <span class="item-promo__percent_right">%</span></div>
+            </div>
+            <div class="catalogue__filter">
+                <div class="filter-modal__title">
+                    <button class="button p-1 me-3 button_gray">
+                        <svg width="41" height="33" viewBox="0 0 41 33" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 5.36353H40.2727" stroke="black" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                            <path d="M1 27.1819H40.2727" stroke="black" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                            <path d="M1 16.2727H40.2727" stroke="black" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                            <circle cx="33.7269" cy="5.36364" r="4.86364" fill="#821E27" stroke="white"
+                                    stroke-linecap="round" stroke-linejoin="round"></circle>
+                            <circle cx="33.7269" cy="27.1818" r="4.36364" fill="white" stroke="black"
+                                    stroke-linecap="round" stroke-linejoin="round"></circle>
+                            <circle cx="7.54528" cy="16.2728" r="4.36364" fill="white" stroke="black"
+                                    stroke-linecap="round" stroke-linejoin="round"></circle>
+                        </svg>
+                    </button>
+                    <strong>
+                        Фильтр по параметрам
+                    </strong></div>
+                <div class="filter-modal__body">
+                    <div class="filter-modal__body-item">
+                        <div class="mb-2">
+                            Районы
+                        </div>
+                        <div class="checkbox mb-2 checkbox_right" data-v-6beb2e9c><label
+                                class="checkbox__label" data-v-6beb2e9c><input type="checkbox"
+                                                                               true-value="true" value="Все"
+                                                                               class="checkbox__input"
+                                                                               data-v-6beb2e9c> <span
+                                class="checkbox__icon" data-v-6beb2e9c></span>
+                            Все
+                        </label></div>
+                        <div class="checkbox checkbox_right" data-v-6beb2e9c><label class="checkbox__label"
+                                                                                    data-v-6beb2e9c><input
+                                type="checkbox" true-value="true" value="Всеволожский муниципальный район"
+                                class="checkbox__input" data-v-6beb2e9c> <span class="checkbox__icon"
+                                                                               data-v-6beb2e9c></span>
+                            Всеволожский муниципальный район
+                        </label></div>
+                        <div class="checkbox mb-2 checkbox_right" data-v-6beb2e9c><label
+                                class="checkbox__label" data-v-6beb2e9c><input type="checkbox"
+                                                                               true-value="true"
+                                                                               value="Никтоволожский район"
+                                                                               class="checkbox__input"
+                                                                               data-v-6beb2e9c> <span
+                                class="checkbox__icon" data-v-6beb2e9c></span>
+                            Никтоволожский район
+                        </label></div>
+                        <hr>
+                    </div>
+                    <div class="filter-modal__body-item">
+                        <div class="mb-2">
+                            Количество этажей
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <div class="checkbox mb-2 checkbox_right" data-v-6beb2e9c><label
+                                    class="checkbox__label" data-v-6beb2e9c><input type="checkbox"
+                                                                                   true-value="true"
+                                                                                   value="1"
+                                                                                   class="checkbox__input"
+                                                                                   data-v-6beb2e9c> <span
+                                    class="checkbox__icon" data-v-6beb2e9c></span>
+                                1
+                            </label></div>
+                            <div class="checkbox mb-2 checkbox_right" data-v-6beb2e9c><label
+                                    class="checkbox__label" data-v-6beb2e9c><input type="checkbox"
+                                                                                   true-value="true"
+                                                                                   value="2"
+                                                                                   class="checkbox__input"
+                                                                                   data-v-6beb2e9c> <span
+                                    class="checkbox__icon" data-v-6beb2e9c></span>
+                                2
+                            </label></div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="filter-modal__body-item mb-4">
+                        <div class="mb-2">
+                            Количество спален
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <div class="checkbox mb-2 checkbox_right" data-v-6beb2e9c><label
+                                    class="checkbox__label" data-v-6beb2e9c><input type="checkbox"
+                                                                                   true-value="true"
+                                                                                   value="1"
+                                                                                   class="checkbox__input"
+                                                                                   data-v-6beb2e9c> <span
+                                    class="checkbox__icon" data-v-6beb2e9c></span>
+                                1
+                            </label></div>
+                            <div class="checkbox mb-2 checkbox_right" data-v-6beb2e9c><label
+                                    class="checkbox__label" data-v-6beb2e9c><input type="checkbox"
+                                                                                   true-value="true"
+                                                                                   value="2"
+                                                                                   class="checkbox__input"
+                                                                                   data-v-6beb2e9c> <span
+                                    class="checkbox__icon" data-v-6beb2e9c></span>
+                                2
+                            </label></div>
+                            <div class="checkbox mb-2 checkbox_right" data-v-6beb2e9c><label
+                                    class="checkbox__label" data-v-6beb2e9c><input type="checkbox"
+                                                                                   true-value="true"
+                                                                                   value="3"
+                                                                                   class="checkbox__input"
+                                                                                   data-v-6beb2e9c> <span
+                                    class="checkbox__icon" data-v-6beb2e9c></span>
+                                3
+                            </label></div>
+                            <div class="checkbox mb-2 checkbox_right" data-v-6beb2e9c><label
+                                    class="checkbox__label" data-v-6beb2e9c><input type="checkbox"
+                                                                                   true-value="true"
+                                                                                   value="4+"
+                                                                                   class="checkbox__input"
+                                                                                   data-v-6beb2e9c> <span
+                                    class="checkbox__icon" data-v-6beb2e9c></span>
+                                4+
+                            </label></div>
+                        </div>
+                    </div>
+                    <button class="button button_primary">
+                        Применить
+                    </button>
+                </div>
+            </div>
+            <form class="catalogue__calculate-project calculate-project"><h2
+                    class="calculate-project__title">
+                Расчет стоимости проекта
+            </h2>
+                <div class="input w-100 mb-4"><input placeholder="Номер телефона" class="input__input">
+                    <label class="input__label">
+
+                    </label> <!----></div>
+                <label for="upload-photo" class="file-input mb-4">Прикрепите файл проекта</label> <input
+                        id="upload-photo" type="file" class="file-input__btn">
+                <button type="submit" class="button w-100 mb-3 button_primary">
+                    Рассчитать проект
+                </button>
+                <p class="catalogue__signing">
+                    Нажимая на кнопку "Рассчитать проект" Вы соглашаетесь на
+                    обработку персональных данных в соответствии с условиями
+                    <a href="/">политики конфиденциальности</a></p></form>
+            <div class="catalogue__content">
+                <div class="item-promo">
+                    Скидка 7% <br>до конца июля
+                    <span class="item-promo__box"></span> <span class="item-promo__percent">%</span></div>
+                <div class="item-promo">
+                    Скидка 7% <br>до конца июля
+                    <span class="item-promo__percent_right">%</span></div>
+                <a href="/" class="catalogue__link">
+                    <div class="house-project-card catalogue__item-card" data-v-408feb7f><img
+                            src="/assets/images/site/catalogue/item.png" alt="item" class="mb-3" data-v-408feb7f>
+                        <div class="house-project-card__description" data-v-408feb7f>
+                            <div class="mb-3" data-v-408feb7f>
+                                Каркасный дом Проект 345
+                            </div>
+                            <div data-v-408feb7f>Площадь: <span data-v-408feb7f>138.2 м<sup
+                                    data-v-408feb7f>2</sup></span>
+                            </div>
+                            <div class="d-flex justify-content-between flex-xl-row flex-column"
+                                 data-v-408feb7f>
+                                <div data-v-408feb7f>Спальных комнат: <span data-v-408feb7f>4</span></div>
+                                <div data-v-408feb7f>от <span data-v-408feb7f>1 450 000 Р</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </a> <a href="/" class="catalogue__link">
+                <div class="house-project-card catalogue__item-card" data-v-408feb7f><img
+                        src="/assets/images/site/catalogue/item.png" alt="item" class="mb-3" data-v-408feb7f>
+                    <div class="house-project-card__description" data-v-408feb7f>
+                        <div class="mb-3" data-v-408feb7f>
+                            Каркасный дом Проект 345
+                        </div>
+                        <div data-v-408feb7f>Площадь: <span data-v-408feb7f>138.2 м<sup
+                                data-v-408feb7f>2</sup></span></div>
+                        <div class="d-flex justify-content-between flex-xl-row flex-column" data-v-408feb7f>
+                            <div data-v-408feb7f>Спальных комнат: <span data-v-408feb7f>4</span></div>
+                            <div data-v-408feb7f>от <span data-v-408feb7f>1 450 000 Р</span></div>
+                        </div>
+                    </div>
+                </div>
+            </a> <a href="/" class="catalogue__link">
+                <div class="house-project-card catalogue__item-card" data-v-408feb7f><img
+                        src="/assets/images/site/catalogue/item.png" alt="item" class="mb-3" data-v-408feb7f>
+                    <div class="house-project-card__description" data-v-408feb7f>
+                        <div class="mb-3" data-v-408feb7f>
+                            Каркасный дом Проект 345
+                        </div>
+                        <div data-v-408feb7f>Площадь: <span data-v-408feb7f>138.2 м<sup
+                                data-v-408feb7f>2</sup></span></div>
+                        <div class="d-flex justify-content-between flex-xl-row flex-column" data-v-408feb7f>
+                            <div data-v-408feb7f>Спальных комнат: <span data-v-408feb7f>4</span></div>
+                            <div data-v-408feb7f>от <span data-v-408feb7f>1 450 000 Р</span></div>
+                        </div>
+                    </div>
+                </div>
+            </a> <a href="/" class="catalogue__link">
+                <div class="house-project-card catalogue__item-card" data-v-408feb7f><img
+                        src="/assets/images/site/catalogue/item.png" alt="item" class="mb-3" data-v-408feb7f>
+                    <div class="house-project-card__description" data-v-408feb7f>
+                        <div class="mb-3" data-v-408feb7f>
+                            Каркасный дом Проект 345
+                        </div>
+                        <div data-v-408feb7f>Площадь: <span data-v-408feb7f>138.2 м<sup
+                                data-v-408feb7f>2</sup></span></div>
+                        <div class="d-flex justify-content-between flex-xl-row flex-column" data-v-408feb7f>
+                            <div data-v-408feb7f>Спальных комнат: <span data-v-408feb7f>4</span></div>
+                            <div data-v-408feb7f>от <span data-v-408feb7f>1 450 000 Р</span></div>
+                        </div>
+                    </div>
+                </div>
+            </a> <a href="/" class="catalogue__link">
+                <div class="house-project-card catalogue__item-card" data-v-408feb7f><img
+                        src="/assets/images/site/catalogue/item.png" alt="item" class="mb-3" data-v-408feb7f>
+                    <div class="house-project-card__description" data-v-408feb7f>
+                        <div class="mb-3" data-v-408feb7f>
+                            Каркасный дом Проект 345
+                        </div>
+                        <div data-v-408feb7f>Площадь: <span data-v-408feb7f>138.2 м<sup
+                                data-v-408feb7f>2</sup></span></div>
+                        <div class="d-flex justify-content-between flex-xl-row flex-column" data-v-408feb7f>
+                            <div data-v-408feb7f>Спальных комнат: <span data-v-408feb7f>4</span></div>
+                            <div data-v-408feb7f>от <span data-v-408feb7f>1 450 000 Р</span></div>
+                        </div>
+                    </div>
+                </div>
+            </a></div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="row gy-lg-0 gy-4 text-lg-start text-center">
+                <div class="col-lg-3"><a href="/" aria-current="page"
+                                         class="nuxt-link-exact-active nuxt-link-active"
+                ><img
+                        src="/assets/images/footer/logo-footer.svg" alt=""></a>
+                    <div class="footer__contacts"><a href="#"
+                                                     class="footer__contacts-link link link_light"
+                    ><i
+                            class="icon-location"></i>
+                        Санкт-Петербург,
+                        ул. Белоостровская, 37
+                    </a> <a href="tel:+7(812)-123-45-67" class="footer__contacts-link link link_light"
+                    ><i class="icon-phone"></i>
+                        +7 (812) 123 45 67
+                    </a> <a href="mailto:info@company.ru" class="footer__contacts-link link link_light"
+                    ><i class="icon-mail"></i>
+                        info@company.ru
+                    </a></div>
+                </div>
+                <div class="col-lg-2 col-6 d-none d-sm-block">
+                    <div class="footer__group">
+                        <div class="footer__group-title">
+                            О компании
+                        </div>
+                        <a href="/" aria-current="page"
+                           class="footer__group-link nuxt-link-exact-active nuxt-link-active"
+                        >
+                            Услуги
+                        </a> <a href="/" aria-current="page"
+                                class="footer__group-link nuxt-link-exact-active nuxt-link-active"
+                    >
+                        Сертификаты
+                    </a> <a href="/" aria-current="page"
+                            class="footer__group-link nuxt-link-exact-active nuxt-link-active"
+                    >
+                        Отзывы
+                    </a> <a href="/" aria-current="page"
+                            class="footer__group-link nuxt-link-exact-active nuxt-link-active"
+                    >
+                        Партнеры
+                    </a></div>
+                </div>
+                <div class="col-lg-2 col-6 d-none d-sm-block">
+                    <div class="footer__group">
+                        <div class="footer__group-title">
+                            Клиенту
+                        </div>
+                        <a href="/" aria-current="page"
+                           class="footer__group-link nuxt-link-exact-active nuxt-link-active"
+                        >
+                            Доставка
+                        </a> <a href="/" aria-current="page"
+                                class="footer__group-link nuxt-link-exact-active nuxt-link-active"
+                    >
+                        Гарантии
+                    </a> <a href="/" aria-current="page"
+                            class="footer__group-link nuxt-link-exact-active nuxt-link-active"
+                    >
+                        Вопросы и ответы
+                    </a> <a href="/" aria-current="page"
+                            class="footer__group-link nuxt-link-exact-active nuxt-link-active"
+                    >
+                        Технологии
+                    </a> <a href="/" aria-current="page"
+                            class="footer__group-link nuxt-link-exact-active nuxt-link-active"
+                    >
+                        Документации
+                    </a></div>
+                </div>
+                <div class="col-lg-2 col-6 d-none d-sm-block">
+                    <div class="footer__group">
+                        <div class="footer__group-title">
+                            Цены
+                        </div>
+                        <a href="/" aria-current="page"
+                           class="footer__group-link nuxt-link-exact-active nuxt-link-active"
+                        >
+                            Кредит
+                        </a> <a href="/" aria-current="page"
+                                class="footer__group-link nuxt-link-exact-active nuxt-link-active"
+                    >
+                        Маткапитал
+                    </a></div>
+                </div>
+                <div class="col-lg-3 col-6 d-none d-sm-block">
+                    <div class="footer__other"><a href="/" aria-current="page"
+                                                  class="footer__other-link nuxt-link-exact-active nuxt-link-active"
+                    >
+                        Проекты
+                    </a> <a href="/" aria-current="page"
+                            class="footer__other-link nuxt-link-exact-active nuxt-link-active"
+                    >
+                        Реализованные проекты
+                    </a> <a href="/" aria-current="page"
+                            class="footer__other-link nuxt-link-exact-active nuxt-link-active"
+                    >
+                        Блог
+                    </a> <a href="/" aria-current="page"
+                            class="footer__other-link nuxt-link-exact-active nuxt-link-active"
+                    >
+                        Акции
+                    </a> <a href="/" aria-current="page"
+                            class="footer__other-link nuxt-link-exact-active nuxt-link-active"
+                    >
+                        Контакты
+                    </a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="row gy-lg-0 gy-3 text-lg-start text-center">
+                <div class="col-lg-9 order-lg-0 order-1">
+                    © 2002 - 2021 Frame House
+                </div>
+                <div class="col-lg-3 order-lg-1 order-0"><a href="/" aria-current="page"
+                                                            class="footer__bottom-privacy nuxt-link-exact-active nuxt-link-active"
+                >
+                    Политика конфиденциальности
+                </a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
