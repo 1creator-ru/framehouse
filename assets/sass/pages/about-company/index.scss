@@ -73,11 +73,11 @@
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 30px;
 
-            @include media-breakpoint-down(lg){
+            @include media-breakpoint-down(lg) {
                 grid-template-columns: 1fr 1fr;
             }
 
-            @include media-breakpoint-down(md){
+            @include media-breakpoint-down(md) {
                 grid-template-columns: 1fr;
             }
         }

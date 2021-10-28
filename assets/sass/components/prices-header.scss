@@ -5,7 +5,7 @@
     padding: 84px 104px;
     display: flex;
     justify-content: space-between;
-    @include media-breakpoint-down(xl){
+    @include media-breakpoint-down(xl) {
         padding: 60px;
     }
     @include media-breakpoint-down(lg) {
