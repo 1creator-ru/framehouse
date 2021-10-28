@@ -1,0 +1,272 @@
+.navbar {
+    background: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+
+
+    .navbar__top {
+        padding: 3px 0;
+        border-bottom: 1px solid #EDEDED;
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+
+        .icon-location-pin {
+            color: $gray;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        .navbar__top-link {
+            color: $gray;
+            text-decoration: underline;
+
+            &:hover {
+                color: $gray;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .navbar__middle {
+        border-bottom: 1px solid #EDEDED;
+        padding: 15px 0;
+
+        .navbar__middle-content {
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            column-gap: 70px;
+            @include media-breakpoint-down(xxl) {
+                grid-gap: 40px;
+            }
+            @include media-breakpoint-down(lg) {
+                display: flex;
+                align-items: center;
+                grid-gap: 10px;
+            }
+        }
+
+        .navbar__logo {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: $dark;
+
+            &:hover {
+                color: $dark;
+                text-decoration: none;
+            }
+
+            img {
+                margin-right: 20px;
+                @include media-breakpoint-down(lg) {
+                    margin-right: 0;
+                    height: 40px;
+                }
+                @include media-breakpoint-down(sm) {
+                    height: 32px;
+                }
+            }
+
+            .navbar__logo-text {
+                font-family: "Montserrat", sans-serif;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 18px;
+                @include media-breakpoint-down(lg) {
+                    display: none;
+                }
+            }
+        }
+
+        .navbar__middle-btns {
+            display: flex;
+            align-items: center;
+
+            @include media-breakpoint-down(xl) {
+                flex-direction: column;
+            }
+            @include media-breakpoint-down(lg) {
+                display: none;
+            }
+
+            button {
+                padding: 6px 20px;
+                text-transform: none;
+                @include media-breakpoint-down(xl) {
+                    width: 100%;
+                }
+            }
+        }
+
+        .navbar__middle-btns-sm {
+            display: flex;
+            align-items: center;
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+        }
+
+        .navbar__middle-phone {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+
+            .navbar__middle-phone-link {
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 14px;
+                }
+            }
+
+            button {
+                @include media-breakpoint-down(lg) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .navbar__bottom {
+        padding: 10px 0;
+        @include media-breakpoint-down(lg) {
+            background: rgba($primary, .98);
+            padding: 27px 0;
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+        }
+
+        &.opened {
+            @include media-breakpoint-down(lg) {
+                display: block;
+            }
+        }
+
+
+        .button_navbar-primary {
+            color: $primary;
+            background: white;
+            padding: 12px;
+            width: 100%;
+            font-size: 14px;
+
+            &:hover {
+                background: mix(black, white, 10%);
+            }
+
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+        }
+
+        .button_navbar-secondary {
+            text-decoration: none;
+            display: block;
+            color: $primary;
+            background: #86C239;
+            padding: 12px;
+            width: 100%;
+            font-size: 14px;
+
+            &:hover {
+                background: mix(black, #86C239, 10%);
+            }
+
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+        }
+
+        .button_navbar-close {
+            color: white;
+            background: transparent;
+            padding: 0;
+            font-size: 17px;
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 12px;
+            }
+        }
+
+        .navbar__bottom-content {
+            align-items: center;
+            display: grid;
+            grid-auto-flow: column;
+            grid-gap: 30px;
+            white-space: nowrap;
+            list-style: none;
+            padding: 0;
+            margin-bottom: 0;
+            @include media-breakpoint-down(lg) {
+                display: block;
+                grid-gap: unset;
+                border-top: 1px solid rgba(white, .5);
+                padding-top: 16px;
+                margin-bottom: 20px;
+            }
+
+            li {
+
+                @include media-breakpoint-down(lg) {
+                    padding: 8px 0;
+                    font-weight: 300;
+                }
+            }
+
+            .navbar__bottom-link {
+                @include media-breakpoint-down(lg) {
+                    color: white;
+                    font-size: 24px;
+                }
+            }
+
+            .navbar__bottom-dropdown {
+                li {
+                    padding: 0;
+                }
+
+                .link {
+                    position: relative;
+                    padding: 6px 12px;
+                    display: block;
+                    @include media-breakpoint-down(lg) {
+                        font-size: 18px;
+                        color: white;
+                    }
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        height: 2px;
+                        width: 0;
+                        background: $primary;
+                        transition: width .2s;
+                    }
+
+                    &:hover {
+                        &:before {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

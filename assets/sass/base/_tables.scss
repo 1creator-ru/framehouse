@@ -1,0 +1,27 @@
+.table {
+    width: 100%;
+    overflow: hidden;
+
+    thead, .table__head {
+        color: black;
+        overflow: hidden;
+        font-weight: bold;
+        padding: 5px 10px;
+    }
+
+    td, .table__cell {
+        padding: 15px;
+    }
+
+    tr, .table__row {
+        padding: 5px 10px;
+
+        &:nth-child(even) {
+            background: $light;
+        }
+
+        &:hover{
+            background: $light;
+        }
+    }
+}

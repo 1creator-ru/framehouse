@@ -1,0 +1,49 @@
+.guarantee {
+    margin: $page-content-margin;
+    @include media-breakpoint-down(md) {
+        margin: $page-content-margin-sm;
+    }
+
+    img {
+        border-radius: 5px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .guarantee__title {
+        margin-bottom: 28px;
+    }
+
+    .guarantee__text {
+        margin-bottom: 64px;
+
+        &:last-of-type {
+            margin-bottom: 50px;
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    .icon-info {
+        vertical-align: middle;
+        margin-right: 6px;
+    }
+
+    .guarantee__button {
+        padding: 15px 30px;
+        background: white;
+        display: flex;
+        align-items: center;
+
+        i {
+            font-size: 18px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}

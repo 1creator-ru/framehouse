@@ -1,0 +1,11 @@
+.calculate-project {
+    padding: 40px 17px;
+    background: linear-gradient(180deg, rgba(243, 238, 217, 0.1) -72.27%, rgba(130, 30, 39, 0.1) 145.18%);
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    .calculate-project__title {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 27px;
+    }
+}

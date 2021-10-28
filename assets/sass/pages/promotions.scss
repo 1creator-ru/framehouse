@@ -1,0 +1,96 @@
+.promotions {
+    margin: $page-content-margin;
+    @include media-breakpoint-down(md) {
+        margin: $page-content-margin-sm;
+    }
+
+    .promotions__title {
+        margin-bottom: 38px;
+    }
+
+    .promotions__cards {
+        margin-bottom: 70px;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 40px;
+        }
+
+        .promotions__card-wrap {
+            margin-bottom: 32px;
+
+            .promotions__card {
+                height: 100%;
+                background: $linear-gradient;
+                border: 1px solid $border-color;
+                border-radius: 5px;
+                padding: 45px;
+                @include media-breakpoint-down(md) {
+                    padding: 30px;
+                }
+
+                &-sm-white {
+                    @include media-breakpoint-down(md) {
+                        background: white;
+                    }
+                }
+
+                .promotions__card-title {
+                    line-height: 120%;
+                    font-weight: bold;
+                    margin-bottom: 18px;
+                    color: $primary;
+                    font-size: 28px;
+                    @include media-breakpoint-down(md) {
+                        margin-bottom: 8px;
+                    }
+                }
+
+                .promotions__card-title_small {
+                    font-size: 22px;
+                }
+
+                .promotions__card-title_big {
+                    font-size: 48px;
+                }
+
+                strong {
+                    font-size: 20px;
+                    @include media-breakpoint-down(md) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .promotions__advantages {
+        display: grid;
+        column-gap: 14px;
+        text-align: center;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(5, 232px);
+        @include media-breakpoint-down(xxl) {
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+
+        .promotions__advantages-item {
+            .promotions__advantages-item-img {
+                font-size: 38px;
+                margin: 0 auto 24px;
+
+                i {
+                    vertical-align: middle;
+                }
+
+                .icon-control {
+                    font-size: 30px;
+                }
+            }
+
+            h5 {
+                margin-bottom: 0;
+                font-weight: normal;
+            }
+        }
+    }
+}

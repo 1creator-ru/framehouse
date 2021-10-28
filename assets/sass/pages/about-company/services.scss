@@ -1,0 +1,87 @@
+.services {
+    margin: 45px 0 64px;
+    @include media-breakpoint-down(md) {
+        margin: $page-content-margin-sm;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    .get__consultation {
+        margin-top: 64px;
+    }
+
+    .services__card {
+        background: white;
+        padding: 32px;
+        margin-bottom: 32px;
+        border-radius: 5px;
+        border: 1px solid $border-color;
+        @include media-breakpoint-down(md) {
+            padding: 8px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 32px;
+            }
+        }
+
+        .services__card-text {
+            @include media-breakpoint-down(md) {
+                padding: 8px;
+            }
+
+            h3 {
+                margin: 24px 0 28px;
+                @include media-breakpoint-down(xl) {
+                    margin: 0 0 28px;
+                }
+            }
+
+            .services__card-button {
+                padding: 12px 25px;
+
+                i {
+                    margin-right: 5px;
+                }
+
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+                    padding: 12px;
+                }
+            }
+
+            .services__card-items {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: -12px;
+
+                .services__card-item {
+                    margin-bottom: 12px;
+                    width: 250px;
+                    display: flex;
+                    @include media-breakpoint-down(xl) {
+                        width: 100%;
+                    }
+
+                    i {
+                        font-size: 22px;
+                        color: $primary;
+                        margin-right: 12px;
+                        text-align: center;
+                        min-width: 32px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .services__get-call {
+        background: $linear-gradient;
+    }
+}

@@ -1,0 +1,84 @@
+.prices-header {
+    background: $linear-gradient;
+    border-radius: 5px;
+    border: 1px solid $border-color;
+    padding: 84px 104px;
+    display: flex;
+    justify-content: space-between;
+    @include media-breakpoint-down(xl){
+        padding: 60px;
+    }
+    @include media-breakpoint-down(lg) {
+        flex-direction: column;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 32px;
+    }
+
+    .prices-header__text {
+        order: 0;
+        margin-right: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include media-breakpoint-down(xl) {
+            margin-right: 60px;
+        }
+        @include media-breakpoint-down(lg) {
+            order: 1;
+            margin: 0;
+        }
+
+        h2 {
+            @include media-breakpoint-down(sm) {
+                font-size: 22px;
+            }
+        }
+
+        .prices-header__btn {
+            padding: 12px 72px;
+            @include media-breakpoint-down(xl) {
+                width: 100%;
+                padding: 12px;
+            }
+            @include media-breakpoint-down(lg) {
+                margin: 0 auto;
+                display: block;
+            }
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+                padding: 12px;
+            }
+        }
+    }
+
+    .prices-header__img {
+        order: 1;
+        height: 280px;
+        min-width: 280px;
+        width: 280px;
+        background: $radial-gradient;
+        box-shadow: $box-shadow;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include media-breakpoint-down(lg) {
+            order: 0;
+            margin: 0 auto 24px;
+        }
+        @include media-breakpoint-down(sm) {
+            min-width: auto;
+            width: 100%;
+            height: 220px;
+        }
+
+        i {
+            font-size: 176px;
+            color: white;
+            @include media-breakpoint-down(md) {
+                font-size: 130px;
+            }
+        }
+    }
+}

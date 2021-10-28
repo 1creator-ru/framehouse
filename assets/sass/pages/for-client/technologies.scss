@@ -1,0 +1,21 @@
+.technology {
+    margin: $page-content-margin;
+    @include media-breakpoint-down(md) {
+        margin: $page-content-margin-sm;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    .technology-tab__content {
+        height: 536px;
+        margin-top: 120px;
+        padding: 32px;
+        border-radius: 5px;
+        background: $linear-gradient;
+        @include media-breakpoint-down(md) {
+            margin-top: 32px;
+        }
+    }
+}

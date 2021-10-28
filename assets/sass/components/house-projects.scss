@@ -1,0 +1,41 @@
+.house-projects__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 24px;
+    }
+
+}
+
+.house-projects__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    @include media-breakpoint-down(lg) {
+        grid-template-columns: repeat(3, 320px);
+        overflow-y: scroll;
+        grid-gap: 8px;
+    }
+}
+
+.house-projects {
+    margin-bottom: 120px;
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 64px;
+    }
+
+    button {
+        @include media-breakpoint-down(sm) {
+            font-size: 12px !important;
+        }
+    }
+}
+
+.house-projects__show-more {
+    @include media-breakpoint-down(sm) {
+        padding: 2px !important;
+        width: 104px;
+    }
+}

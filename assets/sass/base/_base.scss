@@ -1,0 +1,30 @@
+body {
+    width: 100%;
+    margin: 0;
+    background: #F2F3F7;
+    background-size: cover;
+    color: $dark;
+    backface-visibility: hidden;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+.icon-wrap {
+    background: $radial-gradient;
+    box-shadow: $box-shadow;
+    border-radius: 12px;
+    padding: 8px;
+    color: white;
+    min-width: 72px;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

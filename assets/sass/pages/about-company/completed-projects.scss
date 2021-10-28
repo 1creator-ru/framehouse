@@ -1,0 +1,52 @@
+.completed-projects {
+    margin: 45px 0 80px;
+    @include media-breakpoint-down(md) {
+        margin: 32px 0 80px;
+    }
+
+    h2 {
+        margin-bottom: 28px;
+    }
+
+    .completed-projects__filters {
+
+        margin-bottom: 32px;
+
+        .completed-projects__filters-group {
+            display: grid;
+            grid-template-columns: 272px repeat(3, 1fr);
+            grid-gap: 16px;
+
+            .completed-projects__filters-select {
+
+            }
+        }
+
+        button {
+            height: 48px;
+            padding: 12px 18px;
+            display: block;
+            text-transform: none;
+
+            i {
+                margin-left: 8px;
+                font-size: 18px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .completed-projects__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 32px;
+
+        @include media-breakpoint-down(md) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .button-show-more {
+        margin-top: 56px;
+    }
+}

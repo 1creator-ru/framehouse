@@ -1,0 +1,56 @@
+.dream-house__card {
+    background: white;
+    border: 1px solid $border-color;
+    padding: 70px;
+    display: grid;
+    grid-template-columns: auto 350px;
+    grid-gap: 100px;
+    @include media-breakpoint-down(lg) {
+        grid-template-columns: auto;
+        grid-gap: 24px;
+        background: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    img {
+        border-radius: 5px;
+    }
+}
+
+.dream-house__title {
+    margin: auto auto 65px;
+    max-width: 700px;
+    text-align: center;
+    @include media-breakpoint-down(lg) {
+        text-align: left;
+        margin-bottom: 32px;
+    }
+}
+
+.dream-house__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-gap: 30px;
+
+    span {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: bold;
+        color: $primary;
+    }
+}
+
+.dream-house__list-item {
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+
+.dream-house {
+    margin-bottom: 120px;
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 64px;
+    }
+}

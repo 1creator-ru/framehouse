@@ -1,0 +1,179 @@
+.prices {
+    margin: $page-content-margin;
+    @include media-breakpoint-down(md) {
+        margin: $page-content-margin-sm;
+    }
+
+    img {
+        border-radius: 5px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 32px;
+        }
+    }
+
+    h2 {
+        margin-bottom: 28px;
+    }
+
+    .prices__header {
+        margin-bottom: 56px;
+
+        .prices__header-text {
+            margin-bottom: 50px;
+        }
+
+        .prices__header-btn-group {
+            h5 {
+                margin-bottom: 32px;
+            }
+
+            .prices__header-btns {
+                display: flex;
+
+                .prices__header-btn {
+                    margin-right: 32px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    @include media-breakpoint-down(lg) {
+                        margin-right: 16px;
+                    }
+                }
+
+                button {
+                    padding: 8px 20px;
+                    font-size: 12px;
+                    min-width: 177px;
+                    @include media-breakpoint-down(md) {
+                        padding: 8px;
+                        min-width: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .prices__cards {
+        margin-bottom: 88px;
+
+        .prices__cards-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            padding: 40px;
+            border: 1px solid rgba($primary, .25);
+            border-radius: 5px;
+            @include media-breakpoint-down(lg) {
+                padding: 32px;
+            }
+
+            .prices__cards-item-img {
+                width: 88px;
+                height: 88px;
+                font-size: 51px;
+                margin-bottom: 20px;
+            }
+
+            .prices__cards-item-title {
+                font-size: 20px;
+                color: $primary;
+                margin-bottom: 9px;
+                font-weight: bold;
+            }
+
+            .prices__cards-item-text {
+                font-size: 14px;
+                margin-bottom: 63px;
+                line-height: 140%;
+            }
+
+            button {
+                padding-top: 16px;
+                padding-bottom: 16px;
+                background: white;
+                width: 280px;
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+    .prices__engineering {
+        margin-bottom: 88px;
+
+        img {
+            border-radius: 5px;
+        }
+
+        .prices__engineering-text {
+            margin-bottom: 38px;
+        }
+
+        .prices__engineering-cost {
+            font-weight: bold;
+            margin-bottom: 48px;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .prices__engineering-price {
+                min-width: 130px;
+                font-size: 36px;
+                margin: 0 40px;
+                @include media-breakpoint-down(xxl) {
+                    margin: 0 0 0 20px;
+                }
+            }
+        }
+
+        button {
+            padding: 12px 45px;
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+        }
+    }
+
+    .prices__house-cards {
+        margin-bottom: 72px;
+
+        .prices__house-card {
+            //min-height: 328px;
+            height: 100%;
+            position: relative;
+
+            img {
+                height: 100%;
+                border-radius: 5px;
+                filter: brightness(.6);
+            }
+
+            .prices__house-card-btn-wrap {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                button {
+                    padding: 12px 47px;
+                    @include media-breakpoint-down(sm) {
+                        padding: 12px;
+                        width: 100%;
+                        margin: 0 16px;
+                    }
+                }
+            }
+
+        }
+    }
+}

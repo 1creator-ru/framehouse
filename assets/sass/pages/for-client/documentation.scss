@@ -1,0 +1,74 @@
+.documentation {
+    margin: $page-content-margin;
+    @include media-breakpoint-down(md) {
+        margin: $page-content-margin-sm;
+    }
+
+    .documentation__title {
+        margin-bottom: 40px;
+    }
+
+    .documentation__files {
+        margin-bottom: 60px;
+
+        .link {
+            i {
+                margin-right: 15px;
+            }
+
+            span {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .documentation__section {
+        margin-bottom: 60px;
+
+        h3 {
+            margin-bottom: 25px;
+        }
+
+        .documentation__section-description {
+            margin-bottom: 40px;
+        }
+
+        .swiper-slide {
+            border-radius: 5px;
+            overflow: hidden;
+        }
+    }
+
+    .documentation__section-item {
+        margin-bottom: 40px;
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        h4 {
+            color: $primary;
+        }
+    }
+
+    .documentation-slider__control {
+        font-size: 64px;
+        transition: .1s;
+
+        &:active {
+            transform: scale(.7);
+
+        }
+
+        &.swiper-button-disabled {
+            opacity: .6;
+            cursor: auto;
+
+            &:active {
+                transform: none;
+                transition: none;
+            }
+        }
+    }
+}

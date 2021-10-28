@@ -1,0 +1,61 @@
+@import "variables";
+@import "base/base";
+@import "base/typo";
+@import "base/links";
+@import "base/tables";
+@import "base/buttons";
+@import "base/inputs";
+//common
+@import "components/breadcrumbs";
+@import "components/calculate-project";
+@import "components/house-project-card";
+@import "components/item-promo";
+//site/layout
+@import "layout/navbar";
+@import "layout/footer";
+//site/general
+@import "components/about-statistics";
+@import "components/get-consultation";
+@import "components/prices-header";
+@import "components/send-order";
+@import "components/filter-modal";
+//site
+@import "pages/contacts";
+@import "pages/prices";
+@import "pages/index";
+@import "pages/promotions";
+@import "pages/map";
+@import "pages/catalogue";
+@import "pages/project-page";
+//pages/about-company
+@import "pages/about-company/certifications";
+@import "pages/about-company/index";
+@import "pages/about-company/partners";
+@import "pages/about-company/services";
+@import "pages/about-company/reviews";
+@import "pages/about-company/completed-projects";
+//pages/blog
+@import "pages/blog/blog";
+@import "pages/blog/article";
+//pages/for-client
+@import "pages/for-client/index";
+@import "pages/for-client/documentation";
+@import "pages/for-client/engineering";
+@import "pages/for-client/estimate";
+@import "pages/for-client/faq";
+@import "pages/for-client/guarantee";
+@import "pages/for-client/payment";
+@import "pages/for-client/technologies";
+//pages/prices
+@import "pages/prices/loan";
+@import "pages/prices/maternal-capital";
+
+@import "components/house-projects";
+@import "components/calculation-feedback";
+@import "components/dream-house";
+@import "components/completed-project-card";
+@import "components/index-offers";
+@import "components/completed-projects-block";
+@import "components/house-selection";
+@import "components/projects-on-map";
+

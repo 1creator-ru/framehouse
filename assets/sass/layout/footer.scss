@@ -1,0 +1,102 @@
+$footer-link-color: #57474A;
+.footer {
+    font-size: 14px;
+    line-height: 18px;
+    background: $dark;
+
+    .footer__top {
+        border-bottom: 1px solid $footer-link-color;
+        padding: 30px 0;
+    }
+
+    .footer__bottom {
+        font-size: 10px;
+        color: $footer-link-color;
+        padding: 30px 0;
+
+        .footer__bottom-privacy {
+            color: $footer-link-color;
+            display: block;
+
+            &:hover {
+                color: $primary;
+            }
+
+        }
+    }
+
+    img {
+        margin-bottom: 25px;
+    }
+
+    .footer__contacts {
+        color: #F3EED9;
+
+        @include media-breakpoint-down(lg) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        @include media-breakpoint-down(sm) {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .footer__contacts-link {
+            margin-bottom: 10px;
+            display: grid;
+            grid-template-columns: 15px auto;
+            grid-gap: 8px;
+            align-items: baseline;
+            color: #F3EED9;
+
+            &:hover {
+                color: white;
+            }
+
+            i {
+                font-size: 14px;
+
+                @include media-breakpoint-down(sm) {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .footer__group {
+        .footer__group-title {
+            color: white;
+            margin-bottom: 17px;
+        }
+
+        .footer__group-link {
+            color: $footer-link-color;
+            display: block;
+            margin-bottom: 12px;
+            text-decoration: none;
+
+            &:hover {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .footer__other {
+        .footer__other-link {
+            color: white;
+            display: block;
+            margin-bottom: 12px;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary;
+                text-decoration: none;
+            }
+        }
+    }
+}

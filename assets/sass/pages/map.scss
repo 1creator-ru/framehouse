@@ -1,0 +1,14 @@
+.objects-map {
+    margin: $page-content-margin;
+    @include media-breakpoint-down(xl) {
+        margin: 45px 0 0;
+    }
+
+    h2 {
+        margin-bottom: 58px;
+        @include media-breakpoint-down(sm) {
+            padding: 0 16px;
+        }
+    }
+
+}

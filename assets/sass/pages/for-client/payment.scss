@@ -1,0 +1,58 @@
+.payment {
+    margin: 45px 0 100px;
+    @include media-breakpoint-down(md) {
+        margin: $page-content-margin-sm;
+    }
+
+    img {
+        border-radius: 5px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .payment__title {
+        margin-bottom: 28px;
+    }
+
+    .payment__section {
+        margin-bottom: 60px;
+
+        .payment__list {
+            padding-left: 16px;
+        }
+
+        .payment__stages {
+            .payment__stage {
+                margin-bottom: 25px;
+
+                .payment__stage-label {
+                    color: $gray;
+                    font-size: 14px;
+                    margin-left: 4px;
+                    line-height: 100%;
+                }
+
+                .payment__stage-group {
+                    display: flex;
+
+                    .payment__stage-number {
+                        line-height: 100%;
+                        font-weight: bold;
+                        font-size: 48px;
+                        color: $primary;
+                        margin-right: 18px;
+                    }
+
+                    .payment__stage-text {
+
+                    }
+                }
+            }
+        }
+    }
+
+    .payment__section_constrained {
+        max-width: 600px;
+    }
+}

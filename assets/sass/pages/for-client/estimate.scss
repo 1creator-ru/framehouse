@@ -1,0 +1,37 @@
+.estimate {
+    margin: $page-content-margin;
+    @include media-breakpoint-down(md) {
+        margin: 32px 0 16px;
+    }
+
+    img {
+        border-radius: 5px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .estimate__title {
+        margin-bottom: 28px;
+    }
+
+    .estimate__text {
+        margin-bottom: 52px;
+    }
+
+    .estimate__button {
+        padding: 12px 90px;
+        background: white;
+        @include media-breakpoint-down(sm) {
+            text-align: center;
+            width: 100%;
+            padding: 15px;
+            margin: 0 auto;
+            display: block;
+        }
+        i {
+            vertical-align: middle;
+            margin-right: 6px;
+        }
+    }
+}

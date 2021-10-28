@@ -1,0 +1,25 @@
+.completed-projects-block {
+    padding: 100px 0;
+    @include media-breakpoint-down(lg) {
+        padding: 64px 0;
+    }
+}
+
+.completed-projects-block__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 32px;
+    @include media-breakpoint-down(lg) {
+        grid-template-columns: repeat(3, 320px);
+        overflow-y: scroll;
+        grid-gap: 8px;
+    }
+}
+
+.completed-projects-block__text {
+    font-size: 22px;
+    margin-bottom: 60px;
+    @include media-breakpoint-down(md) {
+        margin-bottom: 24px;
+    }
+}

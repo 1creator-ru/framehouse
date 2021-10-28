@@ -1,0 +1,66 @@
+.calculation-feedback {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-gap: 75px;
+    padding: 50px;
+    background: linear-gradient(180deg, rgba(243, 238, 217, 0.1) -72.27%, rgba(130, 30, 39, 0.1) 145.18%);
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    margin-bottom: 120px;
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 64px;
+        padding: 8px;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-gap: 24px;
+    }
+
+    img {
+        border-radius: 5px;
+        @include media-breakpoint-down(lg) {
+            width: 100%;
+        }
+    }
+
+    .calculation-feedback__content {
+        @include media-breakpoint-down(lg) {
+            padding: 8px;
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 0;
+        }
+    }
+
+    .icon-check-mark {
+        margin-right: 5px;
+        color: $primary;
+    }
+
+    .calculation-feedback__form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        margin-bottom: 15px;
+        @include media-breakpoint-down(sm) {
+            grid-template-columns: auto;
+             grid-gap: 8px;
+        }
+
+        input {
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+        }
+
+        button {
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+        }
+    }
+
+    .calculation-feedback__terms {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}

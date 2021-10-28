@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="/assets/sass/vendor.scss">
+    <link type="text/css" rel="stylesheet" href="/assets/sass/app.scss">
+    <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon">
+    <title>Главная</title>
+</head>
+<body>
+<nav class="navbar">
+    <div class="navbar__top">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-end"><i class="icon-location-pin"></i> <a
+                    href="#" class="navbar__top-link">
+                Карта строящихся объектов
+            </a></div>
+        </div>
+    </div>
+    <div class="navbar__middle">
+        <div class="container">
+            <div class="navbar__middle-content">
+                <button class="button d-block d-lg-none me-2 button_navbar-sm"><i class="icon-menu-btn"></i>
+                </button>
+                <a href="/" aria-current="page"
+                   class="navbar__logo nuxt-link-exact-active nuxt-link-active"><img src="/assets/logo.svg" alt="">
+                    <div class="navbar__logo-text">
+                        <div>Строительство каркасных домов</div>
+                        <div>ДОСТУПНО И КАЧЕСТВЕННО</div>
+                    </div>
+                </a>
+                <div class="navbar__middle-btns-sm">
+                    <button type="button" class="button me-2 button_navbar-sm"><i
+                            class="icon-calculator"></i></button>
+                    <button type="button" class="button button_navbar-sm"><i class="icon-find-house"></i>
+                    </button>
+                </div>
+                <div class="navbar__middle-btns">
+                    <button type="button" class="button me-xl-2 mb-2 mb-xl-0 button_primary">
+                        Расчет Вашего проекта
+                    </button>
+                    <button type="button" class="button button_outline">
+                        Посмотреть строящийся объект
+                    </button>
+                </div>
+                <div class="navbar__middle-phone"><a href="#"
+                                                     class="link link_gray navbar__middle-phone-link">
+                    +7 (812) 123 45 67
+                </a>
+                    <button class="button button_link">
+                        Заказать звонок
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar__bottom">
+        <div class="container">
+            <button type="button" class="button button_navbar-close"><i class="icon-close"></i></button>
+            <ul class="navbar__bottom-content">
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown__toggle dropdown__toggle_caret"><a href="/about-company"
+                                                                                class="navbar__bottom-link link link_dark">
+                            О компании
+                        </a></div> <!----></div>
+                </li>
+                <li><a href="/catalogue" class="navbar__bottom-link link link_dark">
+                    Проекты
+                </a></li>
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown__toggle dropdown__toggle_caret"><a href="/for-client"
+                                                                                class="navbar__bottom-link link link_dark">
+                            Клиенту
+                        </a></div> <!----></div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown__toggle dropdown__toggle_caret"><a href="/prices"
+                                                                                class="navbar__bottom-link link link_dark">
+                            Цены
+                        </a></div> <!----></div>
+                </li>
+                <li><a href="/about-company/completed-projects" class="navbar__bottom-link link link_dark">
+                    Реализованные проекты
+                </a></li>
+                <li><a href="/blog" class="navbar__bottom-link link link_dark">
+                    Блог
+                </a></li>
+                <li><a href="/promotions" class="navbar__bottom-link link link_dark">
+                    Акции
+                </a></li>
+                <li><a href="/contacts" class="navbar__bottom-link link link_dark">
+                    Контакты
+                </a></li>
+            </ul>
+            <button type="button" class="button mb-2 button_navbar-primary"><i
+                    class="icon-location-pin"></i>
+                Карта строящихся объектов
+            </button>
+            <a href="#" class="button button_navbar-secondary mb-2"><i class="icon-phone-in-talk"></i>
+                +7 (812) 123 45 67
+            </a>
+            <button type="button" class="button mb-2 button_navbar-primary"><i
+                    class="icon-phone-missed"></i>
+                Заказать звонок
+            </button>
+        </div>
+    </div>
+</nav>
+<div class="header">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-lg-7 header__text"><h1>
+                Дом мечты, который
+                нужен семье
+            </h1> <h4 class="fw-normal">
+                Стройте планы,
+                дом построит "Frame House"
+            </h4></div>
+            <div class="col-lg-4"><img src="/assets/images/site/index/header-mans.png"
+                                       class="header__img"></div>
+        </div>
+        <ul class="header__advantages">
+            <li class="header-advantage"><i class="header-advantage__icon icon-wood"
+            ></i> Сухие пиломатериалы
+                заводской сушки
+            </li>
+            <li class="header-advantage"><i
+                    class="header-advantage__icon icon-videocamera"></i> Видеонаблюдение
+                24/7 за процессом стройки
+                вашего дома
+            </li>
+            <li class="header-advantage"><i class="header-advantage__icon icon-guaranty"
+            ></i> Гарантия на построенные
+                объекты 10 лет
+            </li>
+            <li class="header-advantage"><i class="header-advantage__icon icon-control1"
+            ></i> Контроль строительства
+                на каждом этапе
+            </li>
+            <li class="header-advantage"><i class="header-advantage__icon icon-money"
+            ></i> Работаем без предоплаты
+            </li>
+            <li class="header-advantage"><i
+                    class="header-advantage__icon icon-passport1"></i> Специалисты
+                только с гражданством РФ
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

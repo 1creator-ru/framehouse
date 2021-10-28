@@ -1,0 +1,118 @@
+.contacts {
+    margin: $page-content-margin;
+    @include media-breakpoint-down(md) {
+        margin: $page-content-margin-sm;
+    }
+
+    h2 {
+        margin-bottom: 28px;
+    }
+
+    .contacts__label {
+        font-size: 10px;
+        color: $gray;
+        line-height: 120%;
+        margin-bottom: 5px;
+    }
+
+    .contacts__info {
+        margin-bottom: 74px;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 64px;
+        }
+
+        .contacts__info-text {
+            margin-bottom: 40px;
+
+            p {
+                margin-bottom: 30px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .contacts__info-group {
+            .contacts__info-item {
+                margin-bottom: 24px;
+                display: flex;
+
+                i {
+                    font-size: 20px;
+                    color: $primary;
+                    min-width: 20px;
+                    text-align: center;
+                    margin-right: 20px;
+                    @include media-breakpoint-down(md) {
+                        margin-right: 10px;
+                    }
+                }
+
+                .contacts__info-item-text {
+                    font-size: 18px;
+                }
+            }
+
+            .contacts__info-social {
+                display: flex;
+                align-items: center;
+
+                .contacts__label {
+                    margin-right: 24px;
+                    @include media-breakpoint-down(sm) {
+                        margin-right: 16px;
+                    }
+                }
+
+                a {
+                    font-size: 28px;
+                    margin-right: 24px;
+                    color: #92989F;
+                    @include media-breakpoint-down(sm) {
+                        margin-right: 16px;
+                    }
+
+                    &:hover {
+                        color: $gray;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    .contacts__map {
+        margin-bottom: 64px;
+
+        iframe {
+            border-radius: 5px;
+        }
+
+        h3 {
+            margin-bottom: 32px;
+        }
+    }
+
+    .contacts__requisites {
+        margin-bottom: 83px;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 64px;
+        }
+
+        h3 {
+            margin-bottom: 64px;
+            @include media-breakpoint-down(md) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
