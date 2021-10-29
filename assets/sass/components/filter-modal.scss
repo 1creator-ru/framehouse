@@ -27,4 +27,15 @@
         width: 100%;
         padding: 12px;
     }
+
+    .filter-modal__input-wrapper {
+        display: flex;
+        align-items: center;
+        grid-gap: 4px;
+        color: $border-color;
+
+        .input__input {
+            border-color: $border-color;
+        }
+    }
 }

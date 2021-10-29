@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="ru">
 <head>
+    <title>Главная</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" rel="stylesheet" href="/assets/sass/vendor.scss">
     <link type="text/css" rel="stylesheet" href="/assets/sass/app.scss">
-    <title>Главная</title>
+    <script src="/assets/js/vendor.js" type="module"></script>
+    <script src="/assets/js/main.js" type="module"></script>
 </head>
 <body>
 <nav class="navbar">
@@ -43,11 +45,12 @@
                         Посмотреть строящийся объект
                     </button>
                 </div>
-                <div class="navbar__middle-phone"><a href="#"
-                                                     class="link link_gray navbar__middle-phone-link">
-                    +7 (812) 123 45 67
-                </a>
-                    <button class="button button_link">
+                <div class="navbar__middle-phone">
+                    <a href="#"
+                       class="link link_gray navbar__middle-phone-link">
+                        +7 (812) 123 45 67
+                    </a>
+                    <button class="button button_link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         Заказать звонок
                     </button>
                 </div>
@@ -701,5 +704,42 @@
         </div>
     </div>
 </footer>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form class="feedback-form">
+                    <p class="mb-4">
+                        Оставьте заявку и специалист нашей компании перезвонит в течении 15 минут!
+                    </p>
+                    <div class="input mb-3">
+                        <input required placeholder="Ваше имя"
+                                                   class="input__input"/>
+                    </div>
+                    <div class="input mb-3">
+                        <input type="number" required placeholder="Номер телефона"
+                                                   class="input__input"/>
+                    </div>
+                    <button class="button w-100 mb-2 button_primary">
+                        ОСТАВИТЬ ЗАЯВКУ
+                    </button>
+                    <div class="feedback-form__signing gray">
+                        Нажимая на кнопку "Оставить заявку" Вы соглашаетесь на обработку персональных данных в
+                        соответствии с
+                        <a href="#" class="link link_gray">
+                            условиями политики конфиденциальности
+                        </a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

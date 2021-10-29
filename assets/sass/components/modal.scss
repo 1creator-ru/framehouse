@@ -1,0 +1,36 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0,0,0, 0.7);
+    z-index: 999;
+    .modal__close-btn {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: white;
+        color: $primary;
+        top: -10px;
+        right: -10px;
+        border: 1px solid $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .modal__content-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: fit-content;
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+    }
+}
+.modal_hidden {
+    display: none;
+}

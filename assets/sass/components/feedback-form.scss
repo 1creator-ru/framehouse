@@ -1,0 +1,8 @@
+.feedback-form {
+    .input__input {
+        border: 1px solid $gray;
+        &::placeholder {
+            color: $gray;
+        }
+    }
+}

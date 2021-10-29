@@ -61,6 +61,8 @@
         .catalogue__filter {
             grid-column: 1/2;
             grid-row: 1/2;
+            background: white;
+            border-radius: 5px;
             @include media-breakpoint-down(lg) {
                 grid-column: 1/4;
                 grid-row: 2/3;

@@ -9,6 +9,8 @@ export default {
             ]).map(entry => resolve(__dirname, entry)),
             output: {
                 assetFileNames: `assets/[name].[ext]`,
+                chunkFileNames: `assets/[name].js`,
+                entryFileNames: `assets/[name].js`,
                 manualChunks(id) {
                     if (id.includes('vendor')) {
                         return 'vendor';
