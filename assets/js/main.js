@@ -14,14 +14,10 @@ if (quizModal) {
                 el: '.swiper-pagination',
                 type: 'bullets',
             },
+            navigation: {
+                nextEl: '.quiz-btn-next',
+                prevEl: '.quiz-btn-prev',
+            }
         });
-        let btnNextArray = document.getElementsByClassName('quiz-btn-next')
-        let btnPrevArray = document.getElementsByClassName('quiz-btn-prev')
-        for (let item of btnNextArray) {
-            item.addEventListener('click', () => swiper.slideNext())
-        }
-        for (let item of btnPrevArray) {
-            item.addEventListener('click', () => swiper.slidePrev())
-        }
     });
 }
