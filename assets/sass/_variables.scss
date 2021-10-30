@@ -1,6 +1,6 @@
 $primary: #821E27;
 $secondary: #616C78;
-$light: white;
+$light: #ffffff;
 $dark: #191314;
 $gray: #92989F;
 $danger: #C02836;
@@ -63,5 +63,17 @@ $container-max-widths: (
         xxl: 1248px
 );
 
+$input-padding-y: 11px;
+$form-check-input-checked-bg-color: white;
+$form-check-input-checked-color: $primary;
+$form-check-input-checked-border-color: $gray;
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><rect x='2' y='2' width='4' height='4' fill='#{$form-check-input-checked-color}'/></svg>") !default;
+$form-check-input-width: 1.3em;
+$form-check-radio-border-radius: 4px;
+$btn-border-radius: 5px;
+$input-border-radius: 5px;
+$form-check-input-focus-box-shadow: none;
+
 @import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";

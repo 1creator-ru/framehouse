@@ -10,3 +10,13 @@ $enable-negative-margins: true;
 @import "../../../node_modules/bootstrap/scss/bootstrap-grid";
 @import "../../../node_modules/bootstrap/scss/forms";
 @import "../../../node_modules/bootstrap/dist/css/bootstrap-utilities.min";
+
+.form-check-input {
+    &[type=radio] {
+        transition: all .2s ease-in;
+
+        &:hover {
+            box-shadow: 0 4px 4px 0 rgb(130 30 39 / 25%);
+        }
+    }
+}
