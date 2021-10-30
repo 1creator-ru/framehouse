@@ -1,0 +1,235 @@
+// Open Sans
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    src: local('Open Sans'),
+    url("/src/assetssets/fonts/OpenSans/Light/OpenSans-Light.eot") format('embedded-opentype'),
+    url("/src/assetssets/fonts/OpenSans/Light/OpenSans-Light.otf") format('opentype'),
+    url("/src/assetssets/fonts/OpenSans/Light/OpenSans-Light.ttf") format('truetype'),
+    url("/src/assetssets/fonts/OpenSans/Light/OpenSans-Light.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    src: local('Open Sans'),
+    url("/src/assetssets/fonts/OpenSans/Regular/OpenSans-Regular.eot") format('embedded-opentype'),
+    url("/src/assetssets/fonts/OpenSans/Regular/OpenSans-Regular.otf") format('opentype'),
+    url("/src/assetssets/fonts/OpenSans/Regular/OpenSans-Regular.ttf") format('truetype'),
+    url("/src/assetssets/fonts/OpenSans/Regular/OpenSans-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 500;
+    src: local('Open Sans'),
+    url("/src/assetssets/fonts/OpenSans/Medium/OpenSans-Medium.eot") format('embedded-opentype'),
+    url("/src/assetssets/fonts/OpenSans/Medium/OpenSans-Medium.otf") format('opentype'),
+    url("/src/assetssets/fonts/OpenSans/Medium/OpenSans-Medium.ttf") format('truetype'),
+    url("/src/assetssets/fonts/OpenSans/Medium/OpenSans-Medium.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    src: local('Open Sans'),
+    url("/src/assetssets/fonts/OpenSans/SemiBold/OpenSans-SemiBold.eot") format('embedded-opentype'),
+    url("/src/assetssets/fonts/OpenSans/SemiBold/OpenSans-SemiBold.otf") format('opentype'),
+    url("/src/assetssets/fonts/OpenSans/SemiBold/OpenSans-SemiBold.ttf") format('truetype'),
+    url("/src/assetssets/fonts/OpenSans/SemiBold/OpenSans-SemiBold.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    src: local('Open Sans'),
+    url("/src/assetssets/fonts/OpenSans/Bold/OpenSans-Bold.eot") format('embedded-opentype'),
+    url("/src/assetssets/fonts/OpenSans/Bold/OpenSans-Bold.otf") format('opentype'),
+    url("/src/assetssets/fonts/OpenSans/Bold/OpenSans-Bold.ttf") format('truetype'),
+    url("/src/assetssets/fonts/OpenSans/Bold/OpenSans-Bold.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 800;
+    src: local('Open Sans'),
+    url("/src/assetssets/fonts/OpenSans/ExtraBold/OpenSans-ExtraBold.eot") format('embedded-opentype'),
+    url("/src/assetssets/fonts/OpenSans/ExtraBold/OpenSans-ExtraBold.otf") format('opentype'),
+    url("/src/assetssets/fonts/OpenSans/ExtraBold/OpenSans-ExtraBold.ttf") format('truetype'),
+    url("/src/assetssets/fonts/OpenSans/ExtraBold/OpenSans-ExtraBold.woff") format('woff');
+}
+
+// Montserrat
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    src: local('Montserrat'),
+    url("/src/assetssets/fonts/Montserrat/Light/Montserrat-Light.eot") format('embedded-opentype'),
+    url("/src/assetssets/fonts/Montserrat/Light/Montserrat-Light.otf") format('opentype'),
+    url("/src/assetssets/fonts/Montserrat/Light/Montserrat-Light.ttf") format('truetype'),
+    url("/src/assetssets/fonts/Montserrat/Light/Montserrat-Light.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: local('Montserrat'),
+    url("/src/assetssets/fonts/Montserrat/Regular/Montserrat-Regular.eot") format('embedded-opentype'),
+    url("/src/assetssets/fonts/Montserrat/Regular/Montserrat-Regular.otf") format('opentype'),
+    url("/src/assetssets/fonts/Montserrat/Regular/Montserrat-Regular.ttf") format('truetype'),
+    url("/src/assetssets/fonts/Montserrat/Regular/Montserrat-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    src: local('Montserrat'),
+    url("/src/assetssets/fonts/Montserrat/Medium/Montserrat-Medium.eot") format('embedded-opentype'),
+    url("/src/assetssets/fonts/Montserrat/Medium/Montserrat-Medium.otf") format('opentype'),
+    url("/src/assetssets/fonts/Montserrat/Medium/Montserrat-Medium.ttf") format('truetype'),
+    url("/src/assetssets/fonts/Montserrat/Medium/Montserrat-Medium.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    src: local('Montserrat'),
+    url("/src/assetssets/fonts/Montserrat/SemiBold/Montserrat-SemiBold.eot") format('embedded-opentype'),
+    url("/src/assetssets/fonts/Montserrat/SemiBold/Montserrat-SemiBold.otf") format('opentype'),
+    url("/src/assetssets/fonts/Montserrat/SemiBold/Montserrat-SemiBold.ttf") format('truetype'),
+    url("/src/assetssets/fonts/Montserrat/SemiBold/Montserrat-SemiBold.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    src: local('Montserrat'),
+    url("/src/assetssets/fonts/Montserrat/Bold/Montserrat-Bold.eot") format('embedded-opentype'),
+    url("/src/assetssets/fonts/Montserrat/Bold/Montserrat-Bold.otf") format('opentype'),
+    url("/src/assetssets/fonts/Montserrat/Bold/Montserrat-Bold.ttf") format('truetype'),
+    url("/src/assetssets/fonts/Montserrat/Bold/Montserrat-Bold.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    src: local('Montserrat'),
+    url("/src/assetssets/fonts/Montserrat/ExtraBold/Montserrat-ExtraBold.eot") format('embedded-opentype'),
+    url("/src/assetssets/fonts/Montserrat/ExtraBold/Montserrat-ExtraBold.otf") format('opentype'),
+    url("/src/assetssets/fonts/Montserrat/ExtraBold/Montserrat-ExtraBold.ttf") format('truetype'),
+    url("/src/assetssets/fonts/Montserrat/ExtraBold/Montserrat-ExtraBold.woff") format('woff');
+}
+
+body {
+    font: $base-font;
+    font-weight: 400;
+}
+
+.h1, h1 {
+    font: $h1-font;
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-down(md) {
+        font: $h1-font-sm;
+        margin-bottom: 1rem;
+    }
+}
+
+.h1_super {
+    font-size: 46px;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-down(md) {
+        font: $h1-font-sm;
+    }
+}
+
+.h2, h2 {
+    font: $h2-font;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-down(md) {
+        font: $h2-font-sm;
+    }
+}
+
+.h3, h3 {
+    font: $h3-font;
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-down(md) {
+        font: $h3-font-sm;
+    }
+}
+
+
+.h4, h4 {
+    font: $h4-font;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-down(md) {
+        font: $h4-font-sm;
+    }
+}
+
+.h5, h5 {
+    font: $h5-font;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-down(md) {
+        font: $h5-font-sm;
+    }
+}
+
+.h5_primary {
+    color: $primary;
+}
+
+a {
+    color: $primary;
+
+    &:hover {
+        color: darken($primary, 10%);
+    }
+}
+
+[role=button] {
+    cursor: pointer;
+}
+
+small, .small {
+    line-height: 1.1;
+    font: $small-font;
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+p {
+    margin-bottom: 0;
+
+    & + & {
+        margin-top: 15px;
+    }
+}
+
+.text-muted {
+    opacity: 0.6;
+    color: inherit !important;
+}
+
+.list {
+    padding: 0;
+
+    .list-item {
+        display: flex;
+        margin-bottom: 25px;
+
+        i {
+            font-size: 24px;
+            color: $primary;
+            margin-right: 16px;
+        }
+    }
+}

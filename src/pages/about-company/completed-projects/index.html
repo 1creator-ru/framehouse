@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="/src/assets/sass/vendor.scss">
+    <link type="text/css" rel="stylesheet" href="/src/assets/sass/app.scss">
+    <title>Главная</title>
+</head>
+<body>
+<nav class="navbar">
+    <div class="navbar__top">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-end"><i class="icon-location-pin"></i> <a
+                    href="#" class="navbar__top-link">
+                Карта строящихся объектов
+            </a></div>
+        </div>
+    </div>
+    <div class="navbar__middle">
+        <div class="container">
+            <div class="navbar__middle-content">
+                <button class="button d-block d-lg-none me-2 button_navbar-sm"><i class="icon-menu-btn"></i>
+                </button>
+                <a href="/" aria-current="page"
+                   class="navbar__logo"><img src="/src/assets/logo.svg" alt="">
+                    <div class="navbar__logo-text">
+                        <div>Строительство каркасных домов</div>
+                        <div>ДОСТУПНО И КАЧЕСТВЕННО</div>
+                    </div>
+                </a>
+                <div class="navbar__middle-btns-sm">
+                    <button type="button" class="button me-2 button_navbar-sm"><i
+                            class="icon-calculator"></i></button>
+                    <button type="button" class="button button_navbar-sm"><i class="icon-find-house"></i>
+                    </button>
+                </div>
+                <div class="navbar__middle-btns">
+                    <button type="button" class="button me-xl-2 mb-2 mb-xl-0 button_primary">
+                        Расчет Вашего проекта
+                    </button>
+                    <button type="button" class="button button_outline">
+                        Посмотреть строящийся объект
+                    </button>
+                </div>
+                <div class="navbar__middle-phone"><a href="#"
+                                                     class="link link_gray navbar__middle-phone-link">
+                    +7 (812) 123 45 67
+                </a>
+                    <button class="button button_link">
+                        Заказать звонок
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar__bottom">
+        <div class="container">
+            <button type="button" class="button button_navbar-close"><i class="icon-close"></i></button>
+            <ul class="navbar__bottom-content">
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown__toggle dropdown__toggle_caret"><a href="/src/pages/about-companyut-company"
+                                                                                class="navbar__bottom-link link link_dark">
+                            О компании
+                        </a></div> <!----></div>
+                </li>
+                <li><a href="/src/pages/catalogue/catalogue" class="navbar__bottom-link link link_dark">
+                    Проекты
+                </a></li>
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown__toggle dropdown__toggle_caret"><a href="/src/pages/for-clientfor-client"
+                                                                                class="navbar__bottom-link link link_dark">
+                            Клиенту
+                        </a></div> <!----></div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown__toggle dropdown__toggle_caret"><a href="/src/pages/pricesges/prices"
+                                                                                class="navbar__bottom-link link link_dark">
+                            Цены
+                        </a></div> <!----></div>
+                </li>
+                <li><a href="/src/pages/about-companyut-company/completed-projects" class="navbar__bottom-link link link_dark">
+                    Реализованные проекты
+                </a></li>
+                <li><a href="/src/pages/blogpages/blog" class="navbar__bottom-link link link_dark">
+                    Блог
+                </a></li>
+                <li><a href="/src/pages/promotionspromotions" class="navbar__bottom-link link link_dark">
+                    Акции
+                </a></li>
+                <li><a href="/src/pages/contactss/contacts" class="navbar__bottom-link link link_dark">
+                    Контакты
+                </a></li>
+            </ul>
+            <button type="button" class="button mb-2 button_navbar-primary"><i
+                    class="icon-location-pin"></i>
+                Карта строящихся объектов
+            </button>
+            <a href="#" class="button button_navbar-secondary mb-2"><i class="icon-phone-in-talk"></i>
+                +7 (812) 123 45 67
+            </a>
+            <button type="button" class="button mb-2 button_navbar-primary"><i
+                    class="icon-phone-missed"></i>
+                Заказать звонок
+            </button>
+        </div>
+    </div>
+</nav>
+<div class="completed-projects">
+    <div class="container"><h2>
+        Построенные дома
+    </h2>
+        <div class="row mb-5">
+            <div class="col-lg-8"><p>
+                Каким бы красивым ни был проект дома, только умелые рабочие руки и контроль руководителя
+                строительства приведут к ожидаемому результату. Наши бригады соблюдают технологии
+                строительства
+                и регулярно
+                проходят повышение квалификации. Мы гордимся своим портфолио и всегда готовы показать
+                реальные
+                объекты
+            </p></div>
+        </div>
+        <div class="row completed-projects__filters">
+            <div class="col-lg-9 col-3">
+                <div class="completed-projects__filters-group d-none d-lg-grid">
+                    <div tabindex="0" schema="filled"
+                         class="multiselect select completed-projects__filters-select multiselect_filled"
+                    >
+                        <div class="multiselect__select"></div>
+                        <div class="multiselect__tags">
+                            <div class="multiselect__tags-wrap" style="display:none"></div> <!---->
+                            <div class="multiselect__spinner" style="display:none"></div> <!----> <!---->
+                            <span class="multiselect__placeholder">
+          Выберите район
+        </span></div>
+                        <div tabindex="-1" class="multiselect__content-wrapper"
+                             style="max-height:300px;display:none">
+                            <ul class="multiselect__content" style="display:inline-block"> <!---->
+                                <li class="multiselect__element"><span data-select="Press enter to select"
+                                                                       data-selected="Selected"
+                                                                       data-deselect="Press enter to remove"
+                                                                       class="multiselect__option multiselect__option--highlight">
+                                Все районы
+                            </span> <!----></li>
+                                <li class="multiselect__element"><span data-select="Press enter to select"
+                                                                       data-selected="Selected"
+                                                                       data-deselect="Press enter to remove"
+                                                                       class="multiselect__option">
+                                Всеs районы
+                            </span> <!----></li>
+                                <li style="display:none"><span class="multiselect__option">
+        Поиск не дал результатов
+    </span></li>
+                                <li style="display:none"><span class="multiselect__option">
+        Список пуст
+    </span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div tabindex="0" schema="filled"
+                         class="multiselect select completed-projects__filters-select multiselect_filled"
+                    >
+                        <div class="multiselect__select"></div>
+                        <div class="multiselect__tags">
+                            <div class="multiselect__tags-wrap" style="display:none"></div> <!---->
+                            <div class="multiselect__spinner" style="display:none"></div> <!----> <!---->
+                            <span class="multiselect__placeholder">
+          Площадь, м2
+        </span></div>
+                        <div tabindex="-1" class="multiselect__content-wrapper"
+                             style="max-height:300px;display:none">
+                            <ul class="multiselect__content" style="display:inline-block"> <!---->
+                                <li class="multiselect__element"><span data-select="Press enter to select"
+                                                                       data-selected="Selected"
+                                                                       data-deselect="Press enter to remove"
+                                                                       class="multiselect__option multiselect__option--highlight">
+                                45 v2
+                            </span> <!----></li>
+                                <li class="multiselect__element"><span data-select="Press enter to select"
+                                                                       data-selected="Selected"
+                                                                       data-deselect="Press enter to remove"
+                                                                       class="multiselect__option">
+                                asdfasd
+                            </span> <!----></li>
+                                <li style="display:none"><span class="multiselect__option">
+        Поиск не дал результатов
+    </span></li>
+                                <li style="display:none"><span class="multiselect__option">
+        Список пуст
+    </span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div tabindex="0" schema="filled"
+                         class="multiselect select completed-projects__filters-select multiselect_filled"
+                    >
+                        <div class="multiselect__select"></div>
+                        <div class="multiselect__tags">
+                            <div class="multiselect__tags-wrap" style="display:none"></div> <!---->
+                            <div class="multiselect__spinner" style="display:none"></div> <!----> <!---->
+                            <span class="multiselect__placeholder">
+          Кол-во спален
+        </span></div>
+                        <div tabindex="-1" class="multiselect__content-wrapper"
+                             style="max-height:300px;display:none">
+                            <ul class="multiselect__content" style="display:inline-block"> <!---->
+                                <li class="multiselect__element"><span data-select="Press enter to select"
+                                                                       data-selected="Selected"
+                                                                       data-deselect="Press enter to remove"
+                                                                       class="multiselect__option multiselect__option--highlight">
+                                2
+                            </span> <!----></li>
+                                <li class="multiselect__element"><span data-select="Press enter to select"
+                                                                       data-selected="Selected"
+                                                                       data-deselect="Press enter to remove"
+                                                                       class="multiselect__option">
+                                3
+                            </span> <!----></li>
+                                <li style="display:none"><span class="multiselect__option">
+        Поиск не дал результатов
+    </span></li>
+                                <li style="display:none"><span class="multiselect__option">
+        Список пуст
+    </span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div tabindex="0" schema="filled"
+                         class="multiselect select completed-projects__filters-select multiselect_filled"
+                    >
+                        <div class="multiselect__select"></div>
+                        <div class="multiselect__tags">
+                            <div class="multiselect__tags-wrap" style="display:none"></div> <!---->
+                            <div class="multiselect__spinner" style="display:none"></div> <!----> <!---->
+                            <span class="multiselect__placeholder">
+          Кол-во этажей
+        </span></div>
+                        <div tabindex="-1" class="multiselect__content-wrapper"
+                             style="max-height:300px;display:none">
+                            <ul class="multiselect__content" style="display:inline-block"> <!---->
+                                <li class="multiselect__element"><span data-select="Press enter to select"
+                                                                       data-selected="Selected"
+                                                                       data-deselect="Press enter to remove"
+                                                                       class="multiselect__option multiselect__option--highlight">
+                                3
+                            </span> <!----></li>
+                                <li class="multiselect__element"><span data-select="Press enter to select"
+                                                                       data-selected="Selected"
+                                                                       data-deselect="Press enter to remove"
+                                                                       class="multiselect__option">
+                                4
+                            </span> <!----></li>
+                                <li style="display:none"><span class="multiselect__option">
+        Поиск не дал результатов
+    </span></li>
+                                <li style="display:none"><span class="multiselect__option">
+        Список пуст
+    </span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="button p-1 d-block d-lg-none button_gray">
+                    <svg width="41" height="33" viewBox="0 0 41 33" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 5.36353H40.2727" stroke="black" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                        <path d="M1 27.1819H40.2727" stroke="black" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                        <path d="M1 16.2727H40.2727" stroke="black" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                        <circle cx="33.7269" cy="5.36364" r="4.86364" fill="#821E27" stroke="white"
+                                stroke-linecap="round" stroke-linejoin="round"></circle>
+                        <circle cx="33.7269" cy="27.1818" r="4.36364" fill="white" stroke="black"
+                                stroke-linecap="round" stroke-linejoin="round"></circle>
+                        <circle cx="7.54528" cy="16.2728" r="4.36364" fill="white" stroke="black"
+                                stroke-linecap="round" stroke-linejoin="round"></circle>
+                    </svg>
+                </button>
+            </div>
+            <div class="col-lg-3 col-9">
+                <button class="button me-0 ms-auto button_gray">
+                    Смотреть на карте
+                    <i class="icon-location-pin"></i></button>
+            </div>
+        </div>
+        <div class="completed-projects__cards">
+            <div class="completed-project-card">
+                <div class="completed-project-card__label">
+                    Готовый проект
+                </div>
+                <div class="completed-project-card__attrs">
+                    <div class="completed-project-card__attr"><i
+                            class="completed-project-card__attr-icon icon-area"></i> <span
+                            class="completed-project-card__attr-value">
+                152 м2
+            </span> <small class="completed-project-card__attr-label">
+                        общая площадь
+                    </small></div>
+                    <div class="completed-project-card__attr"><i
+                            class="completed-project-card__attr-icon icon-room"></i> <span
+                            class="completed-project-card__attr-value">
+                3
+            </span> <small class="completed-project-card__attr-label">
+                        кол-во спален
+                    </small></div>
+                    <div class="completed-project-card__attr"><i
+                            class="completed-project-card__attr-icon icon-floors"></i> <span
+                            class="completed-project-card__attr-value">
+                1
+            </span> <small class="completed-project-card__attr-label">
+                        кол-во этажей
+                    </small></div>
+                </div>
+                <img src="/src/assets/images/site/completed-projects/house.jpg" alt>
+                <div class="completed-project-card__footer"><i
+                        class="completed-project-card__attr-icon icon-location-pin"></i>
+                    Ленинградская область,
+                    Всеволожский муниципальный район
+                </div>
+            </div>
+            <div class="completed-project-card">
+                <div class="completed-project-card__label">
+                    Готовый проект
+                </div>
+                <div class="completed-project-card__attrs">
+                    <div class="completed-project-card__attr"><i
+                            class="completed-project-card__attr-icon icon-area"></i> <span
+                            class="completed-project-card__attr-value">
+                152 м2
+            </span> <small class="completed-project-card__attr-label">
+                        общая площадь
+                    </small></div>
+                    <div class="completed-project-card__attr"><i
+                            class="completed-project-card__attr-icon icon-room"></i> <span
+                            class="completed-project-card__attr-value">
+                3
+            </span> <small class="completed-project-card__attr-label">
+                        кол-во спален
+                    </small></div>
+                    <div class="completed-project-card__attr"><i
+                            class="completed-project-card__attr-icon icon-floors"></i> <span
+                            class="completed-project-card__attr-value">
+                1
+            </span> <small class="completed-project-card__attr-label">
+                        кол-во этажей
+                    </small></div>
+                </div>
+                <img src="/src/assets/images/site/completed-projects/house.jpg" alt>
+                <div class="completed-project-card__footer"><i
+                        class="completed-project-card__attr-icon icon-location-pin"></i>
+                    Ленинградская область,
+                    Всеволожский муниципальный район
+                </div>
+            </div>
+            <div class="completed-project-card">
+                <div class="completed-project-card__label">
+                    Готовый проект
+                </div>
+                <div class="completed-project-card__attrs">
+                    <div class="completed-project-card__attr"><i
+                            class="completed-project-card__attr-icon icon-area"></i> <span
+                            class="completed-project-card__attr-value">
+                152 м2
+            </span> <small class="completed-project-card__attr-label">
+                        общая площадь
+                    </small></div>
+                    <div class="completed-project-card__attr"><i
+                            class="completed-project-card__attr-icon icon-room"></i> <span
+                            class="completed-project-card__attr-value">
+                3
+            </span> <small class="completed-project-card__attr-label">
+                        кол-во спален
+                    </small></div>
+                    <div class="completed-project-card__attr"><i
+                            class="completed-project-card__attr-icon icon-floors"></i> <span
+                            class="completed-project-card__attr-value">
+                1
+            </span> <small class="completed-project-card__attr-label">
+                        кол-во этажей
+                    </small></div>
+                </div>
+                <img src="/src/assets/images/site/completed-projects/house.jpg" alt>
+                <div class="completed-project-card__footer"><i
+                        class="completed-project-card__attr-icon icon-location-pin"></i>
+                    Ленинградская область,
+                    Всеволожский муниципальный район
+                </div>
+            </div>
+            <div class="completed-project-card">
+                <div class="completed-project-card__label">
+                    Готовый проект
+                </div>
+                <div class="completed-project-card__attrs">
+                    <div class="completed-project-card__attr"><i
+                            class="completed-project-card__attr-icon icon-area"></i> <span
+                            class="completed-project-card__attr-value">
+                152 м2
+            </span> <small class="completed-project-card__attr-label">
+                        общая площадь
+                    </small></div>
+                    <div class="completed-project-card__attr"><i
+                            class="completed-project-card__attr-icon icon-room"></i> <span
+                            class="completed-project-card__attr-value">
+                3
+            </span> <small class="completed-project-card__attr-label">
+                        кол-во спален
+                    </small></div>
+                    <div class="completed-project-card__attr"><i
+                            class="completed-project-card__attr-icon icon-floors"></i> <span
+                            class="completed-project-card__attr-value">
+                1
+            </span> <small class="completed-project-card__attr-label">
+                        кол-во этажей
+                    </small></div>
+                </div>
+                <img src="/src/assets/images/site/completed-projects/house.jpg" alt>
+                <div class="completed-project-card__footer"><i
+                        class="completed-project-card__attr-icon icon-location-pin"></i>
+                    Ленинградская область,
+                    Всеволожский муниципальный район
+                </div>
+            </div>
+        </div>
+        <button class="button button-show-more button_outline"><i class="icon-show-more"
+        ></i>
+            Показать еще
+        </button>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="row gy-lg-0 gy-4 text-lg-start text-center">
+                <div class="col-lg-3"><a href="/" aria-current="page"
+                                         class=""
+                ><img
+                        src="/src/assets/images/footer/logo-footer.svg" alt=""></a>
+                    <div class="footer__contacts"><a href="#"
+                                                     class="footer__contacts-link link link_light"
+                    ><i
+                            class="icon-location"></i>
+                        Санкт-Петербург,
+                        ул. Белоостровская, 37
+                    </a> <a href="tel:+7(812)-123-45-67" class="footer__contacts-link link link_light"
+                    ><i class="icon-phone"></i>
+                        +7 (812) 123 45 67
+                    </a> <a href="mailto:info@company.ru" class="footer__contacts-link link link_light"
+                    ><i class="icon-mail"></i>
+                        info@company.ru
+                    </a></div>
+                </div>
+                <div class="col-lg-2 col-6 d-none d-sm-block">
+                    <div class="footer__group">
+                        <div class="footer__group-title">
+                            О компании
+                        </div>
+                        <a href="/" aria-current="page"
+                           class="footer__group-link"
+                        >
+                            Услуги
+                        </a> <a href="/" aria-current="page"
+                                class="footer__group-link"
+                    >
+                        Сертификаты
+                    </a> <a href="/" aria-current="page"
+                            class="footer__group-link"
+                    >
+                        Отзывы
+                    </a> <a href="/" aria-current="page"
+                            class="footer__group-link"
+                    >
+                        Партнеры
+                    </a></div>
+                </div>
+                <div class="col-lg-2 col-6 d-none d-sm-block">
+                    <div class="footer__group">
+                        <div class="footer__group-title">
+                            Клиенту
+                        </div>
+                        <a href="/" aria-current="page"
+                           class="footer__group-link"
+                        >
+                            Доставка
+                        </a> <a href="/" aria-current="page"
+                                class="footer__group-link"
+                    >
+                        Гарантии
+                    </a> <a href="/" aria-current="page"
+                            class="footer__group-link"
+                    >
+                        Вопросы и ответы
+                    </a> <a href="/" aria-current="page"
+                            class="footer__group-link"
+                    >
+                        Технологии
+                    </a> <a href="/" aria-current="page"
+                            class="footer__group-link"
+                    >
+                        Документации
+                    </a></div>
+                </div>
+                <div class="col-lg-2 col-6 d-none d-sm-block">
+                    <div class="footer__group">
+                        <div class="footer__group-title">
+                            Цены
+                        </div>
+                        <a href="/" aria-current="page"
+                           class="footer__group-link"
+                        >
+                            Кредит
+                        </a> <a href="/" aria-current="page"
+                                class="footer__group-link"
+                    >
+                        Маткапитал
+                    </a></div>
+                </div>
+                <div class="col-lg-3 col-6 d-none d-sm-block">
+                    <div class="footer__other"><a href="/" aria-current="page"
+                                                  class="footer__other-link"
+                    >
+                        Проекты
+                    </a> <a href="/" aria-current="page"
+                            class="footer__other-link"
+                    >
+                        Реализованные проекты
+                    </a> <a href="/" aria-current="page"
+                            class="footer__other-link"
+                    >
+                        Блог
+                    </a> <a href="/" aria-current="page"
+                            class="footer__other-link"
+                    >
+                        Акции
+                    </a> <a href="/" aria-current="page"
+                            class="footer__other-link"
+                    >
+                        Контакты
+                    </a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="row gy-lg-0 gy-3 text-lg-start text-center">
+                <div class="col-lg-9 order-lg-0 order-1">
+                    © 2002 - 2021 Frame House
+                </div>
+                <div class="col-lg-3 order-lg-1 order-0"><a href="/" aria-current="page"
+                                                            class="footer__bottom-privacy"
+                >
+                    Политика конфиденциальности
+                </a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

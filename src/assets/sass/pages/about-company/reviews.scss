@@ -1,0 +1,121 @@
+.review {
+    margin: 45px 0 95px;
+    @include media-breakpoint-down(md) {
+        margin: $page-content-margin-sm;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    .review__cards {
+        .row {
+            gap: 32px 0;
+        }
+
+
+    }
+
+    .button-show-more {
+        margin-top: 32px;
+        margin-bottom: 144px;
+    }
+}
+
+.review__card {
+    height: 100%;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid $border-color;
+    padding: 23px;
+
+    .review__card-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        @include media-breakpoint-down(xl) {
+            flex-direction: column;
+        }
+
+        .review__card-title {
+            font-size: 18px;
+            margin-right: 24px;
+            @include media-breakpoint-down(xl) {
+                margin: 0 0 12px 0;
+            }
+        }
+
+        .review__card-header-links {
+            text-align: right;
+            line-height: 130%;
+            font-size: 12px;
+            @include media-breakpoint-down(xl) {
+                text-align: left;
+            }
+
+            .link {
+                min-width: 211px;
+                display: block;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .review__card-info {
+        font-size: 14px;
+        line-height: 130%;
+        margin-bottom: 22px;
+
+        span {
+            font-weight: bold;
+            font-size: 18px;
+            color: $primary;
+        }
+    }
+
+    hr {
+        margin-top: 0;
+    }
+
+    .review__card-text {
+        margin-bottom: 18px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .review__card-video-wrap {
+        position: relative;
+
+        .review__card-video {
+            width: 100%;
+            min-height: 344px;
+            border-radius: 5px;
+            background: url("/src/assets/images/site/reviews/review.png") center no-repeat;
+            background-size: cover;
+            filter: brightness(60%);
+        }
+
+        i {
+            color: rgba(255, 255, 255, .5);
+            font-size: 64px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            left: 0;
+            text-align: center;
+            transform: translate(0, -50%);
+        }
+    }
+
+    .review__card-files {
+        .link {
+            i {
+                margin-right: 15px;
+            }
+
+            span {
+                text-decoration: underline;
+            }
+        }
+    }
+}

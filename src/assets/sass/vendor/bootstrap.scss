@@ -1,0 +1,20 @@
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/accordion";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/bootstrap-grid";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/dist/css/bootstrap-utilities.min.css";
+
+.form-check-input {
+    &[type=radio] {
+        transition: all .2s ease-in;
+
+        &:hover {
+            box-shadow: 0 4px 4px 0 rgb(130 30 39 / 25%);
+        }
+    }
+}
