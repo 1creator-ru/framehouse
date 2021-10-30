@@ -5,12 +5,12 @@
     border: 1px solid $border-color;
     min-height: 640px;
     height: 640px;
-    background: url("../../images/site/prices/get-house.jpg") bottom right no-repeat, white;
+    background: url("/assets/images/site/prices/get-house.jpg") bottom right no-repeat, white;
     @include media-breakpoint-down(xxl) {
         padding: 50px;
     }
     @include media-breakpoint-down(xl) {
-        background: url("../../images/site/prices/get-house-sm.jpg") center -200px no-repeat, white;
+        background: url("/assets/images/site/prices/get-house-sm.jpg") center -200px no-repeat, white;
         padding-top: 275px;
         height: auto;
         margin-bottom: 64px;

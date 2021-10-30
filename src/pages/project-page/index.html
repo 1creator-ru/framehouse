@@ -1,476 +1,241 @@
-<!doctype html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" rel="stylesheet" href="/src/assets/sass/vendor.scss">
-    <link type="text/css" rel="stylesheet" href="/src/assets/sass/app.scss">
-    <title>Главная</title>
-</head>
-<body>
-<nav class="navbar">
-    <div class="navbar__top">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-end"><i class="icon-location-pin"></i> <a
-                    href="#" class="navbar__top-link">
-                Карта строящихся объектов
-            </a></div>
-        </div>
-    </div>
-    <div class="navbar__middle">
-        <div class="container">
-            <div class="navbar__middle-content">
-                <button class="button d-block d-lg-none me-2 button_navbar-sm"><i class="icon-menu-btn"></i>
-                </button>
-                <a href="/" aria-current="page"
-                   class="navbar__logo"><img src="/src/assets/logo.svg" alt="">
-                    <div class="navbar__logo-text">
-                        <div>Строительство каркасных домов</div>
-                        <div>ДОСТУПНО И КАЧЕСТВЕННО</div>
-                    </div>
-                </a>
-                <div class="navbar__middle-btns-sm">
-                    <button type="button" class="button me-2 button_navbar-sm"><i
-                            class="icon-calculator"></i></button>
-                    <button type="button" class="button button_navbar-sm"><i class="icon-find-house"></i>
-                    </button>
-                </div>
-                <div class="navbar__middle-btns">
-                    <button type="button" class="button me-xl-2 mb-2 mb-xl-0 button_primary">
-                        Расчет Вашего проекта
-                    </button>
-                    <button type="button" class="button button_outline">
-                        Посмотреть строящийся объект
-                    </button>
-                </div>
-                <div class="navbar__middle-phone"><a href="#"
-                                                     class="link link_gray navbar__middle-phone-link">
-                    +7 (812) 123 45 67
-                </a>
-                    <button class="button button_link">
-                        Заказать звонок
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="navbar__bottom">
-        <div class="container">
-            <button type="button" class="button button_navbar-close"><i class="icon-close"></i></button>
-            <ul class="navbar__bottom-content">
-                <li>
-                    <div class="dropdown">
-                        <div class="dropdown__toggle dropdown__toggle_caret"><a href="/src/pages/about-companyut-company"
-                                                                                class="navbar__bottom-link link link_dark">
-                            О компании
-                        </a></div> <!----></div>
-                </li>
-                <li><a href="/src/pages/catalogue/catalogue" class="navbar__bottom-link link link_dark">
-                    Проекты
-                </a></li>
-                <li>
-                    <div class="dropdown">
-                        <div class="dropdown__toggle dropdown__toggle_caret"><a href="/src/pages/for-clientfor-client"
-                                                                                class="navbar__bottom-link link link_dark">
-                            Клиенту
-                        </a></div> <!----></div>
-                </li>
-                <li>
-                    <div class="dropdown">
-                        <div class="dropdown__toggle dropdown__toggle_caret"><a href="/src/pages/pricesges/prices"
-                                                                                class="navbar__bottom-link link link_dark">
-                            Цены
-                        </a></div> <!----></div>
-                </li>
-                <li><a href="/src/pages/about-companyut-company/completed-projects" class="navbar__bottom-link link link_dark">
-                    Реализованные проекты
-                </a></li>
-                <li><a href="/src/pages/blogpages/blog" class="navbar__bottom-link link link_dark">
-                    Блог
-                </a></li>
-                <li><a href="/src/pages/promotionspromotions" class="navbar__bottom-link link link_dark">
-                    Акции
-                </a></li>
-                <li><a href="/src/pages/contactss/contacts" class="navbar__bottom-link link link_dark">
-                    Контакты
-                </a></li>
-            </ul>
-            <button type="button" class="button mb-2 button_navbar-primary"><i
-                    class="icon-location-pin"></i>
-                Карта строящихся объектов
-            </button>
-            <a href="#" class="button button_navbar-secondary mb-2"><i class="icon-phone-in-talk"></i>
-                +7 (812) 123 45 67
-            </a>
-            <button type="button" class="button mb-2 button_navbar-primary"><i
-                    class="icon-phone-missed"></i>
-                Заказать звонок
-            </button>
-        </div>
-    </div>
-</nav>
-<div class="project-page">
-    <div class="container"><h2>Проект П-345</h2>
-        <div class="project-page__card">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="project-page__card-images">
-                        <div class="project-page__card-img main"></div>
-                        <div class="project-page__card-img-wrap"><img
-                                src="/src/assets/images/site/completed-projects/completed-house.jpg" alt
-                                class="project-page__card-img video"> <i class="icon-play"></i></div>
-                        <div class="project-page__card-img-wrap"><img
-                                src="/src/assets/images/site/completed-projects/completed-house.jpg" alt
-                                class="project-page__card-img more">
-                            <div class="project-page__card-img-text">
-                                Смотреть 39 фото
+<extends src="default.html">
+    <block name="page">
+        <div class="project-page">
+            <div class="container"><h2>Проект П-345</h2>
+                <div class="project-page__card">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="project-page__card-images">
+                                <div class="project-page__card-img main"></div>
+                                <div class="project-page__card-img-wrap"><img
+                                        src="/assets/images/site/completed-projects/completed-house.jpg" alt
+                                        class="project-page__card-img video"> <i class="icon-play"></i></div>
+                                <div class="project-page__card-img-wrap"><img
+                                        src="/assets/images/site/completed-projects/completed-house.jpg" alt
+                                        class="project-page__card-img more">
+                                    <div class="project-page__card-img-text">
+                                        Смотреть 39 фото
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="project-page__card-info">
+                                <div class="project-page__card-info-top">
+                                    Дом построен по проекту П-345
+                                </div>
+                                <div class="project-page__card-info-item mb-4"><h5 class="mb-2">
+                                    Место строения
+                                </h5>
+                                    <div class="project-page__card-info-label">
+                                        Ленинградская область,
+                                        Всеволожский муниципальный район
+                                    </div>
+                                </div>
+                                <div class="project-page__card-info-item mb-4"><h5 class="mb-2">
+                                    Комплектация
+                                </h5> <strong class="project-page__card-info-label">
+                                    Под ключ
+                                </strong></div>
+                                <div class="project-page__card-info-item mb-4"><h5 class="mb-2">
+                                    Общая информация
+                                </h5>
+                                    <div class="row">
+                                        <div class="col-6 mb-3">
+                                            <div class="project-page__card-info-label">
+                                                Площадь
+                                            </div>
+                                            <span>154,2 м2</span></div>
+                                        <div class="col-6 mb-3">
+                                            <div class="project-page__card-info-label">
+                                                Размеры
+                                            </div>
+                                            <span>10х13</span></div>
+                                        <div class="col-6 mb-3">
+                                            <div class="project-page__card-info-label">
+                                                Этажей
+                                            </div>
+                                            <span>2</span></div>
+                                        <div class="col-6 mb-3">
+                                            <div class="project-page__card-info-label">
+                                                Высота этажей
+                                            </div>
+                                            <span>2,80 м | 2,60 м</span></div>
+                                        <div class="col-6 mb-3">
+                                            <div class="project-page__card-info-label">
+                                                Спален
+                                            </div>
+                                            <span>6</span></div>
+                                        <div class="col-6 mb-3">
+                                            <div class="project-page__card-info-label">
+                                                Сроки
+                                            </div>
+                                            <span>25 дней</span></div>
+                                    </div>
+                                </div>
+                                <button class="button w-100 button_primary">
+                                    ПОСМОТРЕТЬ ПРОЕКТ
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="project-page__card-info">
-                        <div class="project-page__card-info-top">
-                            Дом построен по проекту П-345
-                        </div>
-                        <div class="project-page__card-info-item mb-4"><h5 class="mb-2">
-                            Место строения
-                        </h5>
-                            <div class="project-page__card-info-label">
-                                Ленинградская область,
-                                Всеволожский муниципальный район
+                <div class="project-plan">
+                    <div class="row">
+                        <div class="col-lg-5 order-1 order-lg-0"><h3 class="d-none d-lg-block">
+                            Планировочные решения
+                        </h3>
+                            <div schema="badges" class="tabs">
+                                <div><!----> <!---->
+                                    <ul class="tabs__head">
+                                        <li class="tabs__item tabs__item_active">
+                                            1 этаж
+                                        </li>
+                                        <li class="tabs__item">
+                                            2 этаж
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="project-plan-tab__content">
+                                        <div class="project-plan-tab__content-title">
+                                            Площадь 1 этажа
+                                            <strong>
+                                                73.4 м2
+                                            </strong></div>
+                                        <ul class="project-plan-tab__content-list">
+                                            <li>
+                                                Прихожая
+                                                <strong>
+                                                    8.36 м2
+                                                </strong></li>
+                                            <li>
+                                                Кладовая
+                                                <strong>
+                                                    4.95 м2
+                                                </strong></li>
+                                            <li>
+                                                Гардероб
+                                                <strong>
+                                                    3.29 м2
+                                                </strong></li>
+                                            <li>
+                                                Санузел
+                                                <strong>
+                                                    3.77 м2
+                                                </strong></li>
+                                            <li>
+                                                Кухня гостинная
+                                                <strong>
+                                                    21.4 м2
+                                                </strong></li>
+                                            <li>
+                                                Спальня
+                                                <strong>
+                                                    13.3 м2
+                                                </strong></li>
+                                            <li>
+                                                Котельная
+                                                <strong>
+                                                    4.92 м2
+                                                </strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div style="display:none">
+                                    <div class="project-plan-tab__content">
+                                        <div class="project-plan-tab__content-title">
+                                            Площадь 2 этажа
+                                            <strong>
+                                                71.4 м2
+                                            </strong></div>
+                                        <ul class="project-plan-tab__content-list">
+                                            <li>
+                                                Прихожая
+                                                <strong>
+                                                    8.36 м2
+                                                </strong></li>
+                                            <li>
+                                                Кладовая
+                                                <strong>
+                                                    4.95 м2
+                                                </strong></li>
+                                            <li>
+                                                Гардероб
+                                                <strong>
+                                                    3.29 м2
+                                                </strong></li>
+                                            <li>
+                                                Санузел
+                                                <strong>
+                                                    3.77 м2
+                                                </strong></li>
+                                            <li>
+                                                Кухня гостинная
+                                                <strong>
+                                                    21.4 м2
+                                                </strong></li>
+                                            <li>
+                                                Спальня
+                                                <strong>
+                                                    13.3 м2
+                                                </strong></li>
+                                            <li>
+                                                Котельная
+                                                <strong>
+                                                    4.92 м2
+                                                </strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="project-page__card-info-item mb-4"><h5 class="mb-2">
-                            Комплектация
-                        </h5> <strong class="project-page__card-info-label">
-                            Под ключ
-                        </strong></div>
-                        <div class="project-page__card-info-item mb-4"><h5 class="mb-2">
-                            Общая информация
-                        </h5>
-                            <div class="row">
-                                <div class="col-6 mb-3">
-                                    <div class="project-page__card-info-label">
-                                        Площадь
+                        <div class="col-lg-7 order-0 order-lg-1"><h3 class="d-block d-lg-none">
+                            Планировочные решения
+                        </h3> <img src="/assets/images/site/documentation/doc.png" alt></div>
+                    </div>
+                </div>
+                <div class="project-page__info">
+                    <div class="row">
+                        <div class="col-lg-5 mb-4 mb-lg-0"><h3>Отзыв заказчика</h3>
+                            <div class="review__card">
+                                <div class="review__card-header">
+                                    <div class="review__card-title">
+                                        Каркасный дом по индивидуальному проекту
                                     </div>
-                                    <span>154,2 м2</span></div>
-                                <div class="col-6 mb-3">
-                                    <div class="project-page__card-info-label">
-                                        Размеры
-                                    </div>
-                                    <span>10х13</span></div>
-                                <div class="col-6 mb-3">
-                                    <div class="project-page__card-info-label">
-                                        Этажей
-                                    </div>
-                                    <span>2</span></div>
-                                <div class="col-6 mb-3">
-                                    <div class="project-page__card-info-label">
-                                        Высота этажей
-                                    </div>
-                                    <span>2,80 м | 2,60 м</span></div>
-                                <div class="col-6 mb-3">
-                                    <div class="project-page__card-info-label">
-                                        Спален
-                                    </div>
-                                    <span>6</span></div>
-                                <div class="col-6 mb-3">
-                                    <div class="project-page__card-info-label">
-                                        Сроки
-                                    </div>
-                                    <span>25 дней</span></div>
+                                    <div class="review__card-header-links"><a href="#" class="link link_gray mb-2">
+                                        Посмотреть реализованный проект
+                                    </a> <a href="#" class="link link_gray">
+                                        Посмотреть проект
+                                    </a></div>
+                                </div>
+                                <div class="review__card-info">
+                                    <div>
+                                        Комплектация: <span>под ключ</span></div>
+                                    <div>
+                                        Общая площадь: <span>192 м2</span></div>
+                                </div>
+                                <div class="review__card-video-wrap">
+                                    <div class="review__card-video"></div>
+                                    <i class="icon-play"></i></div>
                             </div>
                         </div>
-                        <button class="button w-100 button_primary">
-                            ПОСМОТРЕТЬ ПРОЕКТ
+                        <div class="col-lg-7 mb-4 mb-lg-0"><h3>Объект на карте</h3></div>
+                    </div>
+                </div>
+                <div class="get__consultation"><img src="/assets/images/site/for-client/consultation.png"
+                                                    alt="">
+                    <div class="get__consultation-content">
+                        <div class="get__consultation-text"><h3>Получите
+                            консультацию</h3>
+                            Консультация эксперта с 10 летним стажем
+                        </div>
+                        <button type="button" class="button button_primary">
+                            ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="project-plan">
-            <div class="row">
-                <div class="col-lg-5 order-1 order-lg-0"><h3 class="d-none d-lg-block">
-                    Планировочные решения
-                </h3>
-                    <div schema="badges" class="tabs">
-                        <div><!----> <!---->
-                            <ul class="tabs__head">
-                                <li class="tabs__item tabs__item_active">
-                                    1 этаж
-                                </li>
-                                <li class="tabs__item">
-                                    2 этаж
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <div class="project-plan-tab__content">
-                                <div class="project-plan-tab__content-title">
-                                    Площадь 1 этажа
-                                    <strong>
-                                        73.4 м2
-                                    </strong></div>
-                                <ul class="project-plan-tab__content-list">
-                                    <li>
-                                        Прихожая
-                                        <strong>
-                                            8.36 м2
-                                        </strong></li>
-                                    <li>
-                                        Кладовая
-                                        <strong>
-                                            4.95 м2
-                                        </strong></li>
-                                    <li>
-                                        Гардероб
-                                        <strong>
-                                            3.29 м2
-                                        </strong></li>
-                                    <li>
-                                        Санузел
-                                        <strong>
-                                            3.77 м2
-                                        </strong></li>
-                                    <li>
-                                        Кухня гостинная
-                                        <strong>
-                                            21.4 м2
-                                        </strong></li>
-                                    <li>
-                                        Спальня
-                                        <strong>
-                                            13.3 м2
-                                        </strong></li>
-                                    <li>
-                                        Котельная
-                                        <strong>
-                                            4.92 м2
-                                        </strong></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div style="display:none">
-                            <div class="project-plan-tab__content">
-                                <div class="project-plan-tab__content-title">
-                                    Площадь 2 этажа
-                                    <strong>
-                                        71.4 м2
-                                    </strong></div>
-                                <ul class="project-plan-tab__content-list">
-                                    <li>
-                                        Прихожая
-                                        <strong>
-                                            8.36 м2
-                                        </strong></li>
-                                    <li>
-                                        Кладовая
-                                        <strong>
-                                            4.95 м2
-                                        </strong></li>
-                                    <li>
-                                        Гардероб
-                                        <strong>
-                                            3.29 м2
-                                        </strong></li>
-                                    <li>
-                                        Санузел
-                                        <strong>
-                                            3.77 м2
-                                        </strong></li>
-                                    <li>
-                                        Кухня гостинная
-                                        <strong>
-                                            21.4 м2
-                                        </strong></li>
-                                    <li>
-                                        Спальня
-                                        <strong>
-                                            13.3 м2
-                                        </strong></li>
-                                    <li>
-                                        Котельная
-                                        <strong>
-                                            4.92 м2
-                                        </strong></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 order-0 order-lg-1"><h3 class="d-block d-lg-none">
-                    Планировочные решения
-                </h3> <img src="/src/assets/images/site/documentation/doc.png" alt></div>
-            </div>
-        </div>
-        <div class="project-page__info">
-            <div class="row">
-                <div class="col-lg-5 mb-4 mb-lg-0"><h3>Отзыв заказчика</h3>
-                    <div class="review__card">
-                        <div class="review__card-header">
-                            <div class="review__card-title">
-                                Каркасный дом по индивидуальному проекту
-                            </div>
-                            <div class="review__card-header-links"><a href="#" class="link link_gray mb-2">
-                                Посмотреть реализованный проект
-                            </a> <a href="#" class="link link_gray">
-                                Посмотреть проект
-                            </a></div>
-                        </div>
-                        <div class="review__card-info">
-                            <div>
-                                Комплектация: <span>под ключ</span></div>
-                            <div>
-                                Общая площадь: <span>192 м2</span></div>
-                        </div>
-                        <div class="review__card-video-wrap">
-                            <div class="review__card-video"></div>
-                            <i class="icon-play"></i></div>
-                    </div>
-                </div>
-                <div class="col-lg-7 mb-4 mb-lg-0"><h3>Объект на карте</h3></div>
-            </div>
-        </div>
-        <div class="get__consultation"><img src="/src/assets/images/site/for-client/consultation.png"
-                                            alt="">
-            <div class="get__consultation-content">
-                <div class="get__consultation-text"><h3>Получите
-                    консультацию</h3>
-                    Консультация эксперта с 10 летним стажем
-                </div>
-                <button type="button" class="button button_primary">
-                    ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<footer class="footer">
-    <div class="container">
-        <div class="footer__top">
-            <div class="row gy-lg-0 gy-4 text-lg-start text-center">
-                <div class="col-lg-3"><a href="/" aria-current="page"
-                                         class=""
-                ><img
-                        src="/src/assets/images/footer/logo-footer.svg" alt=""></a>
-                    <div class="footer__contacts"><a href="#"
-                                                     class="footer__contacts-link link link_light"
-                    ><i
-                            class="icon-location"></i>
-                        Санкт-Петербург,
-                        ул. Белоостровская, 37
-                    </a> <a href="tel:+7(812)-123-45-67" class="footer__contacts-link link link_light"
-                    ><i class="icon-phone"></i>
-                        +7 (812) 123 45 67
-                    </a> <a href="mailto:info@company.ru" class="footer__contacts-link link link_light"
-                    ><i class="icon-mail"></i>
-                        info@company.ru
-                    </a></div>
-                </div>
-                <div class="col-lg-2 col-6 d-none d-sm-block">
-                    <div class="footer__group">
-                        <div class="footer__group-title">
-                            О компании
-                        </div>
-                        <a href="/" aria-current="page"
-                           class="footer__group-link"
-                        >
-                            Услуги
-                        </a> <a href="/" aria-current="page"
-                                class="footer__group-link"
-                    >
-                        Сертификаты
-                    </a> <a href="/" aria-current="page"
-                            class="footer__group-link"
-                    >
-                        Отзывы
-                    </a> <a href="/" aria-current="page"
-                            class="footer__group-link"
-                    >
-                        Партнеры
-                    </a></div>
-                </div>
-                <div class="col-lg-2 col-6 d-none d-sm-block">
-                    <div class="footer__group">
-                        <div class="footer__group-title">
-                            Клиенту
-                        </div>
-                        <a href="/" aria-current="page"
-                           class="footer__group-link"
-                        >
-                            Доставка
-                        </a> <a href="/" aria-current="page"
-                                class="footer__group-link"
-                    >
-                        Гарантии
-                    </a> <a href="/" aria-current="page"
-                            class="footer__group-link"
-                    >
-                        Вопросы и ответы
-                    </a> <a href="/" aria-current="page"
-                            class="footer__group-link"
-                    >
-                        Технологии
-                    </a> <a href="/" aria-current="page"
-                            class="footer__group-link"
-                    >
-                        Документации
-                    </a></div>
-                </div>
-                <div class="col-lg-2 col-6 d-none d-sm-block">
-                    <div class="footer__group">
-                        <div class="footer__group-title">
-                            Цены
-                        </div>
-                        <a href="/" aria-current="page"
-                           class="footer__group-link"
-                        >
-                            Кредит
-                        </a> <a href="/" aria-current="page"
-                                class="footer__group-link"
-                    >
-                        Маткапитал
-                    </a></div>
-                </div>
-                <div class="col-lg-3 col-6 d-none d-sm-block">
-                    <div class="footer__other"><a href="/" aria-current="page"
-                                                  class="footer__other-link"
-                    >
-                        Проекты
-                    </a> <a href="/" aria-current="page"
-                            class="footer__other-link"
-                    >
-                        Реализованные проекты
-                    </a> <a href="/" aria-current="page"
-                            class="footer__other-link"
-                    >
-                        Блог
-                    </a> <a href="/" aria-current="page"
-                            class="footer__other-link"
-                    >
-                        Акции
-                    </a> <a href="/" aria-current="page"
-                            class="footer__other-link"
-                    >
-                        Контакты
-                    </a></div>
-                </div>
-            </div>
-        </div>
-        <div class="footer__bottom">
-            <div class="row gy-lg-0 gy-3 text-lg-start text-center">
-                <div class="col-lg-9 order-lg-0 order-1">
-                    © 2002 - 2021 Frame House
-                </div>
-                <div class="col-lg-3 order-lg-1 order-0"><a href="/" aria-current="page"
-                                                            class="footer__bottom-privacy"
-                >
-                    Политика конфиденциальности
-                </a></div>
-            </div>
-        </div>
-    </div>
-</footer>
-</body>
-</html>
+    </block>
+</extends>

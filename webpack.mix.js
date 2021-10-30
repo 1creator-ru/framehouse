@@ -1,13 +1,18 @@
 let mix = require('laravel-mix');
-const path = require('path')
 require('mix-html-builder');
 
 mix.setPublicPath('dist')
-
-mix.js('./src/assets/js/vendor.js', 'dist/js')
-    .js('./src/assets/js/main.js', 'dist/js')
-    .sass('./src/assets/sass/app.scss', '/dist/css')
-    .sass('./src/assets/sass/vendor.scss', '/dist/css')
+    .setResourceRoot('assets')
+    .copyDirectory('./src/assets/images', './dist/assets/images')
+    .copyDirectory('./src/assets/fonts', './dist/assets/fonts')
+    .copyDirectory('./src/assets/sass/vendor/icons/fonts', './dist/assets/fonts/')
+    .js('./src/assets/js/vendor.js', './dist/assets/js')
+    .js('./src/assets/js/main.js', './dist/assets/js')
+    .sass('./src/assets/sass/app.scss', './dist/assets/css')
+    .sass('./src/assets/sass/vendor.scss', './dist/assets/css')
+    .options({
+        processCssUrls: false,
+    })
 
 mix.html({
     htmlRoot: './src/pages/**/*.html', // Your html root file(s)

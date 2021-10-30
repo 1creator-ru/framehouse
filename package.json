@@ -2,7 +2,8 @@
   "name": "Frame House",
   "version": "0.0.0",
   "scripts": {
-    "dev": "mix watch"
+    "mix": "mix",
+    "watch": "mix watch --hot"
   },
   "dependencies": {
     "bootstrap": "^5.1.1",

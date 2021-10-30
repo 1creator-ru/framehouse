@@ -1,299 +1,64 @@
-<!doctype html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" rel="stylesheet" href="/src/assets/sass/vendor.scss">
-    <link type="text/css" rel="stylesheet" href="/src/assets/sass/app.scss">
-    <title>Главная</title>
-</head>
-<body>
-<nav class="navbar">
-    <div class="navbar__top">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-end"><i class="icon-location-pin"></i> <a
-                    href="#" class="navbar__top-link">
-                Карта строящихся объектов
-            </a></div>
-        </div>
-    </div>
-    <div class="navbar__middle">
-        <div class="container">
-            <div class="navbar__middle-content">
-                <button class="button d-block d-lg-none me-2 button_navbar-sm"><i class="icon-menu-btn"></i>
-                </button>
-                <a href="/" aria-current="page"
-                   class="navbar__logo"><img src="/src/assets/logo.svg" alt="">
-                    <div class="navbar__logo-text">
-                        <div>Строительство каркасных домов</div>
-                        <div>ДОСТУПНО И КАЧЕСТВЕННО</div>
+<extends src="default.html">
+    <block name="page">
+        <div class="technology">
+            <div class="container"><h2>
+                Технологии
+            </h2>
+                <div schema="badges" class="tabs">
+                    <div><!----> <!---->
+                        <ul class="tabs__head">
+                            <li class="tabs__item tabs__item_active">
+                                Конструкция пола первого этажа
+                            </li>
+                            <li class="tabs__item">
+                                Конструкция межэтажного перекрытия
+                            </li>
+                            <li class="tabs__item">
+                                Конструкция наружных стен
+                            </li>
+                            <li class="tabs__item">
+                                Конструкция перегородок
+                            </li>
+                            <li class="tabs__item">
+                                Конструкция кровли под ондулин
+                            </li>
+                            <li class="tabs__item">
+                                Конструкция кровли под металлочерепицу
+                            </li>
+                        </ul>
                     </div>
-                </a>
-                <div class="navbar__middle-btns-sm">
-                    <button type="button" class="button me-2 button_navbar-sm"><i
-                            class="icon-calculator"></i></button>
-                    <button type="button" class="button button_navbar-sm"><i class="icon-find-house"></i>
-                    </button>
-                </div>
-                <div class="navbar__middle-btns">
-                    <button type="button" class="button me-xl-2 mb-2 mb-xl-0 button_primary">
-                        Расчет Вашего проекта
-                    </button>
-                    <button type="button" class="button button_outline">
-                        Посмотреть строящийся объект
-                    </button>
-                </div>
-                <div class="navbar__middle-phone"><a href="#"
-                                                     class="link link_gray navbar__middle-phone-link">
-                    +7 (812) 123 45 67
-                </a>
-                    <button class="button button_link">
-                        Заказать звонок
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="navbar__bottom">
-        <div class="container">
-            <button type="button" class="button button_navbar-close"><i class="icon-close"></i></button>
-            <ul class="navbar__bottom-content">
-                <li>
-                    <div class="dropdown">
-                        <div class="dropdown__toggle dropdown__toggle_caret"><a href="/src/pages/about-companyut-company"
-                                                                                class="navbar__bottom-link link link_dark">
-                            О компании
-                        </a></div> <!----></div>
-                </li>
-                <li><a href="/src/pages/catalogue/catalogue" class="navbar__bottom-link link link_dark">
-                    Проекты
-                </a></li>
-                <li>
-                    <div class="dropdown">
-                        <div class="dropdown__toggle dropdown__toggle_caret"><a href="/src/pages/for-clientfor-client"
-                                                                                class="navbar__bottom-link link link_dark">
-                            Клиенту
-                        </a></div> <!----></div>
-                </li>
-                <li>
-                    <div class="dropdown">
-                        <div class="dropdown__toggle dropdown__toggle_caret"><a href="/src/pages/pricesges/prices"
-                                                                                class="navbar__bottom-link link link_dark">
-                            Цены
-                        </a></div> <!----></div>
-                </li>
-                <li><a href="/src/pages/about-companyut-company/completed-projects" class="navbar__bottom-link link link_dark">
-                    Реализованные проекты
-                </a></li>
-                <li><a href="/src/pages/blogpages/blog" class="navbar__bottom-link link link_dark">
-                    Блог
-                </a></li>
-                <li><a href="/src/pages/promotionspromotions" class="navbar__bottom-link link link_dark">
-                    Акции
-                </a></li>
-                <li><a href="/src/pages/contactss/contacts" class="navbar__bottom-link link link_dark">
-                    Контакты
-                </a></li>
-            </ul>
-            <button type="button" class="button mb-2 button_navbar-primary"><i
-                    class="icon-location-pin"></i>
-                Карта строящихся объектов
-            </button>
-            <a href="#" class="button button_navbar-secondary mb-2"><i class="icon-phone-in-talk"></i>
-                +7 (812) 123 45 67
-            </a>
-            <button type="button" class="button mb-2 button_navbar-primary"><i
-                    class="icon-phone-missed"></i>
-                Заказать звонок
-            </button>
-        </div>
-    </div>
-</nav>
-<div class="technology">
-    <div class="container"><h2>
-        Технологии
-    </h2>
-        <div schema="badges" class="tabs">
-            <div><!----> <!---->
-                <ul class="tabs__head">
-                    <li class="tabs__item tabs__item_active">
-                        Конструкция пола первого этажа
-                    </li>
-                    <li class="tabs__item">
-                        Конструкция межэтажного перекрытия
-                    </li>
-                    <li class="tabs__item">
-                        Конструкция наружных стен
-                    </li>
-                    <li class="tabs__item">
-                        Конструкция перегородок
-                    </li>
-                    <li class="tabs__item">
-                        Конструкция кровли под ондулин
-                    </li>
-                    <li class="tabs__item">
-                        Конструкция кровли под металлочерепицу
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <div class="technology-tab__content">
-                    Контент Конструкция пола первого этажа
-                </div>
-            </div>
-            <div style="display:none">
-                <div class="technology-tab__content">
-                    Контент Конструкция межэтажного перекрытия
-                </div>
-            </div>
-            <div style="display:none">
-                <div class="technology-tab__content">
-                    Контент Конструкция наружных стен
-                </div>
-            </div>
-            <div style="display:none">
-                <div class="technology-tab__content">
-                    Контент Конструкция перегородок
-                </div>
-            </div>
-            <div style="display:none">
-                <div class="technology-tab__content">
-                    Контент Конструкция кровли под ондулин
-                </div>
-            </div>
-            <div style="display:none">
-                <div class="technology-tab__content">
-                    Контент Конструкция кровлипод металлочерепицу
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<footer class="footer">
-    <div class="container">
-        <div class="footer__top">
-            <div class="row gy-lg-0 gy-4 text-lg-start text-center">
-                <div class="col-lg-3"><a href="/" aria-current="page"
-                                         class=""
-                ><img
-                        src="/src/assets/images/footer/logo-footer.svg" alt=""></a>
-                    <div class="footer__contacts"><a href="#"
-                                                     class="footer__contacts-link link link_light"
-                    ><i
-                            class="icon-location"></i>
-                        Санкт-Петербург,
-                        ул. Белоостровская, 37
-                    </a> <a href="tel:+7(812)-123-45-67" class="footer__contacts-link link link_light"
-                    ><i class="icon-phone"></i>
-                        +7 (812) 123 45 67
-                    </a> <a href="mailto:info@company.ru" class="footer__contacts-link link link_light"
-                    ><i class="icon-mail"></i>
-                        info@company.ru
-                    </a></div>
-                </div>
-                <div class="col-lg-2 col-6 d-none d-sm-block">
-                    <div class="footer__group">
-                        <div class="footer__group-title">
-                            О компании
+                    <div>
+                        <div class="technology-tab__content">
+                            Контент Конструкция пола первого этажа
                         </div>
-                        <a href="/" aria-current="page"
-                           class="footer__group-link"
-                        >
-                            Услуги
-                        </a> <a href="/" aria-current="page"
-                                class="footer__group-link"
-                    >
-                        Сертификаты
-                    </a> <a href="/" aria-current="page"
-                            class="footer__group-link"
-                    >
-                        Отзывы
-                    </a> <a href="/" aria-current="page"
-                            class="footer__group-link"
-                    >
-                        Партнеры
-                    </a></div>
-                </div>
-                <div class="col-lg-2 col-6 d-none d-sm-block">
-                    <div class="footer__group">
-                        <div class="footer__group-title">
-                            Клиенту
+                    </div>
+                    <div style="display:none">
+                        <div class="technology-tab__content">
+                            Контент Конструкция межэтажного перекрытия
                         </div>
-                        <a href="/" aria-current="page"
-                           class="footer__group-link"
-                        >
-                            Доставка
-                        </a> <a href="/" aria-current="page"
-                                class="footer__group-link"
-                    >
-                        Гарантии
-                    </a> <a href="/" aria-current="page"
-                            class="footer__group-link"
-                    >
-                        Вопросы и ответы
-                    </a> <a href="/" aria-current="page"
-                            class="footer__group-link"
-                    >
-                        Технологии
-                    </a> <a href="/" aria-current="page"
-                            class="footer__group-link"
-                    >
-                        Документации
-                    </a></div>
-                </div>
-                <div class="col-lg-2 col-6 d-none d-sm-block">
-                    <div class="footer__group">
-                        <div class="footer__group-title">
-                            Цены
+                    </div>
+                    <div style="display:none">
+                        <div class="technology-tab__content">
+                            Контент Конструкция наружных стен
                         </div>
-                        <a href="/" aria-current="page"
-                           class="footer__group-link"
-                        >
-                            Кредит
-                        </a> <a href="/" aria-current="page"
-                                class="footer__group-link"
-                    >
-                        Маткапитал
-                    </a></div>
-                </div>
-                <div class="col-lg-3 col-6 d-none d-sm-block">
-                    <div class="footer__other"><a href="/" aria-current="page"
-                                                  class="footer__other-link"
-                    >
-                        Проекты
-                    </a> <a href="/" aria-current="page"
-                            class="footer__other-link"
-                    >
-                        Реализованные проекты
-                    </a> <a href="/" aria-current="page"
-                            class="footer__other-link"
-                    >
-                        Блог
-                    </a> <a href="/" aria-current="page"
-                            class="footer__other-link"
-                    >
-                        Акции
-                    </a> <a href="/" aria-current="page"
-                            class="footer__other-link"
-                    >
-                        Контакты
-                    </a></div>
+                    </div>
+                    <div style="display:none">
+                        <div class="technology-tab__content">
+                            Контент Конструкция перегородок
+                        </div>
+                    </div>
+                    <div style="display:none">
+                        <div class="technology-tab__content">
+                            Контент Конструкция кровли под ондулин
+                        </div>
+                    </div>
+                    <div style="display:none">
+                        <div class="technology-tab__content">
+                            Контент Конструкция кровлипод металлочерепицу
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer__bottom">
-            <div class="row gy-lg-0 gy-3 text-lg-start text-center">
-                <div class="col-lg-9 order-lg-0 order-1">
-                    © 2002 - 2021 Frame House
-                </div>
-                <div class="col-lg-3 order-lg-1 order-0"><a href="/" aria-current="page"
-                                                            class="footer__bottom-privacy"
-                >
-                    Политика конфиденциальности
-                </a></div>
-            </div>
-        </div>
-    </div>
-</footer>
-</body>
-</html>
+    </block>
+</extends>

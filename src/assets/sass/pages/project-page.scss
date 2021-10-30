@@ -30,7 +30,7 @@
 
             .main {
                 grid-area: main;
-                background: url("/src/assets/images/site/project/house.jpg") center no-repeat;
+                background: url("/assets/images/site/project/house.jpg") center no-repeat;
                 background-size: cover;
                 @include media-breakpoint-down(md) {
                     height: 320px;
