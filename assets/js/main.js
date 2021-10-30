@@ -1,27 +1,27 @@
 import Swiper from "swiper/swiper-bundle.js";
 
 let quizModal = document.getElementById('quiz-modal')
+if (quizModal) {
+    quizModal.addEventListener('shown.bs.modal', function () {
 
-
-quizModal.addEventListener('shown.bs.modal', function () {
-
-    const swiper = new Swiper('.swiper', {
-        spaceBetween: 200,
-        allowTouchMove: false,
-        observer: true,
-        observeParents: true,
-        autoHeight: true,
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-        },
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 200,
+            allowTouchMove: false,
+            observer: true,
+            observeParents: true,
+            autoHeight: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+        let btnNextArray = document.getElementsByClassName('quiz-btn-next')
+        let btnPrevArray = document.getElementsByClassName('quiz-btn-prev')
+        for (let item of btnNextArray) {
+            item.addEventListener('click', () => swiper.slideNext())
+        }
+        for (let item of btnPrevArray) {
+            item.addEventListener('click', () => swiper.slidePrev())
+        }
     });
-    let btnNextArray = document.getElementsByClassName('quiz-btn-next')
-    let btnPrevArray = document.getElementsByClassName('quiz-btn-prev')
-    for (let item of btnNextArray) {
-        item.addEventListener('click', ()=> swiper.slideNext())
-    }
-    for (let item of btnPrevArray) {
-        item.addEventListener('click', ()=> swiper.slidePrev())
-    }
-})
+}
