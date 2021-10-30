@@ -38,7 +38,8 @@
                     </button>
                 </div>
                 <div class="navbar__middle-btns">
-                    <button type="button" class="button me-xl-2 mb-2 mb-xl-0 button_primary">
+                    <button type="button" class="button me-xl-2 mb-2 mb-xl-0 button_primary" data-bs-toggle="modal"
+                            data-bs-target="#quiz-modal">
                         Расчет Вашего проекта
                     </button>
                     <button type="button" class="button button_outline">
@@ -50,7 +51,7 @@
                        class="link link_gray navbar__middle-phone-link">
                         +7 (812) 123 45 67
                     </a>
-                    <button class="button button_link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <button class="button button_link" data-bs-toggle="modal" data-bs-target="#feedback-modal">
                         Заказать звонок
                     </button>
                 </div>
@@ -705,7 +706,7 @@
     </div>
 </footer>
 <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+<div class="modal fade" id="feedback-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
      aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -720,11 +721,11 @@
                     </p>
                     <div class="input mb-3">
                         <input required placeholder="Ваше имя"
-                                                   class="input__input"/>
+                               class="input__input" />
                     </div>
                     <div class="input mb-3">
                         <input type="number" required placeholder="Номер телефона"
-                                                   class="input__input"/>
+                               class="input__input" />
                     </div>
                     <button class="button w-100 mb-2 button_primary">
                         ОСТАВИТЬ ЗАЯВКУ
@@ -732,11 +733,283 @@
                     <div class="feedback-form__signing gray">
                         Нажимая на кнопку "Оставить заявку" Вы соглашаетесь на обработку персональных данных в
                         соответствии с
-                        <a href="#" class="link link_gray">
+                        <a href="#">
                             условиями политики конфиденциальности
                         </a></div>
                 </form>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="quiz-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered quiz-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body quiz-modal__body">
+                <div class="swiper" id="quiz-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide quiz-modal__slide">
+                            <span class="quiz-modal__number">01</span>
+
+
+                            <div class="quiz-modal__step">
+                                <div class="quiz-content">
+                                    <h3>Как планируете использовать дом?</h3>
+                                    <div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                   id="summer-1" checked="">
+                                            <label class="form-check-label" for="summer-1">
+                                                Для проживания в летний период (одноэтажный дом)
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                   id="summer-2" checked="">
+                                            <label class="form-check-label" for="summer-2">
+                                                Для проживания в летний период (двухэтажный дом)
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                   id="year-1" checked="">
+                                            <label class="form-check-label" for="year-1">
+                                                Для круглогодичного проживания (одноэтажный дом)
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                   id="year-2" checked="">
+                                            <label class="form-check-label" for="year-2">
+                                                Для круглогодичного проживания (двухэтажный дом)
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                   id="other" checked="">
+                                            <label class="form-check-label" for="other">
+                                                Другое
+                                            </label>
+                                        </div>
+                                        <input class="form-control mb-5" type="text" placeholder="Любой текст">
+                                    </div>
+                                    <button class="button button_primary quiz-btn-next">
+                                        Далее
+                                    </button>
+                                </div>
+                                <div class="quiz-modal__logo">
+                                    <div class="quiz-modal__img-wrapper">
+                                        <img src="/assets/logo-white.svg" alt="logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide quiz-modal__slide">
+                            <span class="quiz-modal__number">02</span>
+
+                            <div class="quiz-modal__step">
+                                <div class="quiz-content">
+                                    <h3>Укажите желаемое количество спален</h3>
+                                    <div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                   id="one-bedroom" checked="">
+                                            <label class="form-check-label" for="one-bedroom">
+                                                Одна
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                   id="two-bedroom" checked="">
+                                            <label class="form-check-label" for="two-bedroom">
+                                                Две
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                   id="three-bedroom" checked="">
+                                            <label class="form-check-label" for="three-bedroom">
+                                                Три
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                   id="other-bedroom" checked="">
+                                            <label class="form-check-label" for="other-bedroom">
+                                                Другое
+                                            </label>
+                                        </div>
+                                        <input class="form-control mb-5" placeholder="Любой текст" type="text">
+
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <button class="button quiz-btn-prev me-3">
+                                            Назад
+                                        </button>
+                                        <button class="button button_primary quiz-btn-next">
+                                            Далее
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="quiz-modal__logo">
+                                    <div class="quiz-modal__img-wrapper">
+                                        <img src="/assets/logo-white.svg" alt="logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide quiz-modal__slide">
+                            <span class="quiz-modal__number">03</span>
+
+
+                            <div class="quiz-modal__step">
+                                <div class="quiz-content">
+                                    <h3>На какой бюджет рассчитываете?</h3>
+                                    <label class="quiz-modal__price-wrapper mb-5">
+                                        <input class="form-control" type="number">
+                                        —
+                                        <input class="form-control" type="number">
+                                    </label>
+                                    <div class="d-flex">
+                                        <button class="button quiz-btn-prev me-3">
+                                            Назад
+                                        </button>
+                                        <button class="button button_primary quiz-btn-next">
+                                            Далее
+                                        </button>
+                                    </div>
+
+                                </div>
+                                <div class="quiz-modal__logo">
+                                    <div class="quiz-modal__img-wrapper">
+                                        <img src="/assets/logo-white.svg" alt="logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide quiz-modal__slide">
+                            <span class="quiz-modal__number">04</span>
+
+                            <div class="quiz-modal__step">
+                                <div class="quiz-content">
+                                    <h3>Нужна ли терраса?</h3>
+                                    <div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                   id="terrace-yes" checked="">
+                                            <label class="form-check-label" for="terrace-yes">
+                                                Да
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                   id="terrace-no" checked="">
+                                            <label class="form-check-label" for="terrace-no">
+                                                Нет
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                   id="terrace-dont-know" checked="">
+                                            <label class="form-check-label" for="terrace-dont-know">
+                                                Не знаю
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <button class="button quiz-btn-prev me-3">
+                                            Назад
+                                        </button>
+                                        <button class="button button_primary quiz-btn-next">
+                                            Далее
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="quiz-modal__logo">
+                                    <div class="quiz-modal__img-wrapper">
+                                        <img src="/assets/logo-white.svg" alt="logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide quiz-modal__slide">
+                            <span class="quiz-modal__number">05</span>
+
+                            <div class="quiz-modal__step">
+                                <div class="quiz-content">
+                                    <h3>В каком районе Ленинградской области планируете постройку дома?</h3>
+                                    <div>
+                                        <select class="form-select mb-3">
+                                            <option selected disabled>Выберите район постройки</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <input class="form-control" type="text">
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <button class="button quiz-btn-prev me-3">
+                                            Назад
+                                        </button>
+                                        <button class="button button_primary quiz-btn-next">
+                                            Далее
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="quiz-modal__logo">
+                                    <div class="quiz-modal__img-wrapper">
+                                        <img src="/assets/logo-white.svg" alt="logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide quiz-modal__slide">
+
+                            <div class="quiz-modal__step">
+
+                                <div class="quiz-content">
+                                    <div class="mb-4">
+                                        <div class="h1">Отлично</div>
+                                        <p class="mb-3">Вы ответили на 5 вопросов и остался последний шаг</p>
+                                        <div class="h3 mb-0">Оставьте контактные данные, чтобы мы могли связаться с
+                                            Вами, а также выслать подборку проектов
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <input class="form-control mb-2" type="text" placeholder="Ваше имя">
+                                        <input class="form-control mb-2" type="text" placeholder="Номер телефона">
+                                        <input class="form-control mb-2" type="email" placeholder="Email">
+                                    </div>
+
+                                        <button class="button quiz-btn-submit button_primary">
+                                            ОСТАВИТЬ ЗАЯВКУ
+                                        </button>
+                                </div>
+                                <div class="quiz-modal__logo">
+                                    <div class="quiz-modal__img-wrapper">
+                                        <img src="/assets/logo-white.svg" alt="logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
         </div>
     </div>
 </div>
