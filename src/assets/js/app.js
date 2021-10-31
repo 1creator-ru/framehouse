@@ -2,6 +2,8 @@ import { Swiper, Navigation, Pagination, } from 'swiper';
 
 Swiper.use([Navigation, Pagination])
 
+import 'bootstrap/js/dist/modal'
+
 new Swiper('.quiz-modal__swiper', {
     spaceBetween: 200,
     allowTouchMove: false,
