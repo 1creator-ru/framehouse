@@ -13,42 +13,6 @@
 
     .prices__header {
         margin-bottom: 56px;
-
-        .prices__header-text {
-            margin-bottom: 50px;
-        }
-
-        .prices__header-btn-group {
-            h5 {
-                margin-bottom: 32px;
-            }
-
-            .prices__header-btns {
-                display: flex;
-
-                .prices__header-btn {
-                    margin-right: 32px;
-
-                    &:last-child {
-                        margin-right: 0;
-                    }
-
-                    @include media-breakpoint-down(lg) {
-                        margin-right: 16px;
-                    }
-                }
-
-                button {
-                    padding: 8px 20px;
-                    font-size: 12px;
-                    min-width: 177px;
-                    @include media-breakpoint-down(md) {
-                        padding: 8px;
-                        min-width: auto;
-                    }
-                }
-            }
-        }
     }
 
     .prices__cards {
