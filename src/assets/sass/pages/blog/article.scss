@@ -1,5 +1,4 @@
 .article {
-
     p {
         margin-top: 25px;
 
@@ -37,6 +36,7 @@
             border: 1px solid $border-color;
             margin: 57px 0;
             display: inline-block;
+
             @include media-breakpoint-down(md) {
                 border: none;
                 padding: 0;
@@ -55,10 +55,6 @@
 
                 }
             }
-        }
-
-        .article__section-img-group {
-
         }
 
         .article__section-group {

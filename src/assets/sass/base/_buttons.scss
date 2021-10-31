@@ -73,7 +73,11 @@
 .button_outline {
     background: transparent;
     color: $secondary;
-    border: 1px solid $gray;
+    border: 1px solid currentColor;
+
+    &.button_white {
+        color: white;
+    }
 
     &:hover {
         background: rgba(black, 0.05);

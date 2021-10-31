@@ -92,23 +92,13 @@
         iframe {
             border-radius: 5px;
         }
-
-        h3 {
-            margin-bottom: 32px;
-        }
     }
 
     .contacts__requisites {
         margin-bottom: 83px;
+
         @include media-breakpoint-down(md) {
             margin-bottom: 64px;
-        }
-
-        h3 {
-            margin-bottom: 64px;
-            @include media-breakpoint-down(md) {
-                margin-bottom: 40px;
-            }
         }
     }
 }

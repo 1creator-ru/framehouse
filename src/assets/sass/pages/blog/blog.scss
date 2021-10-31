@@ -35,20 +35,12 @@
         .blog-card__text {
             margin-bottom: 10px;
         }
+    }
+}
 
-        a {
-            margin-top: 10px;
-            display: inline-block;
-
-            i {
-                margin-right: 5px;
-                vertical-align: middle;
-            }
-
-            span {
-                text-decoration: underline;
-            }
-        }
+.blog-card_aside {
+    .blog-card__text {
+        display: none;
     }
 }
 
