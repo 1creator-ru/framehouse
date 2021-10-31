@@ -7,6 +7,10 @@
     border-radius: 5px;
     position: relative;
     font-weight: 300;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:focus {
         outline: none;
@@ -17,8 +21,12 @@
     line-height: 16px;
     font-size: 16px;
     height: 16px;
-    vertical-align: middle;
-    margin-right: 5px;
+    margin-right: 8px;
+
+    &.button__icon_right {
+        margin-right: 0;
+        margin-left: 8px;
+    }
 }
 
 .button_primary {
@@ -43,9 +51,9 @@
 }
 
 .button_white {
-    background: transparent;
-    color: white;
-    border: 1px solid white;
+    background: white;
+    color: #616C78;
+    border: 1px solid #616C78;
 
     &:hover {
         background: rgba(white, 0.2);
@@ -72,28 +80,10 @@
     }
 }
 
-.button_h40 {
-    height: 40px;
-    padding: 10px 25px;
-}
-
 .button_link {
     background: transparent;
     padding: 0;
     text-decoration: underline;
     color: $primary;
     text-transform: none;
-}
-
-.button-show-more {
-    margin: 20px auto 0;
-    display: block;
-    text-transform: none;
-
-    i {
-        margin-right: 10px;
-        vertical-align: middle;
-    }
-
-    padding: 12px 80px;
 }

@@ -1,16 +1,6 @@
 .documentation {
     .documentation__files {
         margin-bottom: 60px;
-
-        .link {
-            i {
-                margin-right: 15px;
-            }
-
-            span {
-                text-decoration: underline;
-            }
-        }
     }
 
     .documentation__section {
@@ -43,7 +33,7 @@
         }
     }
 
-    .documentation-slider__control {
+    .documentation-slider__prev, .documentation-slider__next {
         font-size: 64px;
         transition: .1s;
 

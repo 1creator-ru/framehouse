@@ -1,4 +1,4 @@
-{{#extend "layouts/default"}}
+{{#extend "layouts/default" title="Документации"}}
     {{#content "page"}}
         <div class="documentation">
             <div class="container">
@@ -6,19 +6,30 @@
                     Документации
                 </h1>
                 <div class="row documentation__files">
-                    <div class="col-md-3"><a href class="link link_gray"><i class="icon-adobe"></i> <span>
-                        Архитектурный раздел
-                    </span></a></div>
-                    <div class="col-md-3"><a href class="link link_gray"><i class="icon-adobe"></i> <span>
-                        Инженерный раздел
-                    </span></a></div>
-                    <div class="col-md-3"><a href class="link link_gray"><i class="icon-adobe"></i> <span>
-                        Примеры документации
-                    </span></a></div>
+                    <div class="col-md-3">
+                        <a href="#architecture" class="link link_lined link_gray"><i class="link__icon icon-adobe">
+
+                        </i>Архитектурный раздел
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#engeeniring" class="link link_lined link_gray"><i class="link__icon icon-adobe">
+
+                        </i>Инженерный раздел
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#docs" class="link link_lined link_gray"><i class="link__icon icon-adobe">
+
+                        </i>Примеры документации
+                        </a>
+                    </div>
                 </div>
-                <div class="documentation__section"><h3 class="text-primary">
-                    Архитектурный раздел
-                </h3>
+                <div class="documentation__section">
+                    <a id="architecture" class="anchor"></a>
+                    <h3 class="text-primary">
+                        Архитектурный раздел
+                    </h3>
                     <div class="row">
                         <div class="col-md-10">
                             <div class="documentation__section-description">
@@ -55,9 +66,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="documentation__section"><h3 class="text-primary">
-                    Инженерный раздел
-                </h3>
+                <div class="documentation__section">
+                    <a id="engeeniring" class="anchor"></a>
+                    <h3 class="text-primary">
+                        Инженерный раздел
+                    </h3>
                     <div class="row">
                         <div class="col-md-10">
                             <div class="documentation__section-description">
@@ -110,25 +123,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="documentation__section"><h3 class="text-primary">
-                    Примеры документации
-                </h3>
-                    <div class="row">
-                        <div class="col-1 d-flex align-items-center"><i role="button"
-                                                                        class="documentation-slider__control icon-arrow-left"></i>
+                <div class="documentation__section">
+                    <a id="docs" class="anchor"></a>
+                    <h3 class="text-primary">
+                        Примеры документации
+                    </h3>
+                    <div class="row documentation-slider">
+                        <div class="col-1 d-flex align-items-center">
+                            <i role="button"
+                               class="documentation-slider__prev icon-arrow-left"></i>
                         </div>
                         <div class="col-10">
-                            <div class="swiper-container">
+                            <div class="swiper-container documentation-slider__swiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><img src="/assets/images/site/documentation/doc.png" alt>
+                                    <div class="swiper-slide">
+                                        <img src="/assets/images/site/documentation/doc.png" alt>
                                     </div>
-                                    <div class="swiper-slide"><img src="/assets/images/site/documentation/doc.png" alt>
+                                    <div class="swiper-slide">
+                                        <img src="/assets/images/site/documentation/doc.png" alt>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-1 d-flex align-items-center"><i role="button"
-                                                                        class="documentation-slider__control icon-arrow-right"></i>
+                        <div class="col-1 d-flex align-items-center">
+                            <i role="button"
+                               class="documentation-slider__next icon-arrow-right"></i>
                         </div>
                     </div>
                 </div>

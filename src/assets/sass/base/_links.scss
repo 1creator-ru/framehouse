@@ -1,6 +1,11 @@
 .link {
+    color: $gray;
     cursor: pointer;
     text-decoration: none;
+
+    &:hover {
+        color: $primary;
+    }
 }
 
 .link_dark {
@@ -16,14 +21,6 @@
 
     &:hover {
         color: $secondary;
-    }
-}
-
-.link_gray {
-    color: $gray;
-
-    &:hover {
-        color: $gray;
     }
 }
 
@@ -54,13 +51,16 @@
     }
 }
 
-.link_dashed {
-    border-bottom: 1px dashed currentColor;
+.link_lined {
+    text-decoration: underline;
+    text-underline-position: under;
 }
 
 .link__icon {
+    display: inline-block;
     vertical-align: middle;
     margin-right: 5px;
     color: $primary;
     line-height: 16px;
+    text-decoration: none;
 }

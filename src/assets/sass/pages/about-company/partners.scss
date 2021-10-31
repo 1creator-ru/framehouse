@@ -1,16 +1,24 @@
 .partners {
-    .partners__img-wrap {
+    .partners__items{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
+
+        @include media-breakpoint-down(md){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .partner-card {
         background: white;
-        margin-top: 32px;
         border-radius: 5px;
         border: 1px solid $border-color;
         padding: 8px;
 
-        img {
+        .partner-card__img {
             vertical-align: middle;
             display: block;
             margin: 0 auto;
         }
     }
-
 }

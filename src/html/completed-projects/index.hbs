@@ -1,4 +1,4 @@
-{{#extend "layouts/default"}}
+{{#extend "layouts/default" title="Реализованные проекты"}}
     {{#content "page"}}
         <div class="completed-projects">
             <div class="container">
@@ -19,142 +19,30 @@
                 <div class="row completed-projects__filters">
                     <div class="col-lg-9 col-3">
                         <div class="completed-projects__filters-group d-none d-lg-grid">
-                            <div tabindex="0" schema="filled"
-                                 class="multiselect select completed-projects__filters-select multiselect_filled"
-                            >
-                                <div class="multiselect__select"></div>
-                                <div class="multiselect__tags">
-                                    <div class="multiselect__tags-wrap" style="display:none"></div> <!---->
-                                    <div class="multiselect__spinner" style="display:none"></div> <!----> <!---->
-                                    <span class="multiselect__placeholder">
-          Выберите район
-        </span></div>
-                                <div tabindex="-1" class="multiselect__content-wrapper"
-                                     style="max-height:300px;display:none">
-                                    <ul class="multiselect__content" style="display:inline-block"> <!---->
-                                        <li class="multiselect__element"><span data-select="Press enter to select"
-                                                                               data-selected="Selected"
-                                                                               data-deselect="Press enter to remove"
-                                                                               class="multiselect__option multiselect__option--highlight">
-                                Все районы
-                            </span> <!----></li>
-                                        <li class="multiselect__element"><span data-select="Press enter to select"
-                                                                               data-selected="Selected"
-                                                                               data-deselect="Press enter to remove"
-                                                                               class="multiselect__option">
-                                Всеs районы
-                            </span> <!----></li>
-                                        <li style="display:none"><span class="multiselect__option">
-        Поиск не дал результатов
-    </span></li>
-                                        <li style="display:none"><span class="multiselect__option">
-        Список пуст
-    </span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div tabindex="0" schema="filled"
-                                 class="multiselect select completed-projects__filters-select multiselect_filled"
-                            >
-                                <div class="multiselect__select"></div>
-                                <div class="multiselect__tags">
-                                    <div class="multiselect__tags-wrap" style="display:none"></div> <!---->
-                                    <div class="multiselect__spinner" style="display:none"></div> <!----> <!---->
-                                    <span class="multiselect__placeholder">
-          Площадь, м2
-        </span></div>
-                                <div tabindex="-1" class="multiselect__content-wrapper"
-                                     style="max-height:300px;display:none">
-                                    <ul class="multiselect__content" style="display:inline-block"> <!---->
-                                        <li class="multiselect__element"><span data-select="Press enter to select"
-                                                                               data-selected="Selected"
-                                                                               data-deselect="Press enter to remove"
-                                                                               class="multiselect__option multiselect__option--highlight">
-                                45 v2
-                            </span> <!----></li>
-                                        <li class="multiselect__element"><span data-select="Press enter to select"
-                                                                               data-selected="Selected"
-                                                                               data-deselect="Press enter to remove"
-                                                                               class="multiselect__option">
-                                asdfasd
-                            </span> <!----></li>
-                                        <li style="display:none"><span class="multiselect__option">
-        Поиск не дал результатов
-    </span></li>
-                                        <li style="display:none"><span class="multiselect__option">
-        Список пуст
-    </span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div tabindex="0" schema="filled"
-                                 class="multiselect select completed-projects__filters-select multiselect_filled"
-                            >
-                                <div class="multiselect__select"></div>
-                                <div class="multiselect__tags">
-                                    <div class="multiselect__tags-wrap" style="display:none"></div> <!---->
-                                    <div class="multiselect__spinner" style="display:none"></div> <!----> <!---->
-                                    <span class="multiselect__placeholder">
-          Кол-во спален
-        </span></div>
-                                <div tabindex="-1" class="multiselect__content-wrapper"
-                                     style="max-height:300px;display:none">
-                                    <ul class="multiselect__content" style="display:inline-block"> <!---->
-                                        <li class="multiselect__element"><span data-select="Press enter to select"
-                                                                               data-selected="Selected"
-                                                                               data-deselect="Press enter to remove"
-                                                                               class="multiselect__option multiselect__option--highlight">
-                                2
-                            </span> <!----></li>
-                                        <li class="multiselect__element"><span data-select="Press enter to select"
-                                                                               data-selected="Selected"
-                                                                               data-deselect="Press enter to remove"
-                                                                               class="multiselect__option">
-                                3
-                            </span> <!----></li>
-                                        <li style="display:none"><span class="multiselect__option">
-        Поиск не дал результатов
-    </span></li>
-                                        <li style="display:none"><span class="multiselect__option">
-        Список пуст
-    </span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div tabindex="0" schema="filled"
-                                 class="multiselect select completed-projects__filters-select multiselect_filled"
-                            >
-                                <div class="multiselect__select"></div>
-                                <div class="multiselect__tags">
-                                    <div class="multiselect__tags-wrap" style="display:none"></div> <!---->
-                                    <div class="multiselect__spinner" style="display:none"></div> <!----> <!---->
-                                    <span class="multiselect__placeholder">
-          Кол-во этажей
-        </span></div>
-                                <div tabindex="-1" class="multiselect__content-wrapper"
-                                     style="max-height:300px;display:none">
-                                    <ul class="multiselect__content" style="display:inline-block"> <!---->
-                                        <li class="multiselect__element"><span data-select="Press enter to select"
-                                                                               data-selected="Selected"
-                                                                               data-deselect="Press enter to remove"
-                                                                               class="multiselect__option multiselect__option--highlight">
-                                3
-                            </span> <!----></li>
-                                        <li class="multiselect__element"><span data-select="Press enter to select"
-                                                                               data-selected="Selected"
-                                                                               data-deselect="Press enter to remove"
-                                                                               class="multiselect__option">
-                                4
-                            </span> <!----></li>
-                                        <li style="display:none"><span class="multiselect__option">
-        Поиск не дал результатов
-    </span></li>
-                                        <li style="display:none"><span class="multiselect__option">
-        Список пуст
-    </span></li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <select class="form-select mb-3">
+                                <option selected disabled>Выберите район</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <select class="form-select mb-3">
+                                <option selected disabled>Площадь, м2</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <select class="form-select mb-3">
+                                <option selected disabled>Кол-во спален</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <select class="form-select mb-3">
+                                <option selected disabled>Кол-во этажей</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
                         </div>
                         <button class="button p-1 d-block d-lg-none button_gray">
                             <svg width="41" height="33" viewBox="0 0 41 33" fill="none"
@@ -177,149 +65,19 @@
                     <div class="col-lg-3 col-9">
                         <button class="button me-0 ms-auto button_gray">
                             Смотреть на карте
-                            <i class="icon-location-pin"></i></button>
+                            <i class="icon-location-pin button__icon button__icon_right"></i></button>
                     </div>
                 </div>
                 <div class="completed-projects__cards">
-                    <div class="completed-project-card">
-                        <div class="completed-project-card__label">
-                            Готовый проект
-                        </div>
-                        <div class="completed-project-card__attrs">
-                            <div class="completed-project-card__attr"><i
-                                    class="completed-project-card__attr-icon icon-area"></i> <span
-                                    class="completed-project-card__attr-value">
-                152 м2
-            </span> <small class="completed-project-card__attr-label">
-                                общая площадь
-                            </small></div>
-                            <div class="completed-project-card__attr"><i
-                                    class="completed-project-card__attr-icon icon-room"></i> <span
-                                    class="completed-project-card__attr-value">
-                3
-            </span> <small class="completed-project-card__attr-label">
-                                кол-во спален
-                            </small></div>
-                            <div class="completed-project-card__attr"><i
-                                    class="completed-project-card__attr-icon icon-floors"></i> <span
-                                    class="completed-project-card__attr-value">
-                1
-            </span> <small class="completed-project-card__attr-label">
-                                кол-во этажей
-                            </small></div>
-                        </div>
-                        <img src="/assets/images/site/completed-projects/completed-house.jpg" alt>
-                        <div class="completed-project-card__footer"><i
-                                class="completed-project-card__attr-icon icon-location-pin"></i>
-                            Ленинградская область,
-                            Всеволожский муниципальный район
-                        </div>
-                    </div>
-                    <div class="completed-project-card">
-                        <div class="completed-project-card__label">
-                            Готовый проект
-                        </div>
-                        <div class="completed-project-card__attrs">
-                            <div class="completed-project-card__attr"><i
-                                    class="completed-project-card__attr-icon icon-area"></i> <span
-                                    class="completed-project-card__attr-value">
-                152 м2
-            </span> <small class="completed-project-card__attr-label">
-                                общая площадь
-                            </small></div>
-                            <div class="completed-project-card__attr"><i
-                                    class="completed-project-card__attr-icon icon-room"></i> <span
-                                    class="completed-project-card__attr-value">
-                3
-            </span> <small class="completed-project-card__attr-label">
-                                кол-во спален
-                            </small></div>
-                            <div class="completed-project-card__attr"><i
-                                    class="completed-project-card__attr-icon icon-floors"></i> <span
-                                    class="completed-project-card__attr-value">
-                1
-            </span> <small class="completed-project-card__attr-label">
-                                кол-во этажей
-                            </small></div>
-                        </div>
-                        <img src="/assets/images/site/completed-projects/completed-house.jpg" alt>
-                        <div class="completed-project-card__footer"><i
-                                class="completed-project-card__attr-icon icon-location-pin"></i>
-                            Ленинградская область,
-                            Всеволожский муниципальный район
-                        </div>
-                    </div>
-                    <div class="completed-project-card">
-                        <div class="completed-project-card__label">
-                            Готовый проект
-                        </div>
-                        <div class="completed-project-card__attrs">
-                            <div class="completed-project-card__attr"><i
-                                    class="completed-project-card__attr-icon icon-area"></i> <span
-                                    class="completed-project-card__attr-value">
-                152 м2
-            </span> <small class="completed-project-card__attr-label">
-                                общая площадь
-                            </small></div>
-                            <div class="completed-project-card__attr"><i
-                                    class="completed-project-card__attr-icon icon-room"></i> <span
-                                    class="completed-project-card__attr-value">
-                3
-            </span> <small class="completed-project-card__attr-label">
-                                кол-во спален
-                            </small></div>
-                            <div class="completed-project-card__attr"><i
-                                    class="completed-project-card__attr-icon icon-floors"></i> <span
-                                    class="completed-project-card__attr-value">
-                1
-            </span> <small class="completed-project-card__attr-label">
-                                кол-во этажей
-                            </small></div>
-                        </div>
-                        <img src="/assets/images/site/completed-projects/completed-house.jpg" alt>
-                        <div class="completed-project-card__footer"><i
-                                class="completed-project-card__attr-icon icon-location-pin"></i>
-                            Ленинградская область,
-                            Всеволожский муниципальный район
-                        </div>
-                    </div>
-                    <div class="completed-project-card">
-                        <div class="completed-project-card__label">
-                            Готовый проект
-                        </div>
-                        <div class="completed-project-card__attrs">
-                            <div class="completed-project-card__attr"><i
-                                    class="completed-project-card__attr-icon icon-area"></i> <span
-                                    class="completed-project-card__attr-value">
-                152 м2
-            </span> <small class="completed-project-card__attr-label">
-                                общая площадь
-                            </small></div>
-                            <div class="completed-project-card__attr"><i
-                                    class="completed-project-card__attr-icon icon-room"></i> <span
-                                    class="completed-project-card__attr-value">
-                3
-            </span> <small class="completed-project-card__attr-label">
-                                кол-во спален
-                            </small></div>
-                            <div class="completed-project-card__attr"><i
-                                    class="completed-project-card__attr-icon icon-floors"></i> <span
-                                    class="completed-project-card__attr-value">
-                1
-            </span> <small class="completed-project-card__attr-label">
-                                кол-во этажей
-                            </small></div>
-                        </div>
-                        <img src="/assets/images/site/completed-projects/completed-house.jpg" alt>
-                        <div class="completed-project-card__footer"><i
-                                class="completed-project-card__attr-icon icon-location-pin"></i>
-                            Ленинградская область,
-                            Всеволожский муниципальный район
-                        </div>
-                    </div>
+                    {{> partials/completed-project-card }}
+                    {{> partials/completed-project-card }}
+                    {{> partials/completed-project-card }}
+                    {{> partials/completed-project-card }}
+                    {{> partials/completed-project-card }}
+                    {{> partials/completed-project-card }}
                 </div>
-                <button class="button button-show-more button_outline"><i class="icon-show-more"
-                ></i>
+                <button class="button button_outline mx-auto mt-5 col-12 col-md-4">
+                    <i class="icon-show-more button__icon"></i>
                     Показать еще
                 </button>
             </div>

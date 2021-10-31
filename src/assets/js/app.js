@@ -20,3 +20,13 @@ new Swiper('.quiz-modal__swiper', {
         prevEl: '.quiz__prev',
     }
 });
+
+
+new Swiper('.documentation-slider__swiper', {
+    observer: true,
+    observeParents: true,
+    navigation: {
+        nextEl: '.documentation-slider__next',
+        prevEl: '.documentation-slider__prev',
+    }
+});

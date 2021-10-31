@@ -17,25 +17,4 @@
             }
         }
     }
-
-    .icon-info {
-        vertical-align: middle;
-        margin-right: 6px;
-    }
-
-    .guarantee__button {
-        padding: 15px 30px;
-        background: white;
-        display: flex;
-        align-items: center;
-
-        i {
-            font-size: 18px;
-        }
-
-        @include media-breakpoint-down(sm) {
-            width: 100%;
-            justify-content: center;
-        }
-    }
 }
