@@ -1,13 +1,4 @@
 .project-page {
-    margin: 45px 0 64px;
-    @include media-breakpoint-down(md) {
-        margin: 32px 0 64px;
-    }
-
-    h2 {
-        margin-bottom: 30px;
-    }
-
     .project-page__card {
         margin-bottom: 64px;
 

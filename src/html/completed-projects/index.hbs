@@ -62,10 +62,11 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="col-lg-3 col-9">
-                        <button class="button me-0 ms-auto button_gray">
+                    <div class="col-lg-3 col-9 text-lg-end">
+                        <button class="button button_gray">
                             Смотреть на карте
-                            <i class="icon-location-pin button__icon button__icon_right"></i></button>
+                            <i class="icon-location-pin button__icon button__icon_right"></i>
+                        </button>
                     </div>
                 </div>
                 <div class="completed-projects__cards">
@@ -76,10 +77,12 @@
                     {{> partials/completed-project-card }}
                     {{> partials/completed-project-card }}
                 </div>
-                <button class="button button_outline mx-auto mt-5 col-12 col-md-4">
-                    <i class="icon-show-more button__icon"></i>
-                    Показать еще
-                </button>
+                <div class="text-center mt-5">
+                    <button class="button button_outline col-12 col-md-4">
+                        <i class="icon-show-more button__icon"></i>
+                        Показать еще
+                    </button>
+                </div>
             </div>
         </div>
     {{/content}}

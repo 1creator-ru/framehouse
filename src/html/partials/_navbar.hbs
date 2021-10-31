@@ -1,130 +1,125 @@
 <nav class="navbar">
-    <div class="navbar__top">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-end">
-                <i class="icon-location-pin link__icon"></i>
-                <a href="/map" class="small link link_lined">
-                    Карта строящихся объектов
-                </a>
-            </div>
+    <div class="container navbar__top">
+        <div class="d-flex align-items-center justify-content-end">
+            <i class="icon-location-pin link__icon"></i>
+            <a href="/map" class="small link link_lined">
+                Карта строящихся объектов
+            </a>
         </div>
     </div>
-    <div class="navbar__middle">
-        <div class="container">
-            <div class="navbar__middle-content">
-                <button class="button d-block d-lg-none me-2 button_navbar-sm"><i class="icon-menu-btn"></i>
+    <div class="container navbar__middle">
+        <div class="navbar__middle-content">
+            <button class="button d-block d-lg-none button_navbar-sm"><i class="icon-menu-btn"></i>
+            </button>
+            <a href="/" aria-current="page"
+               class="navbar__logo"><img src="/assets/images/logo.svg" alt="">
+                <div class="navbar__logo-text">
+                    <div>Строительство каркасных домов</div>
+                    <div>ДОСТУПНО И КАЧЕСТВЕННО</div>
+                </div>
+            </a>
+            <div class="navbar__middle-btns-sm">
+                <button type="button" class="button me-2 button_navbar-sm"><i
+                        class="icon-calculator"></i></button>
+                <button type="button" class="button button_navbar-sm"><i class="icon-find-house"></i>
                 </button>
-                <a href="/" aria-current="page"
-                   class="navbar__logo"><img src="/assets/images/logo.svg" alt="">
-                    <div class="navbar__logo-text">
-                        <div>Строительство каркасных домов</div>
-                        <div>ДОСТУПНО И КАЧЕСТВЕННО</div>
-                    </div>
+            </div>
+            <div class="navbar__middle-btns">
+                <button type="button" class="button me-xl-2 mb-2 mb-xl-0 button_primary" data-bs-toggle="modal"
+                        data-bs-target="#quiz-modal">
+                    Расчет Вашего проекта
+                </button>
+                <button type="button" class="button button_outline">
+                    Посмотреть строящийся объект
+                </button>
+            </div>
+            <div class="navbar__middle-phone">
+                <a href="#"
+                   class="link link_gray navbar__middle-phone-link">
+                    +7 (812) 123 45 67
                 </a>
-                <div class="navbar__middle-btns-sm">
-                    <button type="button" class="button me-2 button_navbar-sm"><i
-                            class="icon-calculator"></i></button>
-                    <button type="button" class="button button_navbar-sm"><i class="icon-find-house"></i>
-                    </button>
-                </div>
-                <div class="navbar__middle-btns">
-                    <button type="button" class="button me-xl-2 mb-2 mb-xl-0 button_primary" data-bs-toggle="modal"
-                            data-bs-target="#quiz-modal">
-                        Расчет Вашего проекта
-                    </button>
-                    <button type="button" class="button button_outline">
-                        Посмотреть строящийся объект
-                    </button>
-                </div>
-                <div class="navbar__middle-phone">
-                    <a href="#"
-                       class="link link_gray navbar__middle-phone-link">
-                        +7 (812) 123 45 67
-                    </a>
-                    <span class="link link_lined small" data-bs-toggle="modal" data-bs-target="#feedback-modal">
+                <span class="link link_lined small d-none d-lg-inline" data-bs-toggle="modal"
+                      data-bs-target="#feedback-modal">
                         Заказать звонок
                     </span>
-                </div>
             </div>
         </div>
     </div>
-    <div class="navbar__bottom">
-        <div class="container">
-            <button type="button" class="button button_navbar-close"><i class="icon-close"></i></button>
-            <ul class="navbar__bottom-content">
-                <li class="dropdown navbar-dropdown">
-                    <a href="/about-company" class="dropdown-toggle navbar__bottom-link link link_dark">
-                        О компании
-                    </a>
-                    <ul class="dropdown-menu navbar-dropdown__items" aria-labelledby="navbarDarkDropdownMenuLink">
-                        <li><a class="navbar__dropdown-link" href="/about-company/services">Услуги</a></li>
-                        <li><a class="navbar__dropdown-link" href="/about-company/certifications">Сертификаты</a></li>
-                        <li><a class="navbar__dropdown-link" href="/about-company/partners">Партнеры</a></li>
-                        <li><a class="navbar__dropdown-link" href="/about-company/reviews">Отзывы</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/projects" class="navbar__bottom-link link link_dark">
-                        Проекты
-                    </a>
-                </li>
-                <li class="dropdown navbar-dropdown">
-                    <a href="/for-client" class="dropdown-toggle navbar__bottom-link link link_dark">
-                        Клиенту
-                    </a>
-                    <ul class="dropdown-menu navbar-dropdown__items">
-                        <li><a class="navbar__dropdown-link" href="/for-client/payment">Оплата</a></li>
-                        <li><a class="navbar__dropdown-link" href="/for-client/guarantee">Гарантии</a></li>
-                        <li><a class="navbar__dropdown-link" href="/for-client/faq">Вопросы и ответы</a></li>
-                        <li><a class="navbar__dropdown-link" href="/for-client/engineering">Инженерия</a></li>
-                        <li><a class="navbar__dropdown-link" href="/for-client/technologies">Технологии</a></li>
-                        <li><a class="navbar__dropdown-link" href="/for-client/documentation">Документации</a></li>
-                        <li><a class="navbar__dropdown-link" href="/for-client/estimate">Смета</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown navbar-dropdown">
-                    <a href="/prices" class="dropdown-toggle navbar__bottom-link link link_dark">
-                        Цены
-                    </a>
-                    <ul class="dropdown-menu navbar-dropdown__items">
-                        <li><a class="navbar__dropdown-link" href="/prices/loan">Кредит</a></li>
-                        <li><a class="navbar__dropdown-link" href="/prices/maternal-capital">Материнский капитал</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/completed-projects" class="navbar__bottom-link link link_dark">
-                        Реализованные проекты
-                    </a>
-                </li>
-                <li>
-                    <a href="/blog" class="navbar__bottom-link link link_dark">
-                        Блог
-                    </a>
-                </li>
-                <li>
-                    <a href="/promotions" class="navbar__bottom-link link link_dark">
-                        Акции
-                    </a>
-                </li>
-                <li>
-                    <a href="/contacts" class="navbar__bottom-link link link_dark">
-                        Контакты
-                    </a>
-                </li>
-            </ul>
-            <button type="button" class="button mb-2 button_navbar-primary">
-                <i class="icon-location-pin"></i>
-                Карта строящихся объектов
-            </button>
-            <a href="#" class="button button_navbar-secondary mb-2">
-                <i class="icon-phone-in-talk"></i>
-                +7 (812) 123 45 67
-            </a>
-            <button type="button" class="button mb-2 button_navbar-primary">
-                <i class="icon-phone-missed"></i>
-                Заказать звонок
-            </button>
-        </div>
+    <div class="container navbar__bottom">
+        <button type="button" class="button button_navbar-close"><i class="icon-close"></i></button>
+        <ul class="navbar__bottom-content">
+            <li class="dropdown navbar-dropdown">
+                <a href="/about-company" class="dropdown-toggle navbar__bottom-link link link_dark">
+                    О компании
+                </a>
+                <ul class="dropdown-menu navbar-dropdown__items" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="navbar__dropdown-link" href="/about-company/services">Услуги</a></li>
+                    <li><a class="navbar__dropdown-link" href="/about-company/certifications">Сертификаты</a></li>
+                    <li><a class="navbar__dropdown-link" href="/about-company/partners">Партнеры</a></li>
+                    <li><a class="navbar__dropdown-link" href="/about-company/reviews">Отзывы</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/projects" class="navbar__bottom-link link link_dark">
+                    Проекты
+                </a>
+            </li>
+            <li class="dropdown navbar-dropdown">
+                <a href="/for-client" class="dropdown-toggle navbar__bottom-link link link_dark">
+                    Клиенту
+                </a>
+                <ul class="dropdown-menu navbar-dropdown__items">
+                    <li><a class="navbar__dropdown-link" href="/for-client/payment">Оплата</a></li>
+                    <li><a class="navbar__dropdown-link" href="/for-client/guarantee">Гарантии</a></li>
+                    <li><a class="navbar__dropdown-link" href="/for-client/faq">Вопросы и ответы</a></li>
+                    <li><a class="navbar__dropdown-link" href="/for-client/engineering">Инженерия</a></li>
+                    <li><a class="navbar__dropdown-link" href="/for-client/technologies">Технологии</a></li>
+                    <li><a class="navbar__dropdown-link" href="/for-client/documentation">Документации</a></li>
+                    <li><a class="navbar__dropdown-link" href="/for-client/estimate">Смета</a></li>
+                </ul>
+            </li>
+            <li class="dropdown navbar-dropdown">
+                <a href="/prices" class="dropdown-toggle navbar__bottom-link link link_dark">
+                    Цены
+                </a>
+                <ul class="dropdown-menu navbar-dropdown__items">
+                    <li><a class="navbar__dropdown-link" href="/prices/loan">Кредит</a></li>
+                    <li><a class="navbar__dropdown-link" href="/prices/maternal-capital">Материнский капитал</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="/completed-projects" class="navbar__bottom-link link link_dark">
+                    Реализованные проекты
+                </a>
+            </li>
+            <li>
+                <a href="/blog" class="navbar__bottom-link link link_dark">
+                    Блог
+                </a>
+            </li>
+            <li>
+                <a href="/promotions" class="navbar__bottom-link link link_dark">
+                    Акции
+                </a>
+            </li>
+            <li>
+                <a href="/contacts" class="navbar__bottom-link link link_dark">
+                    Контакты
+                </a>
+            </li>
+        </ul>
+        <button type="button" class="button mb-2 button_navbar-primary">
+            <i class="icon-location-pin"></i>
+            Карта строящихся объектов
+        </button>
+        <a href="#" class="button button_navbar-secondary mb-2">
+            <i class="icon-phone-in-talk"></i>
+            +7 (812) 123 45 67
+        </a>
+        <button type="button" class="button mb-2 button_navbar-primary">
+            <i class="icon-phone-missed"></i>
+            Заказать звонок
+        </button>
     </div>
 </nav>
