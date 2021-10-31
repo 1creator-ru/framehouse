@@ -1,18 +1,10 @@
 .guarantee {
-    margin: $page-content-margin;
-    @include media-breakpoint-down(md) {
-        margin: $page-content-margin-sm;
-    }
 
     img {
         border-radius: 5px;
         @include media-breakpoint-down(lg) {
             margin-bottom: 32px;
         }
-    }
-
-    .guarantee__title {
-        margin-bottom: 28px;
     }
 
     .guarantee__text {

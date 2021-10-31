@@ -1,8 +1,4 @@
 .article {
-    margin: $page-content-margin;
-    @include media-breakpoint-down(md) {
-        margin: $page-content-margin-sm;
-    }
 
     p {
         margin-top: 25px;

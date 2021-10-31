@@ -1,8 +1,4 @@
 .maternal-capital {
-    margin: $page-content-margin;
-    @include media-breakpoint-down(md) {
-        margin: 32px 0 64px;
-    }
 
     .maternal-capital__body {
         margin: 62px 0;

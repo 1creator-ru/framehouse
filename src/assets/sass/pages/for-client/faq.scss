@@ -1,13 +1,4 @@
 .faq {
-    margin: $page-content-margin;
-    @include media-breakpoint-down(md) {
-        margin: $page-content-margin-sm;
-    }
-
-    h2 {
-        margin-bottom: 50px;
-    }
-
     .faq__section {
         margin-bottom: 70px;
 
@@ -20,30 +11,6 @@
 
         h3 {
             margin-bottom: 35px;
-        }
-
-        .faq-collapse {
-            border: 1px solid $gray;
-            color: $gray;
-            margin-bottom: 8px;
-            background: white;
-            border-radius: 5px;
-            padding: 18px;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-
-            &.collapse_open {
-                color: $dark;
-                border: 1px solid $dark;
-            }
-
-            .faq-collapse__body {
-                font-size: 18px;
-                font-weight: 600;
-                margin-top: 12px;
-            }
         }
     }
 
@@ -87,6 +54,60 @@
         button {
             width: 100%;
             padding: 12px;
+        }
+    }
+}
+
+.faq-collapse {
+    border: 1px solid #616C78;
+    color: #616C78;
+    margin-bottom: 8px;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+
+    .faq-collapse__header {
+        position: relative;
+        padding: 18px;
+
+        &:hover {
+            color: $primary;
+            background: #f5f5f5;
+        }
+
+        &:after {
+            display: inline-block;
+            margin-left: 0.255em;
+            vertical-align: 0.255em;
+            content: "";
+            border-top: 0.3em solid;
+            border-right: 0.3em solid transparent;
+            border-bottom: 0;
+            border-left: 0.3em solid transparent;
+            position: absolute;
+            top: 28px;
+            right: 18px;
+            transition: transform .2s ease-in;
+        }
+
+        &[aria-expanded="true"] {
+            &:after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .faq-collapse__body {
+        font-size: 18px;
+        font-weight: 600;
+        color: $primary;
+        padding-left: 18px;
+        padding-right: 18px;
+
+        &:after {
+            content: '';
+            display: block;
+            height: 15px;
         }
     }
 }

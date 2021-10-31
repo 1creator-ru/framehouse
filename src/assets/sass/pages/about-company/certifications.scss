@@ -1,13 +1,4 @@
 .certifications {
-    margin: 45px 0 60px;
-    @include media-breakpoint-down(md) {
-        margin: $page-content-margin-sm;
-    }
-
-    .certifications__title {
-        margin-bottom: 38px;
-    }
-
     .certifications__column {
         margin-bottom: 32px;
     }

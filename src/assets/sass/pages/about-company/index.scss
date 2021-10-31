@@ -1,9 +1,4 @@
 .about-company {
-    margin: $page-content-margin;
-
-    @include media-breakpoint-down(md) {
-        margin: $page-content-margin-sm;
-    }
 
     .about-company__work {
         margin: 0 auto 88px;

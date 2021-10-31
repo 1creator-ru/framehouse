@@ -1,18 +1,9 @@
 .estimate {
-    margin: $page-content-margin;
-    @include media-breakpoint-down(md) {
-        margin: 32px 0 16px;
-    }
-
     img {
         border-radius: 5px;
         @include media-breakpoint-down(lg) {
             margin-bottom: 32px;
         }
-    }
-
-    .estimate__title {
-        margin-bottom: 28px;
     }
 
     .estimate__text {

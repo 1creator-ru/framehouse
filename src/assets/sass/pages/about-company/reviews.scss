@@ -1,8 +1,4 @@
 .review {
-    margin: 45px 0 95px;
-    @include media-breakpoint-down(md) {
-        margin: $page-content-margin-sm;
-    }
 
     h2 {
         margin-bottom: 30px;

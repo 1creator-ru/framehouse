@@ -1,135 +1,229 @@
 {{#extend "layouts/default"}}
     {{#content "page"}}
         <div class="faq">
-            <div class="container"><h2>
-                Вопросы и ответы
-            </h2>
+            <div class="container">
+                <h1>
+                    Вопросы и ответы
+                </h1>
                 <div class="row">
                     <div class="col-lg-8 order-1 order-lg-0">
-                        <div id="#construction" class="faq__section"><h3 class="text-primary">
-                            О строительстве
-                        </h3>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
+                        <div id="#construction" class="faq__section">
+                            <h3 class="text-primary">
+                                О строительстве
+                            </h3>
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq1" role="button">
                                     Что необходимо для начала строительства?
                                 </div>
-                            </v-collapse>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
+                                <div class="collapse faq-collapse__body" id="faq1">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
+                                </div>
+                            </div>
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq2" role="button">
                                     В какое время года лучше строить дом?
                                 </div>
-                            </v-collapse>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
+                                <div class="collapse faq-collapse__body" id="faq2">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
+                                </div>
+                            </div>
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq3" role="button">
                                     Если у меня нет готовой проектной документации, но я хочу узнать стоимость
                                     строительства дома из каталога другой компании. Это возможно?
                                 </div>
-                            </v-collapse>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
+                                <div class="collapse faq-collapse__body" id="faq3">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
+                                </div>
+                            </div>
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq4" role="button">
                                     Сколько времени занимает строительство дома
                                 </div>
-                            </v-collapse>
+                                <div class="collapse faq-collapse__body" id="faq4">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
+                                </div>
+                            </div>
                         </div>
-                        <div id="#individual-construction" class="faq__section"><h3 class="text-primary">
-                            Об индивидуальном строительстве
-                        </h3>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
+                        <div id="#individual-construction" class="faq__section">
+                            <h3 class="text-primary">
+                                Об индивидуальном строительстве
+                            </h3>
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq5" role="button">
                                     Что необходимо для начала строительства?
                                 </div>
-                            </v-collapse>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
+                                <div class="collapse faq-collapse__body" id="faq5">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
+                                </div>
+                            </div>
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq6" role="button">
                                     В какое время года лучше строить дом?
                                 </div>
-                            </v-collapse>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
+                                <div class="collapse faq-collapse__body" id="faq6">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
+                                </div>
+                            </div>
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq7" role="button">
                                     Если у меня нет готовой проектной документации, но я хочу узнать стоимость
                                     строительства дома из каталога другой компании. Это возможно?
                                 </div>
-                            </v-collapse>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
+                                <div class="collapse faq-collapse__body" id="faq7">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
+                                </div>
+                            </div>
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq8" role="button">
                                     Сколько времени занимает строительство дома
                                 </div>
-                            </v-collapse>
+                                <div class="collapse faq-collapse__body" id="faq8">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
+                                </div>
+                            </div>
                         </div>
-                        <div id="#delivery" class="faq__section"><h3 class="text-primary">
-                            О доставке
-                        </h3>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
+                        <div id="#delivery" class="faq__section">
+                            <h3 class="text-primary">
+                                О доставке
+                            </h3>
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq9" role="button">
                                     Что необходимо для начала строительства?
                                 </div>
-                            </v-collapse>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
+                                <div class="collapse faq-collapse__body" id="faq9">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
+                                </div>
+                            </div>
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq10" role="button">
                                     В какое время года лучше строить дом?
                                 </div>
-                            </v-collapse>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
+                                <div class="collapse faq-collapse__body" id="faq10">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
+                                </div>
+                            </div>
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq11" role="button">
                                     Если у меня нет готовой проектной документации, но я хочу узнать стоимость
                                     строительства дома из каталога другой компании. Это возможно?
                                 </div>
-                            </v-collapse>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
+                                <div class="collapse faq-collapse__body" id="faq11">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
+                                </div>
+                            </div>
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq12" role="button">
                                     Сколько времени занимает строительство дома
                                 </div>
-                            </v-collapse>
+                                <div class="collapse faq-collapse__body" id="faq12">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
+                                </div>
+                            </div>
                         </div>
-                        <div id="#garanty" class="faq__section"><h3 class="text-primary">
-                            О гарантии
-                        </h3>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
+                        <div id="#garanty" class="faq__section">
+                            <h3 class="text-primary">
+                                О гарантии
+                            </h3>
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq13" role="button">
                                     Что необходимо для начала строительства?
                                 </div>
-                            </v-collapse>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
+                                <div class="collapse faq-collapse__body" id="faq13">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
+                                </div>
+                            </div>
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq14" role="button">
                                     В какое время года лучше строить дом?
                                 </div>
-                            </v-collapse>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
+                                <div class="collapse faq-collapse__body" id="faq14">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
+                                </div>
+                            </div>
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq15" role="button">
                                     Если у меня нет готовой проектной документации, но я хочу узнать стоимость
                                     строительства дома из каталога другой компании. Это возможно?
                                 </div>
-                            </v-collapse>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
+                                <div class="collapse faq-collapse__body" id="faq15">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
+                                </div>
+                            </div>
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq16" role="button">
                                     Сколько времени занимает строительство дома
                                 </div>
-                            </v-collapse>
+                                <div class="collapse faq-collapse__body" id="faq16">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
+                                </div>
+                            </div>
                         </div>
                         <div id="#payment" class="faq__section"><h3 class="text-primary">
                             Об оплате
                         </h3>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq17" role="button">
                                     Что необходимо для начала строительства?
                                 </div>
-                            </v-collapse>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
+                                <div class="collapse faq-collapse__body" id="faq17">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
+                                </div>
+                            </div>
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq18" role="button">
                                     В какое время года лучше строить дом?
                                 </div>
-                            </v-collapse>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
-                                    Если у меня нет готовой проектной документации, но я хочу узнать стоимость
-                                    строительства дома из каталога другой компании. Это возможно?
+                                <div class="collapse faq-collapse__body" id="faq18">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
                                 </div>
-                            </v-collapse>
-                            <v-collapse class="faq-collapse">
-                                <div class="faq-collapse__header">
-                                    Сколько времени занимает строительство дома
+                            </div>
+                            <div class="faq-collapse">
+                                <div class="faq-collapse__header" data-bs-toggle="collapse" href="#faq19" role="button">
+                                    В какое время года лучше строить дом?
                                 </div>
-                            </v-collapse>
+                                <div class="collapse faq-collapse__body" id="faq19">
+                                    Some placeholder content for the first collapse component of this multi-collapse
+                                    example. This panel is hidden by default but revealed when the user activates the
+                                    relevant trigger.
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 order-0 order-lg-1">

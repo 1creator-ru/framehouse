@@ -1,9 +1,10 @@
 {{#extend "layouts/default"}}
     {{#content "page"}}
         <div class="for-client">
-            <div class="container"><h2 class="for-client__title">
-                Полезная информация для клиента
-            </h2>
+            <div class="container">
+                <h1>
+                    Полезная информация для клиента
+                </h1>
                 <div class="row">
                     <div class="col-lg-8 mb-5">
                         Если вы не нашли ответа на свой вопрос или у вас есть вопросы по проектированию, этапам
@@ -11,21 +12,29 @@
                         или финансированию, то воспользуйтесь формой обратной связи
                     </div>
                 </div>
-                <div class="for-client__info"><a href="/" class="link for-client__info-link nuxt-link-active">
-                    Оплата
-                </a> <a href="/" class="link for-client__info-link nuxt-link-active">
-                    Гарантии
-                </a> <a href="/" class="link for-client__info-link nuxt-link-active">
-                    Вопросы и ответы
-                </a> <a href="/" class="link for-client__info-link nuxt-link-active">
-                    Инженерия
-                </a> <a href="/" class="link for-client__info-link nuxt-link-active">
-                    Технологии
-                </a> <a href="/" class="link for-client__info-link nuxt-link-active">
-                    Документации
-                </a> <a href="/" class="link for-client__info-link for-client__info-link_big nuxt-link-active">
-                    Прозрачная <br> развернутая смета
-                </a></div>
+                <div class="for-client__info">
+                    <a href="/for-client/payment" class="link for-client__info-link">
+                        Оплата
+                    </a>
+                    <a href="/for-client/guarantee" class="link for-client__info-link">
+                        Гарантии
+                    </a>
+                    <a href="/for-client/faq" class="link for-client__info-link">
+                        Вопросы и ответы
+                    </a>
+                    <a href="/for-client/engineering" class="link for-client__info-link">
+                        Инженерия
+                    </a>
+                    <a href="/for-client/technologies" class="link for-client__info-link">
+                        Технологии
+                    </a>
+                    <a href="/for-client/documentation" class="link for-client__info-link">
+                        Документации
+                    </a>
+                    <a href="/for-client/estimate" class="link for-client__info-link for-client__info-link_big">
+                        Прозрачная <br> развернутая смета
+                    </a>
+                </div>
                 <div class="get__consultation"><img src="/assets/images/site/for-client/consultation.png"
                                                     alt="">
                     <div class="get__consultation-content">

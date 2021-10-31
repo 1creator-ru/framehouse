@@ -1,16 +1,4 @@
 .partners {
-    margin: $page-content-margin;
-    @include media-breakpoint-down(md) {
-        margin: $page-content-margin-sm;
-    }
-
-    .partners__title {
-        margin-bottom: 8px;
-        @include media-breakpoint-down(md) {
-            margin-bottom: 0;
-        }
-    }
-
     .partners__img-wrap {
         background: white;
         margin-top: 32px;
