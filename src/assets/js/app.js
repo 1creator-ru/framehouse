@@ -5,6 +5,7 @@ Swiper.use([Navigation, Pagination])
 import 'bootstrap/js/src/modal';
 import 'bootstrap/js/src/dropdown';
 import 'bootstrap/js/src/collapse';
+import 'bootstrap/js/src/tab';
 
 new Swiper('.quiz-modal__swiper', {
     spaceBetween: 200,

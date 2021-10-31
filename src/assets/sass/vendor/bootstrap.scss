@@ -7,7 +7,8 @@
 @import "~bootstrap/scss/bootstrap-reboot";
 @import "~bootstrap/scss/bootstrap-grid";
 @import "~bootstrap/scss/forms";
-@import "~bootstrap/dist/css/bootstrap-utilities.min.css";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/utilities";
 
 .form-check-input {
     &[type=radio] {
