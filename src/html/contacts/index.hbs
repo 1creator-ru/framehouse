@@ -1,5 +1,5 @@
-<extends src="default.html">
-    <block name="page">
+{{#extend "layouts/default"}}
+    {{#content "page"}}
         <div class="contacts">
             <div class="container"><h2>Наши контакты</h2>
                 <div class="contacts__info">
@@ -177,5 +177,5 @@
                 </div>
             </div>
         </div>
-    </block>
-</extends>
+    {{/content}}
+{{/extend}}

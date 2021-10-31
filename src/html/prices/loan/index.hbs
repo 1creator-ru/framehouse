@@ -1,5 +1,5 @@
-<extends src="default.html">
-    <block name="page">
+{{#extend "layouts/default"}}
+    {{#content "page"}}
         <div class="prices">
             <div class="container"><h2>
                 Стоимость строительства дома
@@ -179,5 +179,5 @@
                 </div>
             </div>
         </div>
-    </block>
-</extends>
+    {{/content}}
+{{/extend}}

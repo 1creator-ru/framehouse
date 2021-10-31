@@ -1,5 +1,5 @@
-<extends src="default.html">
-    <block name="page">
+{{#extend "layouts/default"}}
+    {{#content "page"}}
         <div class="completed-projects">
             <div class="container"><h2>
                 Построенные дома
@@ -323,5 +323,5 @@
                 </button>
             </div>
         </div>
-    </block>
-</extends>
+    {{/content}}
+{{/extend}}

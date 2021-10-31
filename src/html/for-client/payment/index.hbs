@@ -1,5 +1,5 @@
-<extends src="default.html">
-    <block name="page">
+{{#extend "layouts/default"}}
+    {{#content "page"}}
         <div class="payment">
             <div class="container"><h2 class="payment__title">
                 Оплата
@@ -134,5 +134,5 @@
                 </div>
             </div>
         </div>
-    </block>
-</extends>
+    {{/content}}
+{{/extend}}

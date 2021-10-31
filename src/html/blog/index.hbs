@@ -1,5 +1,5 @@
-<extends src="default.html">
-    <block name="page">
+{{#extend "layouts/default"}}
+    {{#content "page"}}
         <div class="blog">
             <div class="container"><h2>
                 Статьи о строительстве, материалах и технологиях
@@ -145,5 +145,5 @@
                 </button>
             </div>
         </div>
-    </block>
-</extends>
+    {{/content}}
+{{/extend}}

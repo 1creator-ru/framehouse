@@ -1,5 +1,5 @@
-<extends src="default.html">
-    <block name="page">
+{{#extend "layouts/default"}}
+    {{#content "page"}}
         <div class="review">
             <div class="container"><h2>
                 Отзывы
@@ -229,5 +229,5 @@
                 </div>
             </div>
         </div>
-    </block>
-</extends>
+    {{/content}}
+{{/extend}}

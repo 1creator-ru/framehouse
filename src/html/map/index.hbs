@@ -1,5 +1,5 @@
-<extends src="default.html">
-    <block name="page">
+{{#extend "layouts/default"}}
+    {{#content "page"}}
         <div class="objects-map">
             <div class="container p-0 p-sm-3"><h2>
                 Карта строящихся объектов
@@ -46,5 +46,5 @@
                 </div>
             </div>
         </div>
-    </block>
-</extends>
+    {{/content}}
+{{/extend}}
