@@ -1,5 +1,5 @@
-<extends src="default.html">
-    <block name="page">
+{{#extend "layouts/default"}}
+    {{#content "page"}}
         <div class="header">
             <div class="container">
                 <div class="row align-items-end">
@@ -466,5 +466,5 @@
                 </form>
             </div>
         </div>
-    </block>
-</extends>
+    {{/content}}
+{{/extend}}

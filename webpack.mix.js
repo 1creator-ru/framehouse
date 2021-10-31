@@ -1,5 +1,5 @@
 let mix = require('laravel-mix');
-require('mix-html-builder');
+require('laravel-mix-handlebars');
 
 mix.setPublicPath('dist')
     .setResourceRoot('assets')
@@ -14,12 +14,14 @@ mix.setPublicPath('dist')
         processCssUrls: false,
     })
 
-mix.html({
-    htmlRoot: './src/pages/**/*.html', // Your html root file(s)
-    output: '', // The html output folder
-    partialRoot: './src/partials',    // default partial path
-    layoutRoot: './src/layouts',    // default partial path
-    minify: {
-        removeComments: true
-    }
-});
+mix.handlebars('src/html', 'dist/');
+
+// mix.html({
+//     htmlRoot: './src/pages/**/*.html', // Your html root file(s)
+//     output: '', // The html output folder
+//     partialRoot: './src/partials',    // default partial path
+//     layoutRoot: './src/layouts',    // default partial path
+//     minify: {
+//         removeComments: true
+//     }
+// });
