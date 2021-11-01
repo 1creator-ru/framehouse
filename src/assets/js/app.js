@@ -33,3 +33,24 @@ new Swiper('.documentation-slider__swiper', {
         prevEl: '.documentation-slider__prev',
     }
 });
+
+
+const rangeInputs = document.querySelectorAll('.range-inputs')
+for (let range of rangeInputs) {
+    const sliders = range.querySelectorAll('input[type=range]')
+    const inputs = range.querySelectorAll('input[type=number]')
+
+    for (const input of inputs) {
+        input.addEventListener('input', (event) => {
+            sliders[0].value = `${inputs[0].value},${inputs[1].value}`;
+        })
+    }
+
+    for (const slider of sliders) {
+        slider.addEventListener('input', (event) => {
+            const valArray = sliders[0].value.split(',');
+            inputs[0].value = valArray[0]
+            inputs[1].value = valArray[1]
+        })
+    }
+}

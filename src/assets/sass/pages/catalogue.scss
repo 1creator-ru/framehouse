@@ -4,6 +4,7 @@
         text-align: right;
         font-size: 12px;
         align-items: center;
+
         @include media-breakpoint-down(sm) {
             display: none;
         }
@@ -20,104 +21,73 @@
 
     }
 
-    .catalogue__link {
-        text-decoration: none;
-        color: $dark;
-
-        &:hover .catalogue__item-card {
-            box-shadow: 0 4px 34px rgba(0, 0, 0, 0.25);
-        }
-    }
-
-    .catalogue__item-card {
-        transition: box-shadow 0.2s ease-in;
-    }
-
-    .catalogue__wrapper {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto 1fr;
-        grid-gap: 30px;
-        @include media-breakpoint-down(md) {
-            grid-gap: 15px;
-        }
-
-        .catalogue__item-promo {
-            grid-column: 2/4;
-            grid-row: 1/2;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 30px;
-            display: none;
-            @include media-breakpoint-down(lg) {
-                display: grid;
-                grid-column: 1/4;
-                grid-template-columns: 1fr;
-            }
-            @include media-breakpoint-down(md) {
-                grid-gap: 15px;
-            }
-        }
-
-        .catalogue__filter {
-            grid-column: 1/2;
-            grid-row: 1/2;
-            background: white;
-            border-radius: 5px;
-            @include media-breakpoint-down(lg) {
-                grid-column: 1/4;
-                grid-row: 2/3;
-            }
-        }
-
-        .catalogue__content {
-            grid-column: 2/4;
-            grid-row: 1/3;
+    .catalogue__layout {
+        @include media-breakpoint-down(lg) {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 30px;
-            grid-auto-rows: max-content;
-            @include media-breakpoint-down(lg) {
-                grid-column: 1/4;
-                grid-row: 3/4;
-                grid-template-columns: 1fr;
-                .item-promo {
-                    display: none;
-                }
-            }
-            @include media-breakpoint-down(md) {
-                grid-gap: 15px;
-            }
-            @include media-breakpoint-down(xl) {
-                .item-promo {
-                    font-size: 16px;
-                }
-                .item-promo__box {
-                    right: -70px;
-                }
-                .item-promo__percent {
-                    font-size: 80px;
-                }
-                .item-promo__percent_right {
-                    font-size: 113px;
-                }
-            }
         }
+    }
 
-        .catalogue__calculate-project {
-            grid-column: 1/2;
-            grid-row: 2/3;
-            height: fit-content;
-            @include media-breakpoint-down(lg) {
-                grid-column: 1/4;
-                grid-row: 4/5;
-            }
+    .catalogue__promos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        width: calc(66.66666% - 30px);
+        float: right;
+        margin-bottom: 30px;
 
-            .catalogue__signing {
-                font-size: 10px;
-                color: $gray;
-                line-height: 14px;
-
-            }
+        @include media-breakpoint-down(lg) {
+            width: 100%;
+            order: 1;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+            margin-bottom: 15px;
         }
+    }
+
+    .catalogue__filter {
+        float: left;
+        border-radius: 5px;
+        width: 33.33333%;
+        margin-right: 30px;
+        margin-bottom: 30px;
+
+        @include media-breakpoint-down(lg) {
+            width: 100%;
+            margin-bottom: 15px;
+            order: 2;
+        }
+    }
+
+    .catalogue__calculate-project {
+        float: left;
+        width: 33.33333%;
+
+        @include media-breakpoint-down(lg) {
+            width: 100%;
+            order: 4;
+        }
+    }
+
+    .catalogue__cards {
+        width: calc(66.66666% - 30px);
+        float: right;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        grid-auto-rows: max-content;
+
+        @include media-breakpoint-down(lg) {
+            width: 100%;
+            grid-template-columns: 1fr;
+            order: 3;
+            grid-gap: 15px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .catalogue__terms {
+        font-size: 10px;
+        color: $gray;
+        line-height: 14px;
     }
 }

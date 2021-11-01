@@ -19,6 +19,10 @@
         transform: rotate(15deg);
         background: radial-gradient(109.82% 109.82% at 33.93% 38.39%, #C02836 0%, #821E27 100%), #821E27;
         border-radius: 30px;
+
+        @include media-breakpoint-down(md) {
+            right: -90px;
+        }
     }
 
     .item-promo__percent {
@@ -26,6 +30,10 @@
         font-size: 103px;
         right: 20px;
         color: white;
+
+        @include media-breakpoint-down(md) {
+            right: -20px;
+        }
     }
 
     .item-promo__percent_right {
@@ -33,5 +41,10 @@
         font-size: 154px;
         position: absolute;
         right: -10px;
+
+        @include media-breakpoint-down(md) {
+            right: -20px;
+            font-size: 103px;
+        }
     }
 }

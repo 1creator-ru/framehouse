@@ -2,6 +2,17 @@
     {{#content "page"}}
         <div class="project-page">
             <div class="container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">
+                        Главная
+                    </a></li>
+                    <li class="breadcrumbs__item">
+                        <a href="/completed-projects" class="breadcrumbs__link">
+                        Реализованные проекты
+                    </a>
+                    </li>
+                    <li class="breadcrumbs__item">Проект П-345, Всеволожский муниципальный район</li>
+                </ul>
                 <h1>Проект П-345</h1>
                 <div class="project-page__card">
                     <div class="row">
@@ -199,27 +210,7 @@
                 <div class="project-page__info">
                     <div class="row">
                         <div class="col-lg-5 mb-4 mb-lg-0"><h3>Отзыв заказчика</h3>
-                            <div class="review-card">
-                                <div class="review-card__header">
-                                    <div class="review-card__title">
-                                        Каркасный дом по индивидуальному проекту
-                                    </div>
-                                    <div class="review-card__header-links"><a href="#" class="link link_gray mb-2">
-                                        Посмотреть реализованный проект
-                                    </a> <a href="#" class="link link_gray">
-                                        Посмотреть проект
-                                    </a></div>
-                                </div>
-                                <div class="review-card__info">
-                                    <div>
-                                        Комплектация: <span>под ключ</span></div>
-                                    <div>
-                                        Общая площадь: <span>192 м2</span></div>
-                                </div>
-                                <div class="review-card__video-wrap">
-                                    <div class="review-card-video"></div>
-                                    <i class="icon-play"></i></div>
-                            </div>
+                            {{> partials/review-card}}
                         </div>
                         <div class="col-lg-7 mb-4 mb-lg-0"><h3>Объект на карте</h3></div>
                     </div>

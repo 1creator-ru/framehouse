@@ -1,266 +1,155 @@
 {{#extend "layouts/default" title="Проекты"}}
-{{#content "page"}}
-<div class="catalogue">
-    <div class="container">
-        <ul class="breadcrumbs">
-            <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">
-                Главная
-            </a></li>
-            <li class="breadcrumbs__item">
-                Проекты
-            </li>
-        </ul>
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <h1 class="m-0">
-                Проекты
-            </h1>
-            <div class="catalogue__carcass"><a href="/">Подробнее о каркасной <br>технологии</a> <img
-                    src="/assets/images/site/catalogue/carcass.jpg" alt></div>
-        </div>
-        <div class="catalogue__wrapper">
-            <div class="catalogue__item-promo">
-                <div class="item-promo">
-                    Скидка 7% <br>до конца июля
-                    <span class="item-promo__box"></span> <span class="item-promo__percent">%</span></div>
-                <div class="item-promo">
-                    Скидка 7% <br>до конца июля
-                    <span class="item-promo__percent_right">%</span></div>
-            </div>
-            <div class="catalogue__filter">
-                <div class="filter-modal__title">
-                    <button class="button p-1 me-3 button_gray">
-                        <svg width="41" height="33" viewBox="0 0 41 33" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 5.36353H40.2727" stroke="black" stroke-linecap="round"
-                                  stroke-linejoin="round"></path>
-                            <path d="M1 27.1819H40.2727" stroke="black" stroke-linecap="round"
-                                  stroke-linejoin="round"></path>
-                            <path d="M1 16.2727H40.2727" stroke="black" stroke-linecap="round"
-                                  stroke-linejoin="round"></path>
-                            <circle cx="33.7269" cy="5.36364" r="4.86364" fill="#821E27" stroke="white"
-                                    stroke-linecap="round" stroke-linejoin="round"></circle>
-                            <circle cx="33.7269" cy="27.1818" r="4.36364" fill="white" stroke="black"
-                                    stroke-linecap="round" stroke-linejoin="round"></circle>
-                            <circle cx="7.54528" cy="16.2728" r="4.36364" fill="white" stroke="black"
-                                    stroke-linecap="round" stroke-linejoin="round"></circle>
-                        </svg>
-                    </button>
-                    <strong>
-                        Фильтр по параметрам
-                    </strong></div>
-                <div class="filter-modal__body">
-                    <div class="filter-modal__body-item">
-                        <div class="input">
+    {{#content "page"}}
+        <div class="catalogue">
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">
+                        Главная
+                    </a></li>
+                    <li class="breadcrumbs__item">
+                        Проекты
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h1 class="m-0">
+                        Проекты
+                    </h1>
+                    <div class="catalogue__carcass">
+                        <a href="/">Подробнее о каркасной <br>технологии</a>
+                        <img src="/assets/images/site/catalogue/carcass.jpg" alt>
+                    </div>
+                </div>
+                <div class="catalogue__layout clearfix">
+                    <div class="catalogue__filter filter">
+                        <div class="filter__header">
+                            <img src="/assets/images/icons/filter.svg" role="button" alt="Фильтр"
+                                 class="filter__icon"
+                                 data-bs-toggle="modal" data-bs-target="#filter-modal"
+                            />
+                            <span class="d-none d-lg-inline-block">Фильтр по параметрам</span>
+                            <select class="form-select ms-auto d-lg-none">
+                                <option selected disabled>по цене</option>
+                                <option value="1">по площади</option>
+                                <option value="2">по количеству комнат</option>
+                            </select>
+                        </div>
+                        <div class="filter__body">
                             <div class="mb-2">
                                 Стоимость строительства, руб
                             </div>
-                            {{> partials/range-inputs }}
-                            <label class="filter-modal__input-wrapper mb-3">
-                                <input class="input__input" type="number">
-                                —
-                                <input class="input__input" type="number">
-                            </label>
-                            <input type="range" multiple value="0,50" range="0, 5000" class="inp w-100" />
-                        </div>
-                        <hr>
-                    </div>
-                    <div class="filter-modal__body-item">
-                        <div class="input">
-                            <div class="mb-2">
-                                Стоимость строительства, руб
+                            {{> partials/range-inputs min="1500000" max="65000000"}}
+                            <hr>
+                            <div class="input">
+                                <div class="mb-2">
+                                    Площадь, м2
+                                </div>
+                                {{> partials/range-inputs min="65" max="1000" }}
                             </div>
-                            <label class="filter-modal__input-wrapper mb-3">
-                                <input class="input__input" type="number">
-                                —
-                                <input class="input__input" type="number">
+                            <hr>
+                            <div class="mb-2">
+                                Количество этажей
+                            </div>
+                            <div class="filter__checkpoints">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox"
+                                           name="flexRadioDefault"
+                                           id="floor1">
+                                    <label class="form-check-label" for="floor1">
+                                        1
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox"
+                                           name="flexRadioDefault"
+                                           id="floor2">
+                                    <label class="form-check-label" for="floor2">
+                                        2
+                                    </label>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="mb-2">
+                                Количество спален
+                            </div>
+                            <div class="filter__checkpoints">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox"
+                                           name="flexRadioDefault"
+                                           id="rooms1">
+                                    <label class="form-check-label" for="rooms1">
+                                        1
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox"
+                                           name="flexRadioDefault"
+                                           id="rooms2">
+                                    <label class="form-check-label" for="rooms2">
+                                        2
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox"
+                                           name="flexRadioDefault"
+                                           id="rooms3">
+                                    <label class="form-check-label" for="rooms3">
+                                        3
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox"
+                                           name="flexRadioDefault"
+                                           id="rooms4">
+                                    <label class="form-check-label" for="rooms4">
+                                        4
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="button button_primary text-uppercase w-100 mt-3">
+                                Применить
+                            </button>
+                        </div>
+                        {{> partials/filter-modal }}
+                    </div>
+                    <div class="catalogue__promos">
+                        <div class="item-promo">
+                            Скидка 7% <br>до конца июля
+                            <span class="item-promo__box"></span> <span class="item-promo__percent">%</span>
+                        </div>
+                        <div class="item-promo">
+                            Скидка 7% <br>до конца июля
+                            <span class="item-promo__percent_right">%</span>
+                        </div>
+                    </div>
+                    <div class="catalogue__cards">
+                        {{> partials/house-project-card }}
+                        {{> partials/house-project-card }}
+                        {{> partials/house-project-card }}
+                        {{> partials/house-project-card }}
+                        {{> partials/house-project-card }}
+                    </div>
+                    <form class="catalogue__calculate-project calculate-project">
+                        <h2 class="calculate-project__title">
+                            Расчет стоимости проекта
+                        </h2>
+                        <input placeholder="Номер телефона" class="form-control mb-3">
+                        <div class="file-input">
+                            <label for="upload-photo" class="file-input__label mb-4">
+                                <i class="icon-clip"></i>Прикрепите файл проекта
                             </label>
-                            <input type="range" multiple value="0,50" range="0, 5000" class="inp w-100" />
+                            <input id="upload-photo" type="file" class="file-input__input">
                         </div>
-                        <hr>
-                    </div>
-                    <div class="filter-modal__body-item">
-                        <div class="mb-2">
-                            Количество этажей
-                        </div>
-                        <div class="d-flex flex-wrap">
-                            <div class="checkbox mb-2 checkbox_right"><label
-                                    class="checkbox__label"><input type="checkbox"
-                                                                   true-value="true"
-                                                                   value="1"
-                                                                   class="checkbox__input"
-                            > <span
-                                    class="checkbox__icon"></span>
-                                1
-                            </label></div>
-                            <div class="checkbox mb-2 checkbox_right"><label
-                                    class="checkbox__label"><input type="checkbox"
-                                                                   true-value="true"
-                                                                   value="2"
-                                                                   class="checkbox__input"
-                            > <span
-                                    class="checkbox__icon"></span>
-                                2
-                            </label></div>
-                        </div>
-                        <hr>
-                    </div>
-                    <div class="filter-modal__body-item mb-4">
-                        <div class="mb-2">
-                            Количество спален
-                        </div>
-                        <div class="d-flex flex-wrap">
-                            <div class="checkbox mb-2 checkbox_right"><label
-                                    class="checkbox__label"><input type="checkbox"
-                                                                   true-value="true"
-                                                                   value="1"
-                                                                   class="checkbox__input"
-                            > <span
-                                    class="checkbox__icon"></span>
-                                1
-                            </label></div>
-                            <div class="checkbox mb-2 checkbox_right"><label
-                                    class="checkbox__label"><input type="checkbox"
-                                                                   true-value="true"
-                                                                   value="2"
-                                                                   class="checkbox__input"
-                            > <span
-                                    class="checkbox__icon"></span>
-                                2
-                            </label></div>
-                            <div class="checkbox mb-2 checkbox_right"><label
-                                    class="checkbox__label"><input type="checkbox"
-                                                                   true-value="true"
-                                                                   value="3"
-                                                                   class="checkbox__input"
-                            > <span
-                                    class="checkbox__icon"></span>
-                                3
-                            </label></div>
-                            <div class="checkbox mb-2 checkbox_right"><label
-                                    class="checkbox__label"><input type="checkbox"
-                                                                   true-value="true"
-                                                                   value="4+"
-                                                                   class="checkbox__input"
-                            > <span
-                                    class="checkbox__icon"></span>
-                                4+
-                            </label></div>
-                        </div>
-                    </div>
-                    <button class="button button_primary">
-                        Применить
-                    </button>
+                        <button type="submit" class="button w-100 mb-3 button_primary text-uppercase">
+                            Рассчитать проект
+                        </button>
+                        <p class="catalogue__terms">
+                            Нажимая на кнопку "Рассчитать проект" Вы соглашаетесь на
+                            обработку персональных данных в соответствии с условиями
+                            <a href="/">политики конфиденциальности</a>
+                        </p>
+                    </form>
                 </div>
             </div>
-            <form class="catalogue__calculate-project calculate-project"><h2
-                    class="calculate-project__title">
-                Расчет стоимости проекта
-            </h2>
-                <div class="input w-100 mb-4"><input placeholder="Номер телефона" class="input__input">
-                    <label class="input__label">
-
-                    </label> <!----></div>
-                <label for="upload-photo" class="file-input mb-4">Прикрепите файл проекта</label> <input
-                        id="upload-photo" type="file" class="file-input__btn">
-                <button type="submit" class="button w-100 mb-3 button_primary">
-                    Рассчитать проект
-                </button>
-                <p class="catalogue__signing">
-                    Нажимая на кнопку "Рассчитать проект" Вы соглашаетесь на
-                    обработку персональных данных в соответствии с условиями
-                    <a href="/">политики конфиденциальности</a></p></form>
-            <div class="catalogue__content">
-                <div class="item-promo">
-                    Скидка 7% <br>до конца июля
-                    <span class="item-promo__box"></span> <span class="item-promo__percent">%</span></div>
-                <div class="item-promo">
-                    Скидка 7% <br>до конца июля
-                    <span class="item-promo__percent_right">%</span></div>
-                <a href="/projects/project" class="catalogue__link">
-                    <div class="house-project-card catalogue__item-card"><img
-                            src="/assets/images/site/catalogue/item.png" alt="item" class="mb-3">
-                        <div class="house-project-card__description">
-                            <div class="mb-3">
-                                Каркасный дом Проект 345
-                            </div>
-                            <div>Площадь: <span>138.2 м<sup
-                            >2</sup></span>
-                            </div>
-                            <div class="d-flex justify-content-between flex-xl-row flex-column"
-                            >
-                                <div>Спальных комнат: <span>4</span></div>
-                                <div>от <span>1 450 000 Р</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="/projects/project" class="catalogue__link">
-                    <div class="house-project-card catalogue__item-card"><img
-                            src="/assets/images/site/catalogue/item.png" alt="item" class="mb-3">
-                        <div class="house-project-card__description">
-                            <div class="mb-3">
-                                Каркасный дом Проект 345
-                            </div>
-                            <div>Площадь: <span>138.2 м<sup
-                            >2</sup></span></div>
-                            <div class="d-flex justify-content-between flex-xl-row flex-column">
-                                <div>Спальных комнат: <span>4</span></div>
-                                <div>от <span>1 450 000 Р</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="/projects/project" class="catalogue__link">
-                    <div class="house-project-card catalogue__item-card"><img
-                            src="/assets/images/site/catalogue/item.png" alt="item" class="mb-3">
-                        <div class="house-project-card__description">
-                            <div class="mb-3">
-                                Каркасный дом Проект 345
-                            </div>
-                            <div>Площадь: <span>138.2 м<sup
-                            >2</sup></span></div>
-                            <div class="d-flex justify-content-between flex-xl-row flex-column">
-                                <div>Спальных комнат: <span>4</span></div>
-                                <div>от <span>1 450 000 Р</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="/projects/project" class="catalogue__link">
-                    <div class="house-project-card catalogue__item-card"><img
-                            src="/assets/images/site/catalogue/item.png" alt="item" class="mb-3">
-                        <div class="house-project-card__description">
-                            <div class="mb-3">
-                                Каркасный дом Проект 345
-                            </div>
-                            <div>Площадь: <span>138.2 м<sup
-                            >2</sup></span></div>
-                            <div class="d-flex justify-content-between flex-xl-row flex-column">
-                                <div>Спальных комнат: <span>4</span></div>
-                                <div>от <span>1 450 000 Р</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="/projects/project" class="catalogue__link">
-                    <div class="house-project-card catalogue__item-card"><img
-                            src="/assets/images/site/catalogue/item.png" alt="item" class="mb-3">
-                        <div class="house-project-card__description">
-                            <div class="mb-3">
-                                Каркасный дом Проект 345
-                            </div>
-                            <div>Площадь: <span>138.2 м<sup
-                            >2</sup></span></div>
-                            <div class="d-flex justify-content-between flex-xl-row flex-column">
-                                <div>Спальных комнат: <span>4</span></div>
-                                <div>от <span>1 450 000 Р</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
         </div>
-    </div>
-</div>
-{{/content}}
+    {{/content}}
 {{/extend}}

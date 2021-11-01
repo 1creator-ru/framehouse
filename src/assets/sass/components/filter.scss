@@ -1,0 +1,78 @@
+.filter__header {
+    padding: 15px;
+    background: $linear-gradient;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+
+    @include media-breakpoint-down(md) {
+        padding: 0;
+        font-size: 16px;
+        background: none;
+    }
+}
+
+.filter__header_modal {
+    padding: 15px;
+    background: $linear-gradient;
+}
+
+.filter__badge {
+    background: $primary;
+    color: white;
+    font-size: 12px;
+    line-height: 1;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.filter__icon {
+    margin-right: 10px;
+    pointer-events: none;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    background: white;
+    height: 32px;
+
+    @include media-breakpoint-down(md) {
+        height: 48px;
+        pointer-events: auto;
+    }
+}
+
+.filter__body {
+    padding: 15px;
+    background: white;
+
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+
+    hr {
+        color: $border-color;
+        opacity: 1;
+    }
+}
+
+.filter__body_modal {
+    display: block;
+    padding: 0;
+}
+
+
+.filter__checkpoints {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > * {
+        margin-right: 32px;
+        margin-bottom: 8px;
+    }
+}

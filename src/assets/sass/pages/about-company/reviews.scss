@@ -25,6 +25,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-bottom: 12px;
+        align-items: flex-start;
 
         @include media-breakpoint-down(xl) {
             grid-template-columns: 1fr;
@@ -40,6 +41,7 @@
             font-size: 12px;
             display: grid;
             grid-auto-flow: row;
+            grid-gap: 5px;
 
             @include media-breakpoint-down(xl) {
                 text-align: left;

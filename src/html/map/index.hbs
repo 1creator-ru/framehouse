@@ -2,6 +2,12 @@
     {{#content "page"}}
         <div class="objects-map">
             <div class="container p-0 p-sm-3">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">
+                        Главная
+                    </a></li>
+                    <li class="breadcrumbs__item">Карта строящихся объектов</li>
+                </ul>
                 <h1>
                     Карта строящихся объектов
                 </h1>
@@ -30,12 +36,12 @@
                         <p class="mb-4">
                             Оставьте заявку и специалист нашей компании перезвонит в течении 15 минут!
                         </p>
-                        <div class="input mb-3"><input required placeholder="Ваше имя"
-                                                       class="input__input"></div>
-                        <div class="input mb-3"><input required placeholder="Номер телефона"
-                                                       class="input__input"></div>
-                        <button class="button w-100 mb-2 button_primary">
-                            ОСТАВИТЬ ЗАЯВКУ
+                        <input required placeholder="Ваше имя"
+                               class="form-control mb-3">
+                        <input required placeholder="Номер телефона"
+                               class="form-control mb-3">
+                        <button class="button w-100 mb-2 button_primary text-uppercase">
+                            Оставить заявку
                         </button>
                         <div class="projects-on-map__agreement gray">
                             Нажимая на кнопку "Оставить заявку" Вы соглашаетесь на обработку персональных данных в
