@@ -12,6 +12,15 @@ mix.setPublicPath('dist')
     .extract()
     .options({
         processCssUrls: false,
+        terser: {
+            terserOptions: {
+                compress: false,
+                mangle: false,
+                sourceMap: false,
+                keep_fnames: true,
+                keep_classnames: true,
+            },
+        }
     })
     .browserSync({
         proxy: 'http://127.0.0.1:8080',
