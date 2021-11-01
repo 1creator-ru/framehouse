@@ -38,6 +38,17 @@
 @import "pages/about-company/services";
 @import "pages/about-company/reviews";
 @import "pages/about-company/completed-projects";
+//pages/project
+@import "pages/project/project";
+@import "pages/project/completed-house";
+@import "pages/project/cooperation-advantages";
+@import "pages/project/custom-equipment";
+@import "pages/project/project-description";
+@import "pages/project/project-gifts";
+@import "pages/project/project-project-block";
+@import "pages/project/project-promotions";
+@import "pages/project/project-variants";
+@import "pages/project/tables";
 //pages/blog
 @import "pages/blog/blog";
 @import "pages/blog/article";
@@ -63,4 +74,6 @@
 @import "components/projects-on-map";
 @import "components/nav-pills";
 @import "components/range-inputs";
+@import "components/project-block";
+@import "components/project-plan";
 
