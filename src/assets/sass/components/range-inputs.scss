@@ -1,5 +1,47 @@
 .range-inputs {
+    position: relative;
+
     .range-inputs__inputs {
-        display: flex;
+        margin-bottom: 30px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr min-content 1fr;
+        grid-gap: 15px;
+    }
+
+    .range-inputs__delimiter {
+        color: $border-color;
+    }
+
+    input[type="range"] {
+        --range-color: #821E27 !important;
+        -webkit-appearance: none;
+        width: 100%;
+        margin-bottom: 30px;
+
+        &.ghost {
+            --track-background: linear-gradient(to right,
+                    #E5E5E5 var(--low), var(--range-color) 0,
+                    var(--range-color) var(--high), #E5E5E5 0
+            ) no-repeat 0 45% / 100% 40%;
+        }
+    }
+
+    input[type='range']::-webkit-slider-runnable-track {
+        height: 10px;
+        -webkit-appearance: none;
+        color: #13bba4;
+        margin-top: -1px;
+    }
+
+    input[type='range']::-webkit-slider-thumb {
+        width: 36px;
+        height: 36px;
+        -webkit-appearance: none;
+        cursor: ew-resize;
+        background: white;
+        box-shadow: 0 4px 4px 0 rgb(130 30 39 / 25%);
+        border-radius: 50%;
+        margin-top: -15px;
     }
 }

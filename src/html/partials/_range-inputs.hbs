@@ -1,8 +1,8 @@
 <div class="range-inputs">
     <div class="range-inputs__inputs">
-        <input class="range-inputs__input" type="number">
-        —
-        <input class="range-inputs__input" type="number">
+        <input class="range-inputs__input form-control" type="number" value="{{ min }}">
+        <span class="range-inputs__delimiter">—</span>
+        <input class="range-inputs__input form-control" type="number" value="{{ max }}">
     </div>
-    <input type="range" multiple value="0,50" />
+    <input type="range" multiple value="{{ min }},{{ max }}" min="{{ min }}" max="{{ max }}" />
 </div>
