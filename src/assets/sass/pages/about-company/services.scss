@@ -1,14 +1,14 @@
 .services {
-    .get__consultation {
+    .get-consultation {
         margin-top: 64px;
     }
 
-    .services__card {
+    .service-card {
         background: white;
         padding: 32px;
-        margin-bottom: 32px;
         border-radius: 5px;
         border: 1px solid $border-color;
+
         @include media-breakpoint-down(md) {
             padding: 8px;
         }
@@ -21,7 +21,7 @@
             }
         }
 
-        .services__card-text {
+        .service-card__text {
             @include media-breakpoint-down(md) {
                 padding: 8px;
             }
@@ -32,44 +32,51 @@
                     margin: 0 0 28px;
                 }
             }
+        }
 
-            .services__card-button {
-                padding: 12px 25px;
+        .service-card__button {
+            padding: 12px 25px;
 
-                i {
-                    margin-right: 5px;
-                }
-
-                @include media-breakpoint-down(md) {
-                    width: 100%;
-                    padding: 12px;
-                }
+            i {
+                margin-right: 5px;
             }
 
-            .services__card-items {
-                display: flex;
-                flex-wrap: wrap;
-                margin-bottom: -12px;
-
-                .services__card-item {
-                    margin-bottom: 12px;
-                    width: 250px;
-                    display: flex;
-                    @include media-breakpoint-down(xl) {
-                        width: 100%;
-                    }
-
-                    i {
-                        font-size: 22px;
-                        color: $primary;
-                        margin-right: 12px;
-                        text-align: center;
-                        min-width: 32px;
-                    }
-                }
+            @include media-breakpoint-down(md) {
+                width: 100%;
+                padding: 12px;
             }
         }
 
+        .services__items {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: -12px;
+        }
+
+        .services__item {
+            margin-bottom: 12px;
+            width: 250px;
+            display: flex;
+            @include media-breakpoint-down(xl) {
+                width: 100%;
+            }
+
+            i {
+                font-size: 22px;
+                color: $primary;
+                margin-right: 12px;
+                text-align: center;
+                min-width: 32px;
+            }
+        }
+    }
+
+    .service-card + .service-card {
+        margin-top: 30px;
+
+        @include media-breakpoint-down(md) {
+            margin-top: 15px;
+        }
     }
 
     .services__get-call {

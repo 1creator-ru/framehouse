@@ -2,7 +2,6 @@
     font-size: 12px;
     line-height: 14px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(176px, 1fr));
     grid-gap: 8px;
 
     .nav-link {
@@ -14,6 +13,7 @@
 .nav-pills_outline {
     display: grid;
     grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(176px, 1fr));
 
     .nav-link {
         color: $secondary;

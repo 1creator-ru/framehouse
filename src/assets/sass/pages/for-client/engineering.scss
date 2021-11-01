@@ -8,40 +8,47 @@
 
     .engineering__top {
         margin-bottom: 114px;
+
         @include media-breakpoint-down(xl) {
             margin-bottom: 64px;
         }
     }
 
     .systems {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        @media (max-width: 400px) {
-            justify-content: space-around;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
+
+        @include media-breakpoint-down(xl) {
+            grid-template-columns: 1fr 1fr 1fr;
         }
 
-        .systems__card {
-            text-align: center;
-            margin: 24px 0 0;
-            max-width: 176px;
-            @media (max-width: 400px) {
-                max-width: 160px;
-                &:nth-child(2n) {
-                    margin-left: 4px;
-                }
-                &:nth-child(2n+1) {
-                    margin-right: 4px;
-                }
-            }
+        @include media-breakpoint-down(md) {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 4px;
+        }
+    }
 
-            .systems__card-img {
-                width: 100%;
-                margin-bottom: 12px;
-            }
+    .systems-card {
+        text-align: center;
 
-            .systems__card-title {
-                font-weight: 600;
+        .systems-card__img-wrap {
+            position: relative;
+            padding-top: 70%;
+        }
+
+        .systems-card__img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .systems-card__title {
+            font-weight: 600;
+            @include media-breakpoint-down(sm) {
+                font-size: 12px;
             }
         }
     }

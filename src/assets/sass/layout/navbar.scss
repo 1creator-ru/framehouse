@@ -6,7 +6,6 @@
     z-index: 10;
     width: 100%;
 
-
     .navbar__top {
         padding-top: 3px;
         padding-bottom: 3px;
@@ -284,7 +283,6 @@
 
         & + .navbar-dropdown__items {
             max-height: max-content;
-
         }
     }
 
@@ -307,6 +305,8 @@
             border: none;
             max-height: 0;
             overflow: hidden;
+            pointer-events: auto;
+            padding: 0;
         }
     }
 

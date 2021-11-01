@@ -81,10 +81,11 @@
     .completed-house__btns {
         display: flex;
         grid-gap: 16px;
-        @include media-breakpoint-down(xl) {
 
+        @include media-breakpoint-down(xl) {
             justify-content: center;
         }
+
         @include media-breakpoint-down(md) {
             flex-direction: column;
         }

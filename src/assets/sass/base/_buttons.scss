@@ -12,6 +12,11 @@
     align-items: center;
     justify-content: center;
 
+    @include media-breakpoint-down(sm) {
+        font-size: 12px;
+        padding: 13px 17px;
+    }
+
     &:focus {
         outline: none;
     }

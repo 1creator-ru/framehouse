@@ -2,15 +2,33 @@
     background: url('/assets/images/site/index/header.png') center;
     background-size: cover;
     color: white;
+    overflow: hidden;
+
     @include media-breakpoint-down(md) {
         height: 620px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/images/site/index/header.png') center;
+        background-size: cover;
     }
+
     .header__text {
         padding-top: 170px;
         padding-bottom: 170px;
-        @include media-breakpoint-down(lg) {
+
+        @include media-breakpoint-down(md) {
             padding-top: 30px;
             padding-bottom: 30px;
+
+            h4 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .header__img {
+        @include media-breakpoint-down(md) {
+            width: 150%;
+            max-width: none;
+            margin-left: -30%;
         }
     }
 }

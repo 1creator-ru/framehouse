@@ -1,4 +1,4 @@
-.get__consultation {
+.get-consultation {
     background: white;
     border-radius: 5px;
     border: 1px solid $border-color;
@@ -16,7 +16,7 @@
         }
     }
 
-    .get__consultation-content {
+    .get-consultation__content {
         padding: 30px;
         flex-grow: 1;
         display: flex;
@@ -33,7 +33,7 @@
             flex-direction: column;
         }
 
-        .get__consultation-text {
+        .get-consultation__text {
             margin-right: 40px;
             @include media-breakpoint-down(xl) {
                 width: 100%;

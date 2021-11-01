@@ -1,17 +1,29 @@
 .breadcrumbs {
     list-style: none;
     display: flex;
-    padding: 0 0 44px 0;
-    margin: 0;
+    padding: 0;
+    margin-bottom: 44px;
+    flex-wrap: wrap;
+    overflow-x: auto;
 
-    .breadcrumbs__item:not(:first-child) {
-        margin-left: 40px;
+    @include media-breakpoint-down(md) {
+        font-size: 14px;
+        white-space: nowrap;
+        margin-bottom: 25px;
+    }
+
+    .breadcrumbs__item:not(:last-child) {
+        margin-right: 40px;
         position: relative;
 
-        &::before {
+        @include media-breakpoint-down(sm) {
+            margin-right: 20px;
+        }
+
+        &::after {
             content: '>';
             position: absolute;
-            left: -23px;
+            right: -14px;
             color: $dark;
         }
     }

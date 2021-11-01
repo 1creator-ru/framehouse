@@ -8,10 +8,11 @@
         min-height: 560px;
 
         iframe {
-
             position: absolute;
             top: 0;
             left: 0;
+            margin: 0 -15px;
+            width: calc(100% + 30px);
         }
 
         .projects-on-map__card {
@@ -21,15 +22,17 @@
             background: white;
             display: flex;
             flex-direction: column;
+
             @include media-breakpoint-down(sm) {
                 flex-direction: row;
             }
 
             img {
                 border-radius: 5px;
-                width: 100%;
+
                 @include media-breakpoint-down(sm) {
-                    width: auto;
+                    width: 100px;
+                    height: 100px;
                 }
             }
 
@@ -44,7 +47,6 @@
                 }
             }
         }
-
     }
 
     .projects-on-map__form {
@@ -62,16 +64,13 @@
         border-radius: 5px;
         padding: 30px;
 
-        @include media-breakpoint-down(xl) {
+        @include media-breakpoint-down(lg) {
             position: relative;
             right: auto;
             top: auto;
-            margin: 0 auto;
-            transform: translate(0, -20%);
-        }
-        @include media-breakpoint-down(sm) {
-            width: auto;
-            margin: 0 16px;
+            transform: translate(0);
+            width: 100%;
+            margin: -100px auto 0;
         }
 
         h4 {

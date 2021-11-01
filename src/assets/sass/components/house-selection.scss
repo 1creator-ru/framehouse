@@ -102,11 +102,4 @@
         line-height: 100%;
         margin-bottom: 18px;
     }
-
-    .house-selection__button {
-        padding: 12px 72px;
-        @include media-breakpoint-down(sm) {
-            width: 100%;
-        }
-    }
 }

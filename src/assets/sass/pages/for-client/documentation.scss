@@ -37,6 +37,10 @@
         font-size: 64px;
         transition: .1s;
 
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+
         &:active {
             transform: scale(.7);
 

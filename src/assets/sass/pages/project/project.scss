@@ -1,23 +1,8 @@
 .project {
-    margin: 45px 0 64px;
-    @include media-breakpoint-down(md) {
-        margin: 32px 0 64px;
-    }
-
     .project__house-projects {
         margin-bottom: 100px;
         @include media-breakpoint-down(md) {
             margin-bottom: 64px;
-        }
-    }
-
-    h2 {
-        text-align: center;
-        margin-bottom: 48px;
-        @include media-breakpoint-down(md) {
-            text-align: left;
-            margin-bottom: 32px;
-            font-size: 28px;
         }
     }
 }

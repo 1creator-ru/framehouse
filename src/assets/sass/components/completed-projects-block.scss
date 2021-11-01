@@ -17,10 +17,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 32px;
+
     @include media-breakpoint-down(lg) {
-        grid-template-columns: repeat(3, 320px);
-        overflow-y: scroll;
+        grid-auto-flow: column;
+        grid-template-columns: unset;
+        grid-auto-columns: 90%;
         grid-gap: 8px;
+        overflow: auto;
     }
 }
 
