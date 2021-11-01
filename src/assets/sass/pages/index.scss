@@ -1,44 +1,16 @@
 .header {
-    background: url('/assets/images/site/index/header.png');
+    background: url('/assets/images/site/index/header.png') center;
     background-size: cover;
     color: white;
-
+    @include media-breakpoint-down(md) {
+        height: 620px;
+    }
     .header__text {
         padding-top: 170px;
         padding-bottom: 170px;
-    }
-
-    .header__advantages {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 50px;
-        padding: 40px 60px;
-        backdrop-filter: blur(30px);
-        list-style: none;
-        border-radius: 20px;
-        color: black;
-        border: 1px solid white;
-        background: rgba(255, 255, 255, 0.6);
-        margin: -200px 0 200px;
-        transform: translateY(150px);
         @include media-breakpoint-down(lg) {
-            grid-template-columns: 1fr 1fr;
-            padding: 40px 32px;
-        }
-        @include media-breakpoint-down(md) {
-            grid-template-columns: auto;
-        }
-    }
-
-    .header-advantage {
-        display: grid;
-        grid-template-columns: 50px auto;
-        grid-gap: 30px;
-        align-items: center;
-
-        .header-advantage__icon {
-            font-size: 50px;
-            color: $primary;
+            padding-top: 30px;
+            padding-bottom: 30px;
         }
     }
 }

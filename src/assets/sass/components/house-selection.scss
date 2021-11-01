@@ -90,6 +90,10 @@
         @include media-breakpoint-down(xl) {
             margin-bottom: 48px;
         }
+
+        @include media-breakpoint-down(lg) {
+            font-size: 16px;
+        }
     }
 
     .house-selection__button-label {

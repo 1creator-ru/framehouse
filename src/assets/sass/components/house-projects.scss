@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 50px;
+    grid-gap: 10px;
     @include media-breakpoint-down(lg) {
         margin-bottom: 24px;
     }
