@@ -1,0 +1,30 @@
+.file-input {
+    position: relative;
+    font-size: 14px;
+    color: $gray;
+
+    .file-input__label {
+        text-decoration: underline;
+        text-underline-position: under;
+        cursor: pointer;
+
+        &:hover {
+            cursor: pointer;
+            color: $primary;
+        }
+    }
+
+    i {
+        display: inline-block;
+        text-decoration: none;
+        margin-right: 8px;
+        vertical-align: middle;
+    }
+
+    .file-input__input {
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+        transform: scale(0);
+    }
+}

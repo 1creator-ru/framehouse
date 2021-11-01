@@ -54,8 +54,8 @@
                                     Стоимость строительства, руб
                                 </div>
                                 {{> partials/range-inputs min="1500000" max="65000000"}}
-                                <hr>
                             </div>
+                            <hr>
                             <div class="filter-modal__body-item">
                                 <div class="input">
                                     <div class="mb-2">
@@ -63,8 +63,8 @@
                                     </div>
                                     {{> partials/range-inputs min="65" max="1000" }}
                                 </div>
-                                <hr>
                             </div>
+                            <hr>
                             <div class="filter-modal__body-item">
                                 <div class="mb-2">
                                     Количество этажей
@@ -87,8 +87,8 @@
                                         </label>
                                     </div>
                                 </div>
-                                <hr>
                             </div>
+                            <hr>
                             <div class="filter-modal__body-item mb-4">
                                 <div class="mb-2">
                                     Количество спален
@@ -138,8 +138,12 @@
                         Расчет стоимости проекта
                     </h2>
                         <input placeholder="Номер телефона" class="form-control mb-3">
-                        <label for="upload-photo" class="file-input mb-4">Прикрепите файл проекта</label>
-                        <input id="upload-photo" type="file" class="file-input__btn">
+                        <div class="file-input">
+                            <label for="upload-photo" class="file-input__label mb-4">
+                                <i class="icon-clip"></i>Прикрепите файл проекта
+                            </label>
+                            <input id="upload-photo" type="file" class="file-input__input">
+                        </div>
                         <button type="submit" class="button w-100 mb-3 button_primary text-uppercase">
                             Рассчитать проект
                         </button>
