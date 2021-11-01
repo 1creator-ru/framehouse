@@ -79,10 +79,7 @@
         background: linear-gradient(to bottom, transparent, #0000008c);
         margin-bottom: 8px;
         border-radius: 0 0 5px 5px;
-        padding-bottom: 5px;
-    }
-
-    .completed-project-card__attrs {
+        padding: 10px 10px 5px;
         grid-template-columns: 1fr;
         grid-gap: 5px;
     }
