@@ -5,6 +5,14 @@
     }
 }
 
+.completed-projects-block__button {
+    @include media-breakpoint-down(md) {
+        font-size: 12px;
+        line-height: 12px;
+        padding: 8px 5px;
+    }
+}
+
 .completed-projects-block__items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
