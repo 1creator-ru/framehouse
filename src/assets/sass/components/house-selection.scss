@@ -1,20 +1,63 @@
 .house-selection {
+    position: relative;
     margin-bottom: 104px;
     border-radius: 5px;
     padding: 104px;
     border: 1px solid $border-color;
     min-height: 640px;
     height: 640px;
-    background: url("/assets/images/site/prices/get-house.jpg") bottom right no-repeat, white;
+    overflow: hidden;
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        background: white;
+
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 500%;
+        height: 500%;
+        top: -174%;
+        left: -168%;
+        z-index: -1;
+        background: url("/assets/images/site/prices/get-house.jpg") center no-repeat;
+        transform: rotate(-20deg);
+        @include media-breakpoint-down(xl) {
+            width: 77%;
+            height: 61%;
+            top: -24%;
+            left: 12%;
+            transform: rotate(-5deg);
+            background-size: cover;
+        }
+        @include media-breakpoint-down(lg) {
+            width: 77%;
+            height: 47%;
+            top: -7%;
+        }
+        @include media-breakpoint-down(md) {
+            width: 111%;
+            height: 49%;
+            top: -13%;
+            left: -7%;
+        }
+    }
+
     @include media-breakpoint-down(xxl) {
         padding: 50px;
     }
     @include media-breakpoint-down(xl) {
-        background: url("/assets/images/site/prices/get-house-sm.jpg") center -200px no-repeat, white;
         padding-top: 275px;
         height: auto;
         margin-bottom: 64px;
-
     }
     @include media-breakpoint-down(sm) {
         padding: 275px 16px 16px;
