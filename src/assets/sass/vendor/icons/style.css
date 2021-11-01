@@ -11,264 +11,233 @@
 }
 
 [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-edit:before {
+  content: "\e947";
+}
+.icon-employee50:before {
+  content: "\e943";
+}
+.icon-hygiene:before {
+  content: "\e944";
+}
+.icon-careful:before {
+  content: "\e945";
+}
+.icon-cleanliness:before {
+  content: "\e946";
+}
+.icon-calculate:before {
+  content: "\e942";
+}
+.icon-list-numbered:before {
+  content: "\e93e";
+}
+.icon-timer:before {
+  content: "\e93f";
+}
+.icon-guarantee1:before {
+  content: "\e940";
+}
+.icon-list-bold:before {
+  content: "\e941";
+}
 .icon-calculator:before {
-    content: "\e931";
+  content: "\e931";
 }
-
 .icon-find-house:before {
-    content: "\e932";
+  content: "\e932";
 }
-
 .icon-menu-btn:before {
-    content: "\e934";
+  content: "\e934";
 }
-
 .icon-phone-in-talk:before {
-    content: "\e936";
+  content: "\e936";
 }
-
 .icon-phone-missed:before {
-    content: "\e939";
+  content: "\e939";
 }
-
 .icon-close:before {
-    content: "\e93d";
+  content: "\e93d";
 }
-
 .icon-control1:before {
-    content: "\e93b";
+  content: "\e93b";
 }
-
 .icon-guaranty:before {
-    content: "\e933";
+  content: "\e933";
 }
-
 .icon-money:before {
-    content: "\e935";
+  content: "\e935";
 }
-
 .icon-passport1:before {
-    content: "\e938";
+  content: "\e938";
 }
-
 .icon-wood:before {
-    content: "\e93a";
+  content: "\e93a";
 }
-
 .icon-check:before {
-    content: "\e93c";
+  content: "\e93c";
 }
-
 .icon-list:before {
-    content: "\e937";
+  content: "\e937";
 }
-
 .icon-area:before {
-    content: "\e92e";
+  content: "\e92e";
 }
-
 .icon-floors:before {
-    content: "\e92f";
+  content: "\e92f";
 }
-
 .icon-room:before {
-    content: "\e930";
+  content: "\e930";
 }
-
 .icon-play:before {
-    content: "\e92d";
+  content: "\e92d";
 }
-
 .icon-instagram:before {
-    content: "\e92a";
+  content: "\e92a";
 }
-
 .icon-vk:before {
-    content: "\e92b";
+  content: "\e92b";
 }
-
 .icon-work-time:before {
-    content: "\e92c";
+  content: "\e92c";
 }
-
 .icon-available-price:before {
-    content: "\e922";
+  content: "\e922";
 }
-
 .icon-responsibility:before {
-    content: "\e923";
+  content: "\e923";
 }
-
 .icon-roads:before {
-    content: "\e924";
+  content: "\e924";
 }
-
 .icon-smile:before {
-    content: "\e925";
+  content: "\e925";
 }
-
 .icon-waves:before {
-    content: "\e926";
+  content: "\e926";
 }
-
 .icon-passport:before {
-    content: "\e927";
+  content: "\e927";
 }
-
 .icon-emblem:before {
-    content: "\e921";
+  content: "\e921";
 }
-
 .icon-alfa-bank:before {
-    content: "\e91a";
+  content: "\e91a";
 }
-
 .icon-sberbank:before {
-    content: "\e91b";
+  content: "\e91b";
 }
-
 .icon-videocamera:before {
-    content: "\e928";
+  content: "\e928";
 }
-
 .icon-fast-solution:before {
-    content: "\e91c";
+  content: "\e91c";
 }
-
 .icon-loan:before {
-    content: "\e91d";
+  content: "\e91d";
 }
-
 .icon-minimum-paper:before {
-    content: "\e91e";
+  content: "\e91e";
 }
-
 .icon-paper-info:before {
-    content: "\e91f";
+  content: "\e91f";
 }
-
 .icon-success-stamp:before {
-    content: "\e920";
+  content: "\e920";
 }
-
 .icon-maternal-capital:before {
-    content: "\e919";
+  content: "\e919";
 }
-
 .icon-electricity:before {
-    content: "\e914";
+  content: "\e914";
 }
-
 .icon-fire:before {
-    content: "\e915";
+  content: "\e915";
 }
-
 .icon-ventilation:before {
-    content: "\e916";
+  content: "\e916";
 }
-
 .icon-water-system:before {
-    content: "\e917";
+  content: "\e917";
 }
-
 .icon-houses:before {
-    content: "\e900";
+  content: "\e900";
 }
-
 .icon-control:before {
-    content: "\e901";
+  content: "\e901";
 }
-
 .icon-employee:before {
-    content: "\e902";
+  content: "\e902";
 }
-
 .icon-guarantee:before {
-    content: "\e903";
+  content: "\e903";
 }
-
 .icon-mother-capital:before {
-    content: "\e904";
+  content: "\e904";
 }
-
 .icon-arrow-down:before {
-    content: "\e905";
+  content: "\e905";
 }
-
 .icon-arrow-left:before {
-    content: "\e906";
+  content: "\e906";
 }
-
 .icon-arrow-right:before {
-    content: "\e907";
+  content: "\e907";
 }
-
 .icon-arrow-up:before {
-    content: "\e908";
+  content: "\e908";
 }
-
 .icon-location:before {
-    content: "\e909";
+  content: "\e909";
 }
-
 .icon-mail:before {
-    content: "\e90a";
+  content: "\e90a";
 }
-
 .icon-phone:before {
-    content: "\e90b";
+  content: "\e90b";
 }
-
 .icon-article:before {
-    content: "\e929";
+  content: "\e929";
 }
-
 .icon-dialog:before {
-    content: "\e918";
+  content: "\e918";
 }
-
 .icon-location-pin:before {
-    content: "\e90c";
+  content: "\e90c";
 }
-
 .icon-adobe:before {
-    content: "\e90d";
+  content: "\e90d";
 }
-
 .icon-check-mark:before {
-    content: "\e90e";
+  content: "\e90e";
 }
-
 .icon-clip:before {
-    content: "\e90f";
+  content: "\e90f";
 }
-
 .icon-info:before {
-    content: "\e910";
+  content: "\e910";
 }
-
 .icon-like:before {
-    content: "\e911";
+  content: "\e911";
 }
-
 .icon-print:before {
-    content: "\e912";
+  content: "\e912";
 }
-
 .icon-show-more:before {
-    content: "\e913";
+  content: "\e913";
 }
