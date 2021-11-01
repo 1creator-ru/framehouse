@@ -26,109 +26,86 @@
                             Скидка 7% <br>до конца июля
                             <span class="item-promo__percent_right">%</span></div>
                     </div>
-                    <div class="catalogue__filter">
-                        <div class="filter-modal__title">
-                            <button class="button p-1 me-3 button_gray">
-                                <svg width="41" height="33" viewBox="0 0 41 33" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 5.36353H40.2727" stroke="black" stroke-linecap="round"
-                                          stroke-linejoin="round"></path>
-                                    <path d="M1 27.1819H40.2727" stroke="black" stroke-linecap="round"
-                                          stroke-linejoin="round"></path>
-                                    <path d="M1 16.2727H40.2727" stroke="black" stroke-linecap="round"
-                                          stroke-linejoin="round"></path>
-                                    <circle cx="33.7269" cy="5.36364" r="4.86364" fill="#821E27" stroke="white"
-                                            stroke-linecap="round" stroke-linejoin="round"></circle>
-                                    <circle cx="33.7269" cy="27.1818" r="4.36364" fill="white" stroke="black"
-                                            stroke-linecap="round" stroke-linejoin="round"></circle>
-                                    <circle cx="7.54528" cy="16.2728" r="4.36364" fill="white" stroke="black"
-                                            stroke-linecap="round" stroke-linejoin="round"></circle>
-                                </svg>
-                            </button>
+                    <div class="catalogue__filter filter">
+                        <div class="filter__title">
+                            <img src="/assets/images/icons/filter.svg" role="button" alt="Фильтр" class="filter__icon"/>
                             <strong>
                                 Фильтр по параметрам
-                            </strong></div>
-                        <div class="filter-modal__body">
-                            <div class="filter-modal__body-item">
+                            </strong>
+                        </div>
+                        <div class="filter__body">
+                            <div class="mb-2">
+                                Стоимость строительства, руб
+                            </div>
+                            {{> partials/range-inputs min="1500000" max="65000000"}}
+                            <hr>
+                            <div class="input">
                                 <div class="mb-2">
-                                    Стоимость строительства, руб
+                                    Площадь, м2
                                 </div>
-                                {{> partials/range-inputs min="1500000" max="65000000"}}
+                                {{> partials/range-inputs min="65" max="1000" }}
                             </div>
                             <hr>
-                            <div class="filter-modal__body-item">
-                                <div class="input">
-                                    <div class="mb-2">
-                                        Площадь, м2
-                                    </div>
-                                    {{> partials/range-inputs min="65" max="1000" }}
-                                </div>
+                            <div class="mb-2">
+                                Количество этажей
                             </div>
-                            <hr>
-                            <div class="filter-modal__body-item">
-                                <div class="mb-2">
-                                    Количество этажей
+                            <div class="filter__checkpoints">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox"
+                                           name="flexRadioDefault"
+                                           id="floor1">
+                                    <label class="form-check-label" for="floor1">
+                                        1
+                                    </label>
                                 </div>
-                                <div class="d-flex flex-wrap">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox"
-                                               name="flexRadioDefault"
-                                               id="floor1">
-                                        <label class="form-check-label" for="floor1">
-                                            1
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox"
-                                               name="flexRadioDefault"
-                                               id="floor2">
-                                        <label class="form-check-label" for="floor2">
-                                            2
-                                        </label>
-                                    </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox"
+                                           name="flexRadioDefault"
+                                           id="floor2">
+                                    <label class="form-check-label" for="floor2">
+                                        2
+                                    </label>
                                 </div>
                             </div>
                             <hr>
-                            <div class="filter-modal__body-item mb-4">
-                                <div class="mb-2">
-                                    Количество спален
+                            <div class="mb-2">
+                                Количество спален
+                            </div>
+                            <div class="filter__checkpoints">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox"
+                                           name="flexRadioDefault"
+                                           id="rooms1">
+                                    <label class="form-check-label" for="rooms1">
+                                        1
+                                    </label>
                                 </div>
-                                <div class="d-flex flex-wrap">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox"
-                                               name="flexRadioDefault"
-                                               id="rooms1">
-                                        <label class="form-check-label" for="rooms1">
-                                            1
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox"
-                                               name="flexRadioDefault"
-                                               id="rooms2">
-                                        <label class="form-check-label" for="rooms2">
-                                            2
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox"
-                                               name="flexRadioDefault"
-                                               id="rooms3">
-                                        <label class="form-check-label" for="rooms3">
-                                            3
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox"
-                                               name="flexRadioDefault"
-                                               id="rooms4">
-                                        <label class="form-check-label" for="rooms4">
-                                            4
-                                        </label>
-                                    </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox"
+                                           name="flexRadioDefault"
+                                           id="rooms2">
+                                    <label class="form-check-label" for="rooms2">
+                                        2
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox"
+                                           name="flexRadioDefault"
+                                           id="rooms3">
+                                    <label class="form-check-label" for="rooms3">
+                                        3
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox"
+                                           name="flexRadioDefault"
+                                           id="rooms4">
+                                    <label class="form-check-label" for="rooms4">
+                                        4
+                                    </label>
                                 </div>
                             </div>
-                            <button class="button button_primary text-uppercase">
+                            <button class="button button_primary text-uppercase w-100 mt-3">
                                 Применить
                             </button>
                         </div>

@@ -1,4 +1,4 @@
-.filter-modal__title {
+.filter__title {
     padding: 15px;
     background: $linear-gradient;
     display: flex;
@@ -9,33 +9,25 @@
     }
 }
 
-.filter-modal__body {
+.filter__icon {
+    margin-right: 10px;
+}
+
+.filter__body {
     padding: 15px;
 
     hr {
         color: $border-color;
         opacity: 1;
     }
+}
 
-    .filter-modal__body-item {
-        .d-flex {
-            gap: 8px 32px;
-        }
-    }
+.filter__checkpoints {
+    display: flex;
+    flex-wrap: wrap;
 
-    button {
-        width: 100%;
-        padding: 12px;
-    }
-
-    .filter-modal__input-wrapper {
-        display: flex;
-        align-items: center;
-        grid-gap: 4px;
-        color: $border-color;
-
-        .input__input {
-            border-color: $border-color;
-        }
+    & > * {
+        margin-right: 32px;
+        margin-bottom: 8px;
     }
 }

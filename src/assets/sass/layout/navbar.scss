@@ -215,6 +215,7 @@
         list-style: none;
         padding: 0;
         margin-bottom: 0;
+
         @include media-breakpoint-down(lg) {
             display: block;
             grid-gap: unset;
@@ -265,7 +266,6 @@
         }
     }
 }
-
 
 .navbar-dropdown {
     &:hover {
