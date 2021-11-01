@@ -1,0 +1,206 @@
+.project-block__card {
+    margin-bottom: 64px;
+}
+
+.project-block__card-images {
+    display: grid;
+    grid-template-columns: 1fr 304px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "main video"
+    "main more";
+    grid-gap: 8px;
+    @include media-breakpoint-down(md) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+    "main main"
+    "video more";
+        margin-bottom: 32px;
+    }
+
+    .main {
+        grid-area: main;
+        background: url("/images/site/card/house.jpg") center no-repeat;
+        background-size: cover;
+        @include media-breakpoint-down(md) {
+            height: 320px;
+        }
+    }
+
+    .video {
+        grid-area: video;
+        filter: brightness(60%);
+        @include media-breakpoint-down(md) {
+
+        }
+    }
+
+    .more {
+        grid-area: more;
+        filter: brightness(60%);
+        @include media-breakpoint-down(md) {
+
+        }
+    }
+}
+
+.project-block__card-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-block__card-img-wrap {
+    position: relative;
+
+    .project-block__card-img-text {
+        color: white;
+        font-size: 18px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        text-align: center;
+        transform: translate(0, -50%);
+        padding: 0 15px;
+    }
+
+    i {
+        color: rgba(255, 255, 255, .5);
+        font-size: 64px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        text-align: center;
+        transform: translate(0, -50%);
+    }
+}
+
+.project-block__card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    .project-block__card-info-top {
+        color: $primary;
+        font-size: 18px;
+        margin-bottom: 35px;
+    }
+
+    .project-block__card-info-advantages {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 45px;
+        //@include media-breakpoint-down(lg) {
+        //    grid-template-columns: 1fr 1fr;
+        //    padding: 40px 32px;
+        //}
+        @media (max-width: 374px) {
+            grid-template-columns: auto;
+            grid-gap: 15px;
+        }
+
+        li {
+            padding: 0;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 9px;
+            align-items: center;
+            font-size: 12px;
+            line-height: 130%;
+
+            @media (max-width: 374px) {
+                grid-template-columns: auto 1fr;
+            }
+
+            i {
+                font-size: 36px;
+                color: $primary;
+            }
+
+        }
+    }
+
+    .project-block__card-info-item {
+        line-height: 120%;
+
+        h5 {
+            a {
+                font-size: 12px;
+                font-weight: normal;
+            }
+        }
+
+        span {
+            font-size: 18px;
+        }
+
+        strong {
+            margin-bottom: 0;
+        }
+    }
+
+    .project-block__card-info-label {
+        color: $gray;
+        font-size: 12px;
+    }
+
+    .project-block__card-info-btns {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 8px;
+
+        button {
+            @include media-breakpoint-down(xxl) {
+                padding: 12px 6px;
+            }
+        }
+    }
+
+
+
+    button {
+        padding: 12px;
+    }
+}
+    .project-block__card-info-price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+
+        @include media-breakpoint-down(xxl) {
+
+        }
+        @media (max-width: 374px) {
+            flex-direction: column;
+            align-items: start;
+        }
+
+        strong {
+            font-size: 36px;
+            line-height: 120%;
+
+            @include media-breakpoint-down(xxl) {
+                font-size: 22px;
+            }
+            @include media-breakpoint-down(lg) {
+                font-size: 32px;
+            }
+        }
+
+        h5 {
+            @include media-breakpoint-down(xxl) {
+                font-size: 16px;
+            }
+        }
+
+        .project-block__card-info-price-text {
+            font-size: 12px;
+        }
+
+    }

@@ -1,0 +1,105 @@
+.custom-equipment {
+    margin-bottom: 116px;
+    background: $linear-gradient;
+    padding: 52px 0 72px;
+
+    @include media-breakpoint-down(xl) {
+        background: none;
+        padding: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+        margin-bottom: 32px;
+    }
+
+    .custom-equipment__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 32px;
+
+        @include media-breakpoint-down(lg) {
+            grid-template-columns: auto;
+        }
+
+        @include media-breakpoint-down(md) {
+            grid-gap: 16px;
+        }
+    }
+
+    .custom-equipment__item {
+        background: rgba(white, .3);
+        border-radius: 5px;
+        border: 1px solid #CCCCCC;
+        display: flex;
+
+        img {
+            border-radius: 5px 0 0 5px;
+            height: 100%;
+            max-width: 176px;
+            @include media-breakpoint-down(sm) {
+                max-width: 136px;
+            }
+            @media (max-width: 374px) {
+                max-width: 100px;
+            }
+        }
+
+        .custom-equipment__item-content {
+            padding: 25px 32px 18px;
+            @include media-breakpoint-down(sm) {
+                padding: 16px;
+            }
+            @media (max-width: 374px) {
+                padding: 12px;
+            }
+
+            .radio {
+                .radio__label {
+                    @include media-breakpoint-down(sm) {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            h5 {
+                font-size: 20px;
+
+                @media (max-width: 374px) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .custom-equipment__item-final {
+        display: block;
+        padding: 40px 104px;
+        height: 100%;
+
+        @include media-breakpoint-down(xl) {
+            padding: 32px 16px;
+
+        }
+
+        button {
+            width: 100%;
+        }
+
+        .project-block__card-info-price-text {
+            line-height: 120%;
+        }
+
+        .project-block__card-info-price {
+            @include media-breakpoint-down(sm) {
+                grid-gap: 10px;
+            }
+        }
+
+        strong {
+            @include media-breakpoint-down(sm) {
+                font-size: 28px;
+
+            }
+        }
+    }
+}

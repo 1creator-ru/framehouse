@@ -1,0 +1,109 @@
+.completed-house {
+    margin-bottom: 120px;
+    border-radius: 5px;
+    background: $linear-gradient;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    @include media-breakpoint-down(lg) {
+        grid-template-columns: auto;
+        margin-bottom: 64px;
+    }
+    @include media-breakpoint-down(md) {
+        background: none;
+
+    }
+
+    img {
+        height: 100%;
+        min-width: 352px;
+        border-radius: 5px 0 0 5px;
+        @include media-breakpoint-down(lg) {
+            border-radius: 5px;
+            width: 100%;
+            min-width: 100%;
+        }
+    }
+
+    .completed-house__content {
+        padding: 55px 104px 55px 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include media-breakpoint-down(xxl) {
+            padding: 32px;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 32px 0 0 0;
+        }
+    }
+
+    .completed-house__items {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 30px;
+        margin-bottom: 32px;
+        @include media-breakpoint-down(md) {
+            grid-template-columns: auto;
+            grid-gap: 38px;
+        }
+
+        .completed-house__item {
+            display: grid;
+
+            i {
+                font-size: 64px;
+                border: 1px solid #F2F3F7;
+                border-radius: 5px;
+                text-align: center;
+                margin: 0 auto;
+                align-self: flex-start;
+
+                @include media-breakpoint-down(md) {
+                    justify-self: flex-start;
+                    text-align: left;
+                    margin: unset;
+                    border: 1px solid #fff;
+                }
+            }
+
+            h5 {
+
+            }
+
+            .completed-house__item-text {
+                font-size: 14px;
+                line-height: 120%;
+            }
+        }
+    }
+
+    .completed-house__btns {
+        display: flex;
+        grid-gap: 16px;
+        @include media-breakpoint-down(xl) {
+
+            justify-content: center;
+        }
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            @include media-breakpoint-down(xl) {
+                padding: 12px;
+            }
+            @include media-breakpoint-down(md) {
+                justify-content: center;
+            }
+
+            i {
+                font-size: 18px;
+                margin-right: 8px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,151 @@
+.project-variants {
+    margin-bottom: 120px;
+    @include media-breakpoint-down(xl) {
+        margin-bottom: 64px;
+    }
+    @include media-breakpoint-down(md) {
+        margin-bottom: 32px;
+    }
+
+    .project-variants__row {
+        .tabs {
+            .tabs__head {
+                overflow: hidden;
+                margin-bottom: 24px;
+                height: 48px;
+            }
+
+            .tabs__item {
+                justify-content: center;
+                width: 141px;
+                min-width: 141px;
+                @include media-breakpoint-down(sm) {
+                    min-width: auto;
+                    width: auto;
+                }
+            }
+        }
+
+        .project-variants__form {
+            .form {
+                background: rgba(255, 255, 255, 0.68);
+                border: 1px solid #E5E5E5;
+                box-shadow: 0 9px 13px rgb(0 0 0 / 10%);
+                -webkit-backdrop-filter: blur(29px);
+                backdrop-filter: blur(29px);
+                border-radius: 5px;
+                padding: 30px;
+
+                .form__agreement {
+                    font-size: 10px;
+                    line-height: 15px;
+                }
+
+                @include media-breakpoint-down(xxl) {
+                    margin: 0 auto;
+                }
+                @include media-breakpoint-down(ms) {
+                    padding: 32px 16px;
+                    width: 100%;
+                }
+
+                .checkbox__label {
+                    text-align: left;
+                    line-height: 130%;
+                }
+            }
+        }
+    }
+
+
+    .project-variants-tab__content {
+        .project-variants-tab__list {
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            @include media-breakpoint-down(xxl) {
+                margin-bottom: 24px;
+            }
+
+            .project-variants-tab__list-item {
+                display: flex;
+
+                .project-variants-tab__list-number {
+                    background: white;
+                    border: 1px solid $border-color;
+                    border-radius: 5px;
+                    padding: 14px;
+                    align-self: flex-start;
+                    color: $primary;
+                    font-size: 36px;
+                    line-height: 100%;
+                    font-weight: 800;
+                    margin-right: 32px;
+                    @include media-breakpoint-down(md) {
+                        margin-right: 24px;
+                        align-self: center;
+                    }
+                }
+
+                .project-variants-tab__list-text {
+
+                }
+            }
+        }
+
+        .project-variants-tab__footer {
+            display: flex;
+            align-items: center;
+            @include media-breakpoint-down(md) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .project-variants-tab__footer-price {
+                margin-right: 32px;
+                font-size: 18px;
+                @include media-breakpoint-down(md) {
+                    margin-right: 0;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
+
+                @media (max-width: 374px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                strong {
+                    display: block;
+                    line-height: 130%;
+                    font-size: 36px;
+                    @include media-breakpoint-down(md) {
+                        display: inline-block;
+                        margin-left: 8px;
+                    }
+                    @media (max-width: 374px) {
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            .project-variants-tab__footer-btns {
+                display: flex;
+                gap: 16px;
+                @include media-breakpoint-down(md) {
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+                button {
+                    text-transform: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

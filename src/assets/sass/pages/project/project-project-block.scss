@@ -1,0 +1,23 @@
+    .project__project-block {
+        .project-block__card-img {
+            width: auto;
+        }
+
+        .project-block__card-info-top {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr auto auto;
+            grid-gap: 20px;
+            color: $dark;
+            @media (max-width: 374px) {
+                grid-gap: 10px;
+            }
+
+            button {
+                color: #CCD0D6;
+                border: none;
+                padding: 0;
+                font-size: 20px;
+            }
+        }
+    }
