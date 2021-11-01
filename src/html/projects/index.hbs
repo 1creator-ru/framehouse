@@ -14,24 +14,24 @@
                     <h1 class="m-0">
                         Проекты
                     </h1>
-                    <div class="catalogue__carcass"><a href="/">Подробнее о каркасной <br>технологии</a> <img
-                            src="/assets/images/site/catalogue/carcass.jpg" alt></div>
-                </div>
-                <div class="catalogue__wrapper">
-                    <div class="catalogue__item-promo">
-                        <div class="item-promo">
-                            Скидка 7% <br>до конца июля
-                            <span class="item-promo__box"></span> <span class="item-promo__percent">%</span></div>
-                        <div class="item-promo">
-                            Скидка 7% <br>до конца июля
-                            <span class="item-promo__percent_right">%</span></div>
+                    <div class="catalogue__carcass">
+                        <a href="/">Подробнее о каркасной <br>технологии</a>
+                        <img src="/assets/images/site/catalogue/carcass.jpg" alt>
                     </div>
+                </div>
+                <div class="catalogue__layout clearfix">
                     <div class="catalogue__filter filter">
-                        <div class="filter__title">
-                            <img src="/assets/images/icons/filter.svg" role="button" alt="Фильтр" class="filter__icon"/>
-                            <strong>
-                                Фильтр по параметрам
-                            </strong>
+                        <div class="filter__header">
+                            <img src="/assets/images/icons/filter.svg" role="button" alt="Фильтр"
+                                 class="filter__icon"
+                                 data-bs-toggle="modal" data-bs-target="#filter-modal"
+                            />
+                            <span class="d-none d-lg-inline-block">Фильтр по параметрам</span>
+                            <select class="form-select ms-auto d-lg-none">
+                                <option selected disabled>по цене</option>
+                                <option value="1">по площади</option>
+                                <option value="2">по количеству комнат</option>
+                            </select>
                         </div>
                         <div class="filter__body">
                             <div class="mb-2">
@@ -109,11 +109,29 @@
                                 Применить
                             </button>
                         </div>
+                        {{> partials/filter-modal }}
                     </div>
-                    <form class="catalogue__calculate-project calculate-project"><h2
-                            class="calculate-project__title">
-                        Расчет стоимости проекта
-                    </h2>
+                    <div class="catalogue__promos">
+                        <div class="item-promo">
+                            Скидка 7% <br>до конца июля
+                            <span class="item-promo__box"></span> <span class="item-promo__percent">%</span>
+                        </div>
+                        <div class="item-promo">
+                            Скидка 7% <br>до конца июля
+                            <span class="item-promo__percent_right">%</span>
+                        </div>
+                    </div>
+                    <div class="catalogue__cards">
+                        {{> partials/house-project-card }}
+                        {{> partials/house-project-card }}
+                        {{> partials/house-project-card }}
+                        {{> partials/house-project-card }}
+                        {{> partials/house-project-card }}
+                    </div>
+                    <form class="catalogue__calculate-project calculate-project">
+                        <h2 class="calculate-project__title">
+                            Расчет стоимости проекта
+                        </h2>
                         <input placeholder="Номер телефона" class="form-control mb-3">
                         <div class="file-input">
                             <label for="upload-photo" class="file-input__label mb-4">
@@ -124,101 +142,12 @@
                         <button type="submit" class="button w-100 mb-3 button_primary text-uppercase">
                             Рассчитать проект
                         </button>
-                        <p class="catalogue__signing">
+                        <p class="catalogue__terms">
                             Нажимая на кнопку "Рассчитать проект" Вы соглашаетесь на
                             обработку персональных данных в соответствии с условиями
-                            <a href="/">политики конфиденциальности</a></p>
+                            <a href="/">политики конфиденциальности</a>
+                        </p>
                     </form>
-                    <div class="catalogue__content">
-                        <div class="item-promo">
-                            Скидка 7% <br>до конца июля
-                            <span class="item-promo__box"></span> <span class="item-promo__percent">%</span></div>
-                        <div class="item-promo">
-                            Скидка 7% <br>до конца июля
-                            <span class="item-promo__percent_right">%</span></div>
-                        <a href="/projects/project" class="catalogue__link">
-                            <div class="house-project-card catalogue__item-card"><img
-                                    src="/assets/images/site/catalogue/item.png" alt="item" class="mb-3">
-                                <div class="house-project-card__description">
-                                    <div class="mb-3">
-                                        Каркасный дом Проект 345
-                                    </div>
-                                    <div>Площадь: <span>138.2 м<sup
-                                    >2</sup></span>
-                                    </div>
-                                    <div class="d-flex justify-content-between flex-xl-row flex-column"
-                                    >
-                                        <div>Спальных комнат: <span>4</span></div>
-                                        <div>от <span>1 450 000 Р</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/projects/project" class="catalogue__link">
-                            <div class="house-project-card catalogue__item-card"><img
-                                    src="/assets/images/site/catalogue/item.png" alt="item" class="mb-3">
-                                <div class="house-project-card__description">
-                                    <div class="mb-3">
-                                        Каркасный дом Проект 345
-                                    </div>
-                                    <div>Площадь: <span>138.2 м<sup
-                                    >2</sup></span></div>
-                                    <div class="d-flex justify-content-between flex-xl-row flex-column">
-                                        <div>Спальных комнат: <span>4</span></div>
-                                        <div>от <span>1 450 000 Р</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/projects/project" class="catalogue__link">
-                            <div class="house-project-card catalogue__item-card"><img
-                                    src="/assets/images/site/catalogue/item.png" alt="item" class="mb-3">
-                                <div class="house-project-card__description">
-                                    <div class="mb-3">
-                                        Каркасный дом Проект 345
-                                    </div>
-                                    <div>Площадь: <span>138.2 м<sup
-                                    >2</sup></span></div>
-                                    <div class="d-flex justify-content-between flex-xl-row flex-column">
-                                        <div>Спальных комнат: <span>4</span></div>
-                                        <div>от <span>1 450 000 Р</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/projects/project" class="catalogue__link">
-                            <div class="house-project-card catalogue__item-card"><img
-                                    src="/assets/images/site/catalogue/item.png" alt="item" class="mb-3">
-                                <div class="house-project-card__description">
-                                    <div class="mb-3">
-                                        Каркасный дом Проект 345
-                                    </div>
-                                    <div>Площадь: <span>138.2 м<sup
-                                    >2</sup></span></div>
-                                    <div class="d-flex justify-content-between flex-xl-row flex-column">
-                                        <div>Спальных комнат: <span>4</span></div>
-                                        <div>от <span>1 450 000 Р</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/projects/project" class="catalogue__link">
-                            <div class="house-project-card catalogue__item-card"><img
-                                    src="/assets/images/site/catalogue/item.png" alt="item" class="mb-3">
-                                <div class="house-project-card__description">
-                                    <div class="mb-3">
-                                        Каркасный дом Проект 345
-                                    </div>
-                                    <div>Площадь: <span>138.2 м<sup
-                                    >2</sup></span></div>
-                                    <div class="d-flex justify-content-between flex-xl-row flex-column">
-                                        <div>Спальных комнат: <span>4</span></div>
-                                        <div>от <span>1 450 000 Р</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>

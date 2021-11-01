@@ -1,0 +1,93 @@
+<div class="modal fade" id="filter-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header filter__header filter__header_modal">
+                <div class="modal-title d-flex align-items-center">
+                    <img class="filter__icon" src="/assets/images/icons/filter.svg" alt="Фильтр" />
+                    Фильтр по параметрам
+                    <span class="filter__badge ms-2">1</span>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="filter__body filter__body_modal">
+                    <div class="mb-2">
+                        Стоимость строительства, руб
+                    </div>
+                    {{> partials/range-inputs min="1500000" max="65000000"}}
+                    <hr>
+                    <div class="input">
+                        <div class="mb-2">
+                            Площадь, м2
+                        </div>
+                        {{> partials/range-inputs min="65" max="1000" }}
+                    </div>
+                    <hr>
+                    <div class="mb-2">
+                        Количество этажей
+                    </div>
+                    <div class="filter__checkpoints">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                   name="flexRadioDefault"
+                                   id="floor1">
+                            <label class="form-check-label" for="floor1">
+                                1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                   name="flexRadioDefault"
+                                   id="floor2">
+                            <label class="form-check-label" for="floor2">
+                                2
+                            </label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="mb-2">
+                        Количество спален
+                    </div>
+                    <div class="filter__checkpoints">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                   name="flexRadioDefault"
+                                   id="rooms1">
+                            <label class="form-check-label" for="rooms1">
+                                1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                   name="flexRadioDefault"
+                                   id="rooms2">
+                            <label class="form-check-label" for="rooms2">
+                                2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                   name="flexRadioDefault"
+                                   id="rooms3">
+                            <label class="form-check-label" for="rooms3">
+                                3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                   name="flexRadioDefault"
+                                   id="rooms4">
+                            <label class="form-check-label" for="rooms4">
+                                4
+                            </label>
+                        </div>
+                    </div>
+                    <button class="button button_primary text-uppercase w-100 mt-3">
+                        Применить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
