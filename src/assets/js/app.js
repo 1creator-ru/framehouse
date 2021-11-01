@@ -54,3 +54,14 @@ for (let range of rangeInputs) {
         })
     }
 }
+
+const media = getComputedStyle(document.body).getPropertyValue('--media').substr(1)
+if (['xs', 'sm', 'md'].includes(media)) {
+    const dropdownToggles = document.querySelectorAll('.navbar-dropdown__toggle')
+    for (let toggle of dropdownToggles) {
+        toggle.addEventListener('click', (event) => {
+            event.preventDefault()
+            event.target.classList.toggle('navbar-dropdown__toggle_open')
+        })
+    }
+}

@@ -9,7 +9,10 @@
     </div>
     <div class="container navbar__middle">
         <div class="navbar__middle-content">
-            <button class="button d-block d-lg-none button_navbar-sm"><i class="icon-menu-btn"></i>
+            <button class="button d-block d-lg-none button_navbar-sm"
+                    type="button" aria-expanded="false" aria-controls="mobileCollapseNavbar"
+                    data-bs-toggle="collapse" data-bs-target="#mobileCollapseNavbar"
+            ><i class="icon-menu-btn"></i>
             </button>
             <a href="/" aria-current="page"
                class="navbar__logo"><img src="/assets/images/logo.svg" alt="">
@@ -19,9 +22,12 @@
                 </div>
             </a>
             <div class="navbar__middle-buttons-sm">
-                <button type="button" class="button me-2 button_navbar-sm"><i
-                        class="icon-calculator"></i></button>
-                <button type="button" class="button button_navbar-sm"><i class="icon-find-house"></i>
+                <button type="button" class="button me-2 button_navbar-sm" data-bs-toggle="modal"
+                        data-bs-target="#quiz-modal">
+                    <i class="icon-calculator"></i>
+                </button>
+                <button type="button" class="button button_navbar-sm">
+                    <i class="icon-find-house"></i>
                 </button>
             </div>
             <div class="navbar__middle-buttons">
@@ -45,14 +51,17 @@
             </div>
         </div>
     </div>
-    <div class="container navbar__bottom">
-        <button type="button" class="button button_navbar-close"><i class="icon-close"></i></button>
+    <div class="container navbar__bottom collapse" id="mobileCollapseNavbar">
+        <button class="button button_navbar-close"
+                type="button" aria-expanded="false" aria-controls="mobileCollapseNavbar"
+                data-bs-toggle="collapse" data-bs-target="#mobileCollapseNavbar"
+        ><i class="icon-close"></i></button>
         <ul class="navbar__bottom-content">
             <li class="dropdown navbar-dropdown">
-                <a href="/about-company" class="dropdown-toggle navbar__bottom-link link link_dark">
+                <a href="/about-company" class="navbar-dropdown__toggle navbar__bottom-link link link_dark">
                     О компании
                 </a>
-                <ul class="dropdown-menu navbar-dropdown__items" aria-labelledby="navbarDarkDropdownMenuLink">
+                <ul class="dropdown-menu navbar-dropdown__items">
                     <li><a class="navbar__dropdown-link" href="/about-company/services">Услуги</a></li>
                     <li><a class="navbar__dropdown-link" href="/about-company/certifications">Сертификаты</a></li>
                     <li><a class="navbar__dropdown-link" href="/about-company/partners">Партнеры</a></li>
@@ -65,7 +74,7 @@
                 </a>
             </li>
             <li class="dropdown navbar-dropdown">
-                <a href="/for-client" class="dropdown-toggle navbar__bottom-link link link_dark">
+                <a href="/for-client" class="navbar-dropdown__toggle navbar__bottom-link link link_dark">
                     Клиенту
                 </a>
                 <ul class="dropdown-menu navbar-dropdown__items">
@@ -79,7 +88,7 @@
                 </ul>
             </li>
             <li class="dropdown navbar-dropdown">
-                <a href="/prices" class="dropdown-toggle navbar__bottom-link link link_dark">
+                <a href="/prices" class="navbar-dropdown__toggle navbar__bottom-link link link_dark">
                     Цены
                 </a>
                 <ul class="dropdown-menu navbar-dropdown__items">
@@ -109,16 +118,16 @@
                 </a>
             </li>
         </ul>
-        <button type="button" class="button mb-2 button_navbar-primary">
-            <i class="icon-location-pin"></i>
+        <a href="/map" class="button button_navbar-primary mb-2">
+            <i class="icon-location-pin button__icon"></i>
             Карта строящихся объектов
-        </button>
-        <a href="#" class="button button_navbar-secondary mb-2">
-            <i class="icon-phone-in-talk"></i>
+        </a>
+        <a href=tel:88121234567" class="button button_navbar-secondary mb-2">
+            <i class="icon-phone-in-talk button__icon"></i>
             +7 (812) 123 45 67
         </a>
-        <button type="button" class="button mb-2 button_navbar-primary">
-            <i class="icon-phone-missed"></i>
+        <button type="button" class="button button_navbar-primary mb-2">
+            <i class="icon-phone-missed button__icon"></i>
             Заказать звонок
         </button>
     </div>

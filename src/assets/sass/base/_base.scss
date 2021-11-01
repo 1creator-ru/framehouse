@@ -5,6 +5,25 @@ body {
     background-size: cover;
     color: $dark;
     backface-visibility: hidden;
+
+    --media: xl;
+
+    @include media-breakpoint-down(xl) {
+        --media: lg;
+    }
+
+    @include media-breakpoint-down(lg) {
+        --media: md;
+    }
+
+    @include media-breakpoint-down(md) {
+        --media: sm;
+    }
+
+    @include media-breakpoint-down(sm) {
+        --media: xs;
+    }
+
 }
 
 html, body {
