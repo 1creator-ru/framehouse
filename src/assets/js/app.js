@@ -91,7 +91,8 @@ function initRangeInputs() {
 }
 
 function initNavbar() {
-    const media = getComputedStyle(document.body).getPropertyValue('--media').substr(1);
+    const media = getComputedStyle(document.body).getPropertyValue('--media')
+        .replace(/\s/g, '');
     if (['xs', 'sm', 'md'].includes(media)) {
         const dropdownToggles = document.querySelectorAll('.navbar-dropdown__toggle');
         for (let toggle of dropdownToggles) {
