@@ -1,14 +1,14 @@
-import { Navigation, Pagination, Swiper, } from 'swiper';
+import { Navigation, Pagination, Controller, Swiper } from 'swiper';
 import 'bootstrap/js/src/modal';
 import 'bootstrap/js/src/dropdown';
 import 'bootstrap/js/src/collapse';
 import 'bootstrap/js/src/tab';
 
-import multirange from 'multirange/multirange'
+import multirange from 'multirange/multirange';
 
-multirange.init()
+multirange.init();
 
-Swiper.use([Navigation, Pagination])
+Swiper.use([Navigation, Pagination, Controller]);
 
 new Swiper('.quiz-modal__swiper', {
     spaceBetween: 200,
@@ -22,8 +22,28 @@ new Swiper('.quiz-modal__swiper', {
     navigation: {
         nextEl: '.quiz__next',
         prevEl: '.quiz__prev',
-    }
+    },
 });
+const projectThumbsSlider = new Swiper('.project-thumbs-slider__swiper', {
+    spaceBetween: 8,
+    slidesPerView: 5,
+    centeredSlides: true,
+    slideToClickedSlide: true,
+    observer: true,
+    observeParents: true,
+    direction: 'vertical',
+    navigation: {
+        nextEl: '.project-slider__next',
+        prevEl: '.project-slider__prev',
+    },
+});
+const projectSlider = new Swiper('.project-slider-content__swiper', {
+    observer: true,
+    observeParents: true,
+    direction: 'vertical',
+});
+projectSlider.controller.control = projectThumbsSlider;
+projectThumbsSlider.controller.control = projectSlider;
 
 new Swiper('.documentation-slider__swiper', {
     observer: true,
@@ -31,47 +51,45 @@ new Swiper('.documentation-slider__swiper', {
     navigation: {
         nextEl: '.documentation-slider__next',
         prevEl: '.documentation-slider__prev',
-    }
+    },
 });
 
-
-const rangeInputs = document.querySelectorAll('.range-inputs')
+const rangeInputs = document.querySelectorAll('.range-inputs');
 for (let range of rangeInputs) {
-    const sliders = range.querySelectorAll('input[type=range]')
-    const inputs = range.querySelectorAll('input[type=number]')
+    const sliders = range.querySelectorAll('input[type=range]');
+    const inputs = range.querySelectorAll('input[type=number]');
 
     for (const input of inputs) {
         input.addEventListener('input', (event) => {
             sliders[0].value = `${inputs[0].value},${inputs[1].value}`;
-        })
+        });
     }
 
     for (const slider of sliders) {
         slider.addEventListener('input', (event) => {
             const valArray = sliders[0].value.split(',');
-            inputs[0].value = valArray[0]
-            inputs[1].value = valArray[1]
-        })
+            inputs[0].value = valArray[0];
+            inputs[1].value = valArray[1];
+        });
     }
 }
 
-const media = getComputedStyle(document.body).getPropertyValue('--media').substr(1)
+const media = getComputedStyle(document.body).getPropertyValue('--media').substr(1);
 if (['xs', 'sm', 'md'].includes(media)) {
-    const dropdownToggles = document.querySelectorAll('.navbar-dropdown__toggle')
+    const dropdownToggles = document.querySelectorAll('.navbar-dropdown__toggle');
     for (let toggle of dropdownToggles) {
         toggle.addEventListener('click', (event) => {
-            event.preventDefault()
-            event.target.classList.toggle('navbar-dropdown__toggle_open')
-        })
+            event.preventDefault();
+            event.target.classList.toggle('navbar-dropdown__toggle_open');
+        });
         toggle.addEventListener('touchstart', (event) => {
-            event.preventDefault()
-            event.target.classList.toggle('navbar-dropdown__toggle_open')
-        })
+            event.preventDefault();
+            event.target.classList.toggle('navbar-dropdown__toggle_open');
+        });
     }
 }
 
-
-const buildingProjects = []
+const buildingProjects = [];
 
 const buildingMap = document.querySelector('.projects-on-map__map_building');
 if (buildingMap) {
@@ -83,7 +101,7 @@ if (buildingMap) {
             behaviors: ['default', 'scrollZoom'],
             controls: [],
         }, {
-            searchControlProvider: 'yandex#search'
+            searchControlProvider: 'yandex#search',
         });
 
         const MyBalloonLayout = ymaps.templateLayoutFactory.createClass(
@@ -116,12 +134,12 @@ if (buildingMap) {
                     this.constructor.superclass.build.call(this);
 
                     this._$element = this.getParentElement().querySelector('.project-map-card');
-                    this._$line = this.buildLine()
+                    this._$line = this.buildLine();
 
                     myMap.events.add('actionend', () => {
-                        this._$line.geometry.setCoordinates(this.getLineCoordinates())
+                        this._$line.geometry.setCoordinates(this.getLineCoordinates());
                         // this.updateBalloonPosition()
-                    })
+                    });
 
                     this._$element.querySelector('.project-map-card__close').addEventListener('click', this.close.bind(this));
                 },
@@ -135,29 +153,29 @@ if (buildingMap) {
                 // },
 
                 getGlobalCoordinates: function(x, y) {
-                    const container = myMap.container.getElement()
+                    const container = myMap.container.getElement();
                     const topLeftPageCoords = [
                         window.pageXOffset + container.getBoundingClientRect().left + x,
-                        window.pageYOffset + container.getBoundingClientRect().top + y
-                    ]
+                        window.pageYOffset + container.getBoundingClientRect().top + y,
+                    ];
 
                     return myMap.options.get('projection').fromGlobalPixels(
-                        myMap.converter.pageToGlobal(topLeftPageCoords), myMap.getZoom()
-                    )
+                        myMap.converter.pageToGlobal(topLeftPageCoords), myMap.getZoom(),
+                    );
                 },
 
                 getLineCoordinates: function() {
                     return [
                         this.getData().geometry.getCoordinates(),
-                        this.getGlobalCoordinates(50, 50)
-                    ]
+                        this.getGlobalCoordinates(50, 50),
+                    ];
                 },
 
                 buildLine: function() {
                     const myPolyline = new ymaps.Polyline(this.getLineCoordinates(), {
                         // Описываем свойства геообъекта.
                         // Содержимое балуна.
-                        balloonContent: 'Ломаная линия'
+                        balloonContent: 'Ломаная линия',
                     }, {
                         // Задаем опции геообъекта.
                         // Отключаем кнопку закрытия балуна.
@@ -167,11 +185,11 @@ if (buildingMap) {
                         // Ширина линии.
                         strokeWidth: 2,
                         // Коэффициент прозрачности.
-                        strokeOpacity: 0
+                        strokeOpacity: 0,
                     });
 
                     myMap.geoObjects.add(myPolyline);
-                    return myPolyline
+                    return myPolyline;
                 },
 
                 /**
@@ -231,13 +249,13 @@ if (buildingMap) {
         // Создание вложенного макета содержимого балуна.
         const MyBalloonContentLayout = ymaps.templateLayoutFactory.createClass(
             '<h3 class="popover-title">$[properties.balloonHeader]</h3>' +
-            '<div class="popover-content">$[properties.balloonContent]</div>'
+            '<div class="popover-content">$[properties.balloonContent]</div>',
         );
 
         // Создание метки с пользовательским макетом балуна.
         const myPlacemark = window.myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
             balloonHeader: 'Заголовок балуна',
-            balloonContent: 'Контент балуна'
+            balloonContent: 'Контент балуна',
         }, {
             // Необходимо указать данный тип макета.
             iconLayout: 'default#imageWithContent',
@@ -257,12 +275,12 @@ if (buildingMap) {
         myMap.geoObjects.add(myPlacemark);
 
         myMap.events.add('click', function(e) {
-            const x = e.get('domEvent').get('pageX')
-            const y = e.get('domEvent').get('pageY')
-            console.log([x, y])
+            const x = e.get('domEvent').get('pageX');
+            const y = e.get('domEvent').get('pageY');
+            console.log([x, y]);
             console.log(myMap.options.get('projection').fromGlobalPixels(
-                myMap.converter.pageToGlobal([x, y]), myMap.getZoom()
-            ).join(', '))
+                myMap.converter.pageToGlobal([x, y]), myMap.getZoom(),
+            ).join(', '));
         });
     });
 }

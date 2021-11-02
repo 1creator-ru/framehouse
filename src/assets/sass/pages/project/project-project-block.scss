@@ -1,23 +1,76 @@
-    .project__project-block {
-        .project-block__card-img {
-            width: auto;
+.project__project-block {
+    .project-slider {
+        display: flex;
+
+        .project-thumbs-slider {
+            width: 88px;
+            min-width: 88px;
+            margin-right: 16px;
+            height: 472px;
+
+            .project-slider__button-wrap {
+                border-radius: 5px;
+                border: 1px solid $border-color;
+                background: white;
+                font-size: 14px;
+                padding: 4px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: .1s;
+
+                //@include media-breakpoint-down(md) {
+                //    display: none;
+                //}
+
+                &:active {
+                    transform: scale(.7);
+                }
+
+                &.swiper-button-disabled {
+                    opacity: .6;
+                    cursor: auto;
+
+                    &:active {
+                        transform: none;
+                        transition: none;
+                    }
+                }
+            }
+
+            .project-thumbs-slider__swiper {
+                height: 408px;
+
+                .swiper-slide {
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+            }
         }
 
-        .project-block__card-info-top {
-            display: grid;
-            align-items: center;
-            grid-template-columns: 1fr auto auto;
-            grid-gap: 20px;
-            color: $dark;
-            @media (max-width: 374px) {
-                grid-gap: 10px;
-            }
-
-            button {
-                color: #CCD0D6;
-                border: none;
-                padding: 0;
-                font-size: 20px;
-            }
+        .project-slider-content__swiper {
+            height: 472px;
         }
     }
+    .project-block__card-img {
+        width: auto;
+    }
+
+    .project-block__card-info-top {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr auto auto;
+        grid-gap: 20px;
+        color: $dark;
+        @media (max-width: 374px) {
+            grid-gap: 10px;
+        }
+
+        button {
+            color: #CCD0D6;
+            border: none;
+            padding: 0;
+            font-size: 20px;
+        }
+    }
+}
