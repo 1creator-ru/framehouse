@@ -8,8 +8,8 @@
                     </a></li>
                     <li class="breadcrumbs__item">
                         <a href="/about-company" class="breadcrumbs__link">
-                        О компании
-                    </a>
+                            О компании
+                        </a>
                     </li>
                     <li class="breadcrumbs__item">Реализованные проекты</li>
                 </ul>
@@ -17,15 +17,17 @@
                     Построенные дома
                 </h1>
                 <div class="row mb-5">
-                    <div class="col-lg-8"><p>
-                        Каким бы красивым ни был проект дома, только умелые рабочие руки и контроль руководителя
-                        строительства приведут к ожидаемому результату. Наши бригады соблюдают технологии
-                        строительства
-                        и регулярно
-                        проходят повышение квалификации. Мы гордимся своим портфолио и всегда готовы показать
-                        реальные
-                        объекты
-                    </p></div>
+                    <div class="col-lg-8">
+                        <p>
+                            Каким бы красивым ни был проект дома, только умелые рабочие руки и контроль руководителя
+                            строительства приведут к ожидаемому результату. Наши бригады соблюдают технологии
+                            строительства
+                            и регулярно
+                            проходят повышение квалификации. Мы гордимся своим портфолио и всегда готовы показать
+                            реальные
+                            объекты
+                        </p>
+                    </div>
                 </div>
                 <div class="row completed-projects__filters">
                     <div class="col-lg-9 col-3">
@@ -60,10 +62,17 @@
                         </button>
                     </div>
                     <div class="col-lg-3 col-9 text-end">
-                        <button class="button button_gray">
+                        <button class="button button_gray"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#map-collapse">
                             Смотреть на карте
                             <i class="icon-location-pin button__icon button__icon_right"></i>
                         </button>
+                    </div>
+                </div>
+                <div class="completed-projects__map collapse" id="map-collapse">
+                    <div class="projects-on-map">
+                        <div class="projects-on-map__map projects-on-map__map_built"></div>
                     </div>
                 </div>
                 <div class="completed-projects__cards">

@@ -10,6 +10,7 @@
         @include media-breakpoint-down(md) {
             margin: 0 -15px;
             width: calc(100% + 30px);
+            min-height: 360px;
         }
 
         [class*="ground-pane"] {
@@ -69,11 +70,9 @@
     flex-direction: column;
     width: 200px;
 
-    @include media-breakpoint-down(md) {
-    }
-
     @include media-breakpoint-down(sm) {
         flex-direction: row;
+        width: calc(100vw - 30px);
     }
 
     .project-map-card__close {
