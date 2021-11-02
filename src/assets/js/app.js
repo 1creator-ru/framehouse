@@ -26,7 +26,7 @@ new Swiper('.quiz-modal__swiper', {
 });
 const projectThumbsSlider = new Swiper('.project-thumbs-slider__swiper', {
     spaceBetween: 8,
-    slidesPerView: 5,
+    slidesPerView: 3,
     centeredSlides: true,
     slideToClickedSlide: true,
     observer: true,
@@ -35,6 +35,14 @@ const projectThumbsSlider = new Swiper('.project-thumbs-slider__swiper', {
     navigation: {
         nextEl: '.project-slider__next',
         prevEl: '.project-slider__prev',
+    },
+    breakpoints: {
+        960: {
+            slidesPerView: 5,
+        },
+        // 1230: {
+        //     slidesPerView: 3,
+        // },
     },
 });
 const projectSlider = new Swiper('.project-slider-content__swiper', {
