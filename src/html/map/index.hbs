@@ -13,8 +13,7 @@
                 </h1>
                 <div class="projects-on-map">
                     <div class="projects-on-map__map projects-on-map__map_building"></div>
-
-                    <form class="projects-on-map-form">
+                    <form class="projects-on-map-form" method="POST" action="">
                         <h4 class="text-primary">
                             Хотите посетить один из наших объектов?
                         </h4>
@@ -22,10 +21,13 @@
                             Оставьте заявку и специалист нашей компании перезвонит в течение 15 минут!
                         </p>
                         <input required placeholder="Ваше имя"
+                               type="text"
                                class="form-control mb-3">
                         <input required placeholder="Номер телефона"
+                               type="tel"
                                class="form-control mb-3">
-                        <button class="button w-100 mb-2 button_primary text-uppercase">
+                        <button class="button w-100 mb-2 button_primary text-uppercase"
+                                type="submit">
                             Оставить заявку
                         </button>
                         <div class="projects-on-map-form__agreement">
