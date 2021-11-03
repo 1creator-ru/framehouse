@@ -121,7 +121,6 @@
                 font-size: 36px;
                 color: $primary;
             }
-
         }
     }
 
@@ -149,58 +148,62 @@
         font-size: 12px;
     }
 
-    .project-block__card-info-btns {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-gap: 8px;
-
-        button {
-            @include media-breakpoint-down(xxl) {
-                padding: 12px 6px;
-            }
-        }
-    }
-
-
-
     button {
         padding: 12px;
     }
 }
-    .project-block__card-info-price {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 15px;
 
-        @include media-breakpoint-down(xxl) {
-
-        }
-        @media (max-width: 374px) {
-            flex-direction: column;
-            align-items: start;
-        }
-
-        strong {
-            font-size: 36px;
-            line-height: 120%;
-
-            @include media-breakpoint-down(xxl) {
-                font-size: 22px;
-            }
-            @include media-breakpoint-down(lg) {
-                font-size: 32px;
-            }
-        }
-
-        h5 {
-            @include media-breakpoint-down(xxl) {
-                font-size: 16px;
-            }
-        }
-
-        .project-block__card-info-price-text {
-            font-size: 12px;
-        }
-
+.project-block__card-info-tabs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 8px;
+    @include media-breakpoint-down(xl) {
+        grid-template-columns: repeat(auto-fill, minmax(176px, 1fr))
     }
+    @include media-breakpoint-down(md) {
+        grid-template-columns: auto auto auto;
+    }
+
+    button {
+        @include media-breakpoint-down(xl) {
+            padding: 12px 10px;
+        }
+        padding: 12px 10px;
+    }
+}
+
+.project-block__card-info-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+
+    @media (max-width: 374px) {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    strong {
+        font-size: 36px;
+        line-height: 120%;
+        white-space: nowrap;
+        @include media-breakpoint-down(xxl) {
+            font-size: 22px;
+        }
+        @include media-breakpoint-down(lg) {
+            font-size: 32px;
+        }
+    }
+
+    h5 {
+        @include media-breakpoint-down(xxl) {
+            font-size: 16px;
+        }
+    }
+
+    .project-block__card-info-price-text {
+        font-size: 12px;
+    }
+
+}

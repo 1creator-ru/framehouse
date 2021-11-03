@@ -120,8 +120,7 @@
                                     </li>
                                 </ul>
                                 <div class="project-block__card-info-item mb-2">
-                                    <h5 class="mb-2">
-                                        Общая информация </h5>
+                                    <h5 class="mb-2"> Общая информация </h5>
                                     <div class="row">
                                         <div class="col-6 mb-3">
                                             <div class="project-block__card-info-label">
@@ -163,32 +162,79 @@
                                 </div>
                                 <div class="project-block__card-info-item mb-4">
                                     <h5 class="mb-3 d-flex align-items-center justify-content-between gap-2">
-                                        Комплектации <a href="#"
-                                                        class="link link_gray text-decoration-underline text-end">Подробнее
-                                        о
-                                        комплектациях</a>
+                                        Комплектации
+                                        <a href="#" class="link link_gray text-decoration-underline text-end">
+                                        Подробнее о комплектациях</a>
                                     </h5>
-                                    <div class="project-block__card-info-btns">
-                                        <button class="button button_outline">
-                                            Под ключ
-                                        </button>
-                                        <button class="button button_outline">
-                                            Закрытый контур
-                                        </button>
-                                        <button class="button button_outline">
-                                            Силовой каркас
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="project-block__card-info-item project-block__card-info-price mb-4">
-                                    <div>
-                                        <h5 class="mb-0">
-                                            Стоимость дома </h5>
-                                        <div class="project-block__card-info-price-text">
-                                            Комплектация "Под ключ"
+                                    <ul class="nav nav-pills nav-pills_outline project-block__card-info-tabs nav-pills_small mb-3" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" data-bs-toggle="pill"
+                                                    data-bs-target="#tab1" type="button" role="tab"
+                                                    aria-selected="true"
+                                            >
+                                                Под ключ
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" data-bs-toggle="pill"
+                                                    data-bs-target="#tab2" type="button" role="tab"
+                                                    aria-selected="false"
+                                            >
+                                                Закрытый контур
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" data-bs-toggle="pill"
+                                                    data-bs-target="#tab3" type="button" role="tab"
+                                                    aria-selected="false"
+                                            >
+                                                Силовой каркас
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                                            <div class="project-block__card-info-item project-block__card-info-price">
+                                                <div>
+                                                    <h5 class="mb-0"> Стоимость дома </h5>
+                                                    <div class="project-block__card-info-price-text">
+                                                        Комплектация "Под ключ"
+                                                    </div>
+                                                </div>
+                                                <strong> 1 425 000 Р </strong>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab2" role="tabpanel">
+                                            <div class="project-block__card-info-item project-block__card-info-price">
+                                                <div>
+                                                    <h5 class="mb-0">
+                                                        Стоимость дома
+                                                    </h5>
+                                                    <div class="project-block__card-info-price-text">
+                                                        Комплектация "Закрытый контур"
+                                                    </div>
+                                                </div>
+                                                <strong>
+                                                    1 450 000 Р
+                                                </strong>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab3" role="tabpanel">
+                                            <div class="project-block__card-info-item project-block__card-info-price">
+                                                <div>
+                                                    <h5 class="mb-0">
+                                                        Стоимость дома
+                                                    </h5>
+                                                    <div class="project-block__card-info-price-text">
+                                                        Комплектация "Силовой каркас"
+                                                    </div>
+                                                </div>
+                                                <strong>
+                                                    1 480 000 Р
+                                                </strong>
+                                            </div>
                                         </div>
                                     </div>
-                                    <strong> 1 425 000 Р </strong>
                                 </div>
                                 <button class="button w-100 button_primary">
                                     ОСТАВИТЬ ЗАЯВКУ
@@ -477,7 +523,7 @@
                                     </div>
                                 </div>
                                 <div class="project-variants__form col-12 offset-xl-1 col-xl-4">
-                                    <form class="form">
+                                    <form class="form" method="POST" action="">
                                         <h4 class="text-primary mb-4 text-center">
                                             Мне понравился проект, но хочу внести изменения </h4>
                                         <div class="form-check mb-3">
@@ -535,20 +581,24 @@
                                             </label>
                                         </div>
                                         <div class="input mb-3">
-                                            <input class="form-control" type="text" placeholder="Ваше имя">
+                                            <input class="form-control"
+                                                   type="text"
+                                                   placeholder="Ваше имя">
                                         </div>
                                         <div class="input mb-3">
-                                            <input class="form-control" type="text" placeholder="Номер телефона">
+                                            <input class="form-control"
+                                                    type="tel"
+                                                    placeholder="Номер телефона">
                                         </div>
-                                        <button class="button w-100 mb-2 button_primary">
+                                        <button type="submit" class="button w-100 mb-2 button_primary">
                                             ОСТАВИТЬ ЗАЯВКУ
                                         </button>
                                         <div class="form__agreement primary">
                                             Нажимая на кнопку "Оставить заявку" Вы соглашаетесь на обработку
-                                            персональных данных
-                                            в
-                                            соответствии с <a href="#" class="link link_primary"> условиями политики
-                                            конфиденциальности </a>
+                                            персональных данных в соответствии с
+                                            <a href="#" class="link link_primary">
+                                            условиями политики конфиденциальности
+                                            </a>
                                         </div>
                                     </form>
                                 </div>

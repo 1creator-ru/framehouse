@@ -6,15 +6,18 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form class="feedback-form">
+                <form class="feedback-form" method="POST" action="">
                     <p class="mb-4">
                         Оставьте заявку и специалист нашей компании перезвонит в течение 15 минут!
                     </p>
                     <input required placeholder="Ваше имя"
+                           type="text"
                            class="form-control mb-3" />
                     <input required placeholder="Номер телефона"
+                           type="tel"
                            class="form-control mb-3" />
-                    <button class="button w-100 mb-2 button_primary text-uppercase">
+                    <button class="button w-100 mb-2 button_primary text-uppercase"
+                            type="submit">
                         Оставить заявку
                     </button>
                     <div class="feedback-form__signing gray">

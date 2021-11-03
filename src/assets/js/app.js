@@ -40,9 +40,6 @@ const projectThumbsSlider = new Swiper('.project-thumbs-slider__swiper', {
         960: {
             slidesPerView: 5,
         },
-        // 1230: {
-        //     slidesPerView: 3,
-        // },
     },
 });
 const projectSlider = new Swiper('.project-slider-content__swiper', {

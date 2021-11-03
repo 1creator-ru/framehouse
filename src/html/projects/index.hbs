@@ -128,11 +128,12 @@
                         {{> partials/house-project-card }}
                         {{> partials/house-project-card }}
                     </div>
-                    <form class="catalogue__calculate-project calculate-project">
+                    <form class="catalogue__calculate-project calculate-project" method="POST" action="">
                         <h2 class="calculate-project__title">
                             Расчет стоимости проекта
                         </h2>
-                        <input placeholder="Номер телефона" class="form-control mb-3">
+                        <input placeholder="Номер телефона" class="form-control mb-3"
+                               type="tel">
                         <div class="file-input mb-4">
                             <label for="upload-photo" class="file-input__label">
                                 <i class="icon-clip"></i>Прикрепите файл проекта
@@ -145,7 +146,7 @@
                         <p class="catalogue__terms">
                             Нажимая на кнопку "Рассчитать проект" Вы соглашаетесь на
                             обработку персональных данных в соответствии с условиями
-                            <a href="/">политики конфиденциальности</a>
+                            <a href="#">политики конфиденциальности</a>
                         </p>
                     </form>
                 </div>
