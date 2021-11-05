@@ -49,7 +49,7 @@
     }
 
     .project-promotions__item-right {
-        background: $linear-gradient, url("/assets/images/site/project/promotions-top.png") top right no-repeat, url("/assets/images/site/project/promotions-bottom.png") bottom right no-repeat;
+        background: $linear-gradient, url("/assets/images/site/project/promotions-top.webp") top right no-repeat, url("/assets/images/site/project/promotions-bottom.webp") bottom right no-repeat;
         @include media-breakpoint-down(lg) {
             background: $linear-gradient;
         }

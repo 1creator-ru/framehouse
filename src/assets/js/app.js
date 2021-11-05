@@ -131,7 +131,7 @@ function initProjectsOnMap(mapSelector, projects) {
                 `
                 <div class="project-map-card">
                     <button class="project-map-card__close icon-close"></button>
-                    <img class="project-map-card__img" src="/assets/images/site/map/house.jpg" alt>
+                    <img class="project-map-card__img" src="/assets/images/site/map/house.webp" alt>
                     <div class="project-map-card__info">
                         <div class="mb-2">
                             $[properties.name]

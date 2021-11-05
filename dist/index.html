@@ -1,0 +1,1043 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>Главная</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="/assets/css/vendor.css">
+    <link type="text/css" rel="stylesheet" href="/assets/css/app.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="container navbar__top">
+        <div class="d-flex align-items-center justify-content-end">
+            <i class="icon-location-pin link__icon"></i>
+            <a href="/map" class="small link link_lined">
+                Карта строящихся объектов
+            </a>
+        </div>
+    </div>
+    <div class="container navbar__middle">
+        <div class="navbar__middle-content">
+            <button class="button d-block d-lg-none button_navbar-sm"
+                    type="button" aria-expanded="false" aria-controls="mobileCollapseNavbar"
+                    data-bs-toggle="collapse" data-bs-target="#mobileCollapseNavbar"
+            ><i class="icon-menu-btn"></i>
+            </button>
+            <a href="/" aria-current="page"
+               class="navbar__logo"><img src="/assets/images/logo.svg" alt="">
+                <div class="navbar__logo-text">
+                    <div>Строительство каркасных домов</div>
+                    <div>ДОСТУПНО И КАЧЕСТВЕННО</div>
+                </div>
+            </a>
+            <div class="navbar__middle-buttons-sm">
+                <button type="button" class="button me-2 button_navbar-sm" data-bs-toggle="modal"
+                        data-bs-target="#quiz-modal">
+                    <i class="icon-calculator"></i>
+                </button>
+                <button type="button" class="button button_navbar-sm">
+                    <i class="icon-find-house"></i>
+                </button>
+            </div>
+            <div class="navbar__middle-buttons">
+                <button type="button" class="button me-xl-2 mb-2 mb-xl-0 button_primary" data-bs-toggle="modal"
+                        data-bs-target="#quiz-modal">
+                    Расчет Вашего проекта
+                </button>
+                <button type="button" class="button button_outline">
+                    Посмотреть строящийся объект
+                </button>
+            </div>
+            <div class="navbar__middle-phone">
+                <a href="tel:+7(812)-123-45-67"
+                   class="link link_gray navbar__middle-phone-link">
+                    +7 (812) 123 45 67
+                </a>
+                <span class="link link_lined small d-none d-lg-inline" data-bs-toggle="modal"
+                      data-bs-target="#feedback-modal">
+                        Заказать звонок
+                    </span>
+            </div>
+        </div>
+    </div>
+    <div class="container navbar__bottom collapse" id="mobileCollapseNavbar">
+        <button class="button button_navbar-close"
+                type="button" aria-expanded="false" aria-controls="mobileCollapseNavbar"
+                data-bs-toggle="collapse" data-bs-target="#mobileCollapseNavbar"
+        ><i class="icon-close"></i></button>
+        <ul class="navbar__bottom-content">
+            <li class="dropdown navbar-dropdown">
+                <a href="/about-company" class="navbar-dropdown__toggle navbar__bottom-link link link_dark">
+                    О компании
+                </a>
+                <ul class="dropdown-menu navbar-dropdown__items">
+                    <li><a class="navbar__dropdown-link" href="/about-company/services">Услуги</a></li>
+                    <li><a class="navbar__dropdown-link" href="/about-company/certifications">Сертификаты</a></li>
+                    <li><a class="navbar__dropdown-link" href="/about-company/partners">Партнеры</a></li>
+                    <li><a class="navbar__dropdown-link" href="/about-company/reviews">Отзывы</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/projects" class="navbar__bottom-link link link_dark">
+                    Проекты
+                </a>
+            </li>
+            <li class="dropdown navbar-dropdown">
+                <a href="/for-client" class="navbar-dropdown__toggle navbar__bottom-link link link_dark">
+                    Клиенту
+                </a>
+                <ul class="dropdown-menu navbar-dropdown__items">
+                    <li><a class="navbar__dropdown-link" href="/for-client/payment">Оплата</a></li>
+                    <li><a class="navbar__dropdown-link" href="/for-client/guarantee">Гарантии</a></li>
+                    <li><a class="navbar__dropdown-link" href="/for-client/faq">Вопросы и ответы</a></li>
+                    <li><a class="navbar__dropdown-link" href="/for-client/engineering">Инженерия</a></li>
+                    <li><a class="navbar__dropdown-link" href="/for-client/technologies">Технологии</a></li>
+                    <li><a class="navbar__dropdown-link" href="/for-client/documentation">Документации</a></li>
+                    <li><a class="navbar__dropdown-link" href="/for-client/estimate">Смета</a></li>
+                </ul>
+            </li>
+            <li class="dropdown navbar-dropdown">
+                <a href="/prices" class="navbar-dropdown__toggle navbar__bottom-link link link_dark">
+                    Цены
+                </a>
+                <ul class="dropdown-menu navbar-dropdown__items">
+                    <li><a class="navbar__dropdown-link" href="/prices/loan">Кредит</a></li>
+                    <li><a class="navbar__dropdown-link" href="/prices/maternal-capital">Материнский капитал</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="/completed-projects" class="navbar__bottom-link link link_dark">
+                    Реализованные проекты
+                </a>
+            </li>
+            <li>
+                <a href="/blog" class="navbar__bottom-link link link_dark">
+                    Блог
+                </a>
+            </li>
+            <li>
+                <a href="/promotions" class="navbar__bottom-link link link_dark">
+                    Акции
+                </a>
+            </li>
+            <li>
+                <a href="/contacts" class="navbar__bottom-link link link_dark">
+                    Контакты
+                </a>
+            </li>
+        </ul>
+        <a href="/map" class="button button_navbar-primary mb-2">
+            <i class="icon-location-pin button__icon"></i>
+            Карта строящихся объектов
+        </a>
+        <a href="tel:+7(812)-123-45-67" class="button button_navbar-secondary mb-2">
+            <i class="icon-phone-in-talk button__icon"></i>
+            +7 (812) 123 45 67
+        </a>
+        <button type="button" class="button button_navbar-primary mb-2">
+            <i class="icon-phone-missed button__icon"></i>
+            Заказать звонок
+        </button>
+    </div>
+</nav>
+<div class="page pt-0">
+            <div class="header">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-lg-7 header__text">
+                        <h1 class="h1_super">
+                            Дом мечты, который нужен&nbsp;семье
+                        </h1>
+                        <h4 class="fw-normal">
+                            Стройте планы,<br class="d-lg-none" />дом построит "Frame House"
+                        </h4>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="/assets/images/site/index/header-mans.webp"
+                             alt="Дом мечты"
+                             class="header__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="about__advantages">
+                <li class="about-advantage">
+                    <i class="about-advantage__icon icon-wood"></i> Сухие пиломатериалы заводской сушки
+                </li>
+                <li class="about-advantage">
+                    <i class="about-advantage__icon icon-videocamera"></i> Видеонаблюдение
+                    24/7 за процессом стройки вашего дома
+                </li>
+                <li class="about-advantage">
+                    <i class="about-advantage__icon icon-guaranty"
+                    ></i> Гарантия на построенные
+                    объекты 10 лет
+                </li>
+                <li class="about-advantage">
+                    <i class="about-advantage__icon icon-control1"
+                    ></i> Контроль строительства
+                    на каждом этапе
+                </li>
+                <li class="about-advantage">
+                    <i class="about-advantage__icon icon-money"
+                    ></i> Работаем без предоплаты
+                </li>
+                <li class="about-advantage">
+                    <i
+                            class="about-advantage__icon icon-passport1"></i> Специалисты
+                    только с гражданством РФ
+                </li>
+            </ul>
+            <div class="about-statistics"><h2 class="text-lg-center mb-lg-5">
+                Успешно работаем с 2002 года
+            </h2>
+                <div class="about-statistics__content">
+                    <div class="statistics-card">
+                        <div class="statistic-card__number mt-lg-3">
+                            19
+                        </div>
+                        лет надежной работы
+                    </div>
+                    <div class="statistics-card">
+                        <div class="text-primary">
+                            Более
+                        </div>
+                        <div class="statistic-card__number">
+                            1300
+                        </div>
+                        домов построено
+                    </div>
+                    <div class="statistics-card">
+                        <div class="text-primary">
+                            Более
+                        </div>
+                        <div class="statistic-card__number">
+                            200
+                        </div>
+                        готовых проектов
+                    </div>
+                    <div class="statistics-card">
+                        <div class="text-primary">
+                            Более
+                        </div>
+                        <div class="statistic-card__number">
+                            100
+                        </div>
+                        разработанных проектов
+                    </div>
+                    <div class="about-statistics__text"><p>
+                        Frame House — это выбор тысяч семей как надежной и ответственной строительной
+                        организации!
+                    </p>
+                        <p>
+                            Мы работаем в сфере строительства высококачественных и современных каркасных домов
+                            домов,
+                            воплощаем в жизнь проекты любой сложности и строго следуем требованиям заказчика.
+                        </p>
+                        <p>
+                            За годы нашей деятельности каркасные дома стали известны по всей Ленинградской
+                            области.
+                            Такой
+                            популярности послужили профессиональное проектирование, безупречное качество
+                            реализации
+                            проектов. Мы предлагаем доступное жилье по умеренным ценам — при этом наши дома
+                            отвечают
+                            всем
+                            современным требованиям качества и дизайна.
+                        </p></div>
+                </div>
+            </div>
+            <div class="house-projects">
+                <div class="house-projects__header"><h2 class="mb-0 me-3 order-0 order-lg-0"
+                >
+                    Проекты домов
+                </h2>
+                    <ul class="order-2 order-lg-0 mt-lg-0 nav nav-pills nav-pills_outline d-flex" role="tablist">
+                        <li class="nav-item">
+                            <button class="button nav-link active" data-bs-toggle="pill"
+                                    data-bs-target="#one-floor">
+                                1 этаж
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="button nav-link" data-bs-toggle="pill"
+                                    data-bs-target="#two-floor">
+                                2 этаж
+                            </button>
+                        </li>
+                    </ul>
+                    <a href="/projects"
+                       class="button me-0 ms-auto order-1 order-lg-0 house-projects__show-more button_primary button_outline"
+                    >
+                        Посмотреть все проекты
+                    </a>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="one-floor" role="tabpanel">
+                        <div class="house-projects__items">
+                            <div class="house-project-card"><img
+                                    src="/assets/images/site/catalogue/item.webp" alt="item" class="mb-3">
+                                <div class="house-project-card__description">
+                                    <div class="mb-3">
+                                        Каркасный дом Проект 345
+                                    </div>
+                                    <div>Площадь: <span>138.2 м<sup
+                                    >2</sup></span></div>
+                                    <div class="d-flex justify-content-between flex-xl-row flex-column">
+                                        <div>Спальных комнат: <span>4</span></div>
+                                        <div>от <span>1 450 000 Р</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="house-project-card"><img
+                                    src="/assets/images/site/catalogue/item.webp" alt="item" class="mb-3">
+                                <div class="house-project-card__description">
+                                    <div class="mb-3">
+                                        Каркасный дом Проект 345
+                                    </div>
+                                    <div>Площадь: <span>138.2 м<sup
+                                    >2</sup></span></div>
+                                    <div class="d-flex justify-content-between flex-xl-row flex-column">
+                                        <div>Спальных комнат: <span>4</span></div>
+                                        <div>от <span>1 450 000 Р</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="house-project-card"><img
+                                    src="/assets/images/site/catalogue/item.webp" alt="item" class="mb-3">
+                                <div class="house-project-card__description">
+                                    <div class="mb-3">
+                                        Каркасный дом Проект 345
+                                    </div>
+                                    <div>Площадь: <span>138.2 м<sup
+                                    >2</sup></span></div>
+                                    <div class="d-flex justify-content-between flex-xl-row flex-column">
+                                        <div>Спальных комнат: <span>4</span></div>
+                                        <div>от <span>1 450 000 Р</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="two-floor" role="tabpanel">
+                        <div class="house-projects__items">
+                            <div class="house-project-card"><img
+                                    src="/assets/images/site/catalogue/item.webp" alt="item" class="mb-3">
+                                <div class="house-project-card__description">
+                                    <div class="mb-3">
+                                        Каркасный дом Проект 345
+                                    </div>
+                                    <div>Площадь: <span>138.2 м<sup
+                                    >2</sup></span></div>
+                                    <div class="d-flex justify-content-between flex-xl-row flex-column">
+                                        <div>Спальных комнат: <span>4</span></div>
+                                        <div>от <span>1 450 000 Р</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calculation-feedback">
+                <img src="/assets/images/site/feedback/feedback.webp" alt
+                     class="d-lg-block d-none">
+                <img src="/assets/images/site/feedback/feedback-sm.webp" alt class="d-lg-none d-block">
+                <div class="calculation-feedback__content"><h3 class="mb-3">
+                    Есть свой проект? Рассчитаем его и предложим выгодную цену
+                </h3>
+                    <p class="mb-5">
+                        Наши архитекторы воплотят в жизнь любые ваши идеи по проектированию дома и обустройству
+                        участка. Мы
+                        создадим для вас настоящий дом для жизни
+                    </p>
+                    <div class="h4 fw-normal mb-3">
+                        Подойдет проект в любом виде:
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="d-flex align-items-center me-3"><i class="icon-check-mark"
+                        ></i>
+                            чертеж
+                        </div>
+                        <div class="d-flex align-items-center me-3"><i class="icon-check-mark"
+                        ></i>
+                            эскиз
+                        </div>
+                        <div class="d-flex align-items-center"><i class="icon-check-mark"
+                        ></i> рисунок
+                        </div>
+                    </div>
+                    <div class="file-input mb-3">
+                        <label for="upload-photo" class="file-input__label">
+                            <i class="icon-clip"></i>Прикрепите файл проекта
+                        </label>
+                        <input id="upload-photo" type="file" class="file-input__input">
+                    </div>
+                    <div class="calculation-feedback__form">
+                        <input placeholder="Номер телефона"
+                               class="form-control">
+                        <button class="button button_primary">РАССЧИТАТЬ ПРОЕКТ</button>
+                    </div>
+                    <div class="calculation-feedback__terms">
+                        Нажимая на кнопку "Рассчитать проект" Вы соглашаетесь на обработку персональных данных в
+                        соответствии с условиями
+                        <a href="/" class="link link_dark text-decoration-underline">политики
+                            конфиденциальности
+                        </a></div>
+                </div>
+            </div>
+            <div class="dream-house"><h2 class="dream-house__title">
+                Не просто строим типовые дома, мы возводим дом вашей мечты!
+            </h2>
+                <div class="dream-house__card">
+                    <div class="order-1 order-lg-0"><h5 class="text-primary mb-4"
+                    >
+                        Сделайте 5 шагов к жизни в новом доме
+                    </h5> <img src="/assets/images/site/dream-house/dream-house-sm.webp" alt
+                               class="d-lg-none d-block mb-4 w-100">
+                        <ul class="dream-house__list">
+                            <li class="dream-house__list-item"><span>01</span>
+                                <p>Выбираете понравившийся проект или предлагаете свой
+                                    индивидуальный</p></li>
+                            <li class="dream-house__list-item"><span>02</span>
+                                <p>
+                                    Утверждаем перечень работ и договариваемся о сумме строительства. Сумма
+                                    фиксируется в
+                                    договоре и не изменится во время строительства
+                                </p></li>
+                            <li class="dream-house__list-item"><span>03</span>
+                                <p>Заключаем договор без предоплаты при личной встрече</p></li>
+                            <li class="dream-house__list-item"><span>04</span>
+                                <p>Доставляем материал на участок и начинаем работу</p></li>
+                            <li class="dream-house__list-item"><span>05</span>
+                                <p>Сдача готового дома в срок, указанный в договоре и производим
+                                    расчет</p></li>
+                        </ul>
+                    </div>
+                    <img src="/assets/images/site/dream-house/dream-house.webp" alt class="d-lg-block d-none"
+                    ></div>
+            </div>
+        </div>
+        <div class="index-offers">
+            <div class="container index-offers__container">
+                <div class="index-offer"><i class="icon-wrap icon-loan index-offer__icon"
+                ></i>
+                    <div class="index-offer__title">
+                        Кредит и рассрочка
+                    </div>
+                    <div class="index-offer__small">
+                        Выгодные условия от банков-партнеров
+                    </div>
+                    <div>
+                        ЛУЧШЕЕ ВРЕМЯ - СЕЙЧАС!
+                    </div>
+                </div>
+                <div class="index-offer"><i class="icon-wrap icon-emblem index-offer__icon"
+                ></i>
+                    <div class="index-offer__title">
+                        Кредит и рассрочка
+                    </div>
+                    <div class="index-offer__small">
+                        Воспользутесь
+                    </div>
+                    <div>
+                        МАТЕРИНСКИЙ КАТИПАЛ
+                    </div>
+                </div>
+                <div class="index-offer"><i class="icon-wrap icon-emblem index-offer__icon"
+                ></i>
+                    <div class="index-offer__title">
+                        Кредит и рассрочка
+                    </div>
+                    <div class="index-offer__small">
+                        Выезд на стройплощадку
+                    </div>
+                    <div>
+                        ЗАПИШИТЕСЬ НА ПОКАЗ
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="completed-projects-block">
+                <div class="d-flex justify-content-between align-items-center mb-3"><h2
+                        class="mb-0">
+                    Реализованные проекты
+                </h2>
+                    <a href="/completed-projects" class="button button_outline completed-projects-block__button">
+                        Посмотреть все проекты
+                    </a>
+                </div>
+                <div class="completed-projects-block__text">
+                    Мы построили много домов! Построим и Ваш!
+                </div>
+                <div class="completed-projects-block__items">
+                    <a class="completed-project-card completed-project-card_mini" href="/completed-projects/project">
+                        <div class="completed-project-card__label">
+                            Готовый проект
+                        </div>
+                        <div class="completed-project-card__attrs">
+                            <div class="completed-project-card__attr">
+                                <i class="completed-project-card__attr-icon icon-area"></i>
+                                <span class="completed-project-card__attr-value">
+                                    152 м2
+                                </span>
+                                <small class="completed-project-card__attr-label">
+                                    общая площадь
+                                </small>
+                            </div>
+                            <div class="completed-project-card__attr">
+                                <i class="completed-project-card__attr-icon icon-room"></i>
+                                <span class="completed-project-card__attr-value">
+                                    3
+                                </span>
+                                <small class="completed-project-card__attr-label">
+                                    кол-во спален
+                                </small>
+                            </div>
+                            <div class="completed-project-card__attr">
+                                <i class="completed-project-card__attr-icon icon-floors"></i>
+                                <span class="completed-project-card__attr-value">
+                                    1
+                                </span>
+                                <small class="completed-project-card__attr-label">
+                                    кол-во этажей
+                                </small>
+                            </div>
+                        </div>
+                        <img src="/assets/images/site/completed-projects/completed-house.webp" alt>
+                        <div class="completed-project-card__footer">
+                            <i class="completed-project-card__attr-icon icon-location-pin mx-3"></i>
+                            Ленинградская область,
+                            Всеволожский муниципальный район
+                        </div>
+                    </a>                    <a class="completed-project-card completed-project-card_mini" href="/completed-projects/project">
+                        <div class="completed-project-card__label">
+                            Готовый проект
+                        </div>
+                        <div class="completed-project-card__attrs">
+                            <div class="completed-project-card__attr">
+                                <i class="completed-project-card__attr-icon icon-area"></i>
+                                <span class="completed-project-card__attr-value">
+                                    152 м2
+                                </span>
+                                <small class="completed-project-card__attr-label">
+                                    общая площадь
+                                </small>
+                            </div>
+                            <div class="completed-project-card__attr">
+                                <i class="completed-project-card__attr-icon icon-room"></i>
+                                <span class="completed-project-card__attr-value">
+                                    3
+                                </span>
+                                <small class="completed-project-card__attr-label">
+                                    кол-во спален
+                                </small>
+                            </div>
+                            <div class="completed-project-card__attr">
+                                <i class="completed-project-card__attr-icon icon-floors"></i>
+                                <span class="completed-project-card__attr-value">
+                                    1
+                                </span>
+                                <small class="completed-project-card__attr-label">
+                                    кол-во этажей
+                                </small>
+                            </div>
+                        </div>
+                        <img src="/assets/images/site/completed-projects/completed-house.webp" alt>
+                        <div class="completed-project-card__footer">
+                            <i class="completed-project-card__attr-icon icon-location-pin mx-3"></i>
+                            Ленинградская область,
+                            Всеволожский муниципальный район
+                        </div>
+                    </a>                    <a class="completed-project-card completed-project-card_mini" href="/completed-projects/project">
+                        <div class="completed-project-card__label">
+                            Готовый проект
+                        </div>
+                        <div class="completed-project-card__attrs">
+                            <div class="completed-project-card__attr">
+                                <i class="completed-project-card__attr-icon icon-area"></i>
+                                <span class="completed-project-card__attr-value">
+                                    152 м2
+                                </span>
+                                <small class="completed-project-card__attr-label">
+                                    общая площадь
+                                </small>
+                            </div>
+                            <div class="completed-project-card__attr">
+                                <i class="completed-project-card__attr-icon icon-room"></i>
+                                <span class="completed-project-card__attr-value">
+                                    3
+                                </span>
+                                <small class="completed-project-card__attr-label">
+                                    кол-во спален
+                                </small>
+                            </div>
+                            <div class="completed-project-card__attr">
+                                <i class="completed-project-card__attr-icon icon-floors"></i>
+                                <span class="completed-project-card__attr-value">
+                                    1
+                                </span>
+                                <small class="completed-project-card__attr-label">
+                                    кол-во этажей
+                                </small>
+                            </div>
+                        </div>
+                        <img src="/assets/images/site/completed-projects/completed-house.webp" alt>
+                        <div class="completed-project-card__footer">
+                            <i class="completed-project-card__attr-icon icon-location-pin mx-3"></i>
+                            Ленинградская область,
+                            Всеволожский муниципальный район
+                        </div>
+                    </a>                </div>
+            </div>
+            <div class="house-selection">
+                <div class="house-selection__content">
+                    <div><h2><span>Подберем и построим</span>
+                        проект стильного каркасного дома под Ваш бюджет
+                    </h2>
+                        <div class="house-selection__description">
+                            Ответьте <b>на 5 вопросов</b> и получите список подходящих для Вас
+                            домов и бонус от нас
+                        </div>
+                    </div>
+                    <div>
+                        <div class="house-selection__button-label">
+                            Вам понадобится не более одной минуты на ответы
+                        </div>
+                        <button class="button button_primary col-12 col-md-4" data-bs-toggle="modal"
+                                data-bs-target="#quiz-modal">
+                            ПОДОБРАТЬ ДОМ
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-on-map">
+                <ul class="nav nav-pills nav-pills_outline d-flex mb-4" role="tablist">
+                    <li class="nav-item">
+                        <button class="button nav-link active" data-bs-toggle="pill"
+                                data-bs-target="#building">
+                            Строящиеся дома
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="button nav-link" data-bs-toggle="pill"
+                                data-bs-target="#built">
+                            Построенные дома
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="building" role="tabpanel">
+                        <div class="projects-on-map__map projects-on-map__map_building"></div>
+                    </div>
+                    <div class="tab-pane fade" id="built" role="tabpanel">
+                        <div class="projects-on-map__map projects-on-map__map_built"></div>
+                    </div>
+                </div>
+            
+                <form class="projects-on-map-form" method="POST" action="">
+                    <h4 class="text-primary">
+                        Хотите посетить один из наших объектов?
+                    </h4>
+                    <p class="mb-4">
+                        Оставьте заявку и специалист нашей компании перезвонит в течение 15 минут!
+                    </p>
+                    <input required placeholder="Ваше имя"
+                           type="text"
+                           class="form-control mb-3">
+                    <input required placeholder="Номер телефона"
+                           type="tel"
+                           data-mask="+{7}(000)000-00-00"
+                           class="form-control mb-3">
+                    <button class="button w-100 mb-2 button_primary text-uppercase"
+                            type="submit">
+                        Оставить заявку
+                    </button>
+                    <div class="projects-on-map-form__agreement">
+                        Нажимая на кнопку "Оставить заявку" Вы соглашаетесь на обработку персональных данных в
+                        соответствии с
+                        <a href="#" class="link link_gray link_lined">
+                            условиями политики конфиденциальности
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="row gy-lg-0 gy-4 text-lg-start text-center">
+                <div class="col-lg-3"><a href="/" aria-current="page"
+                                         class=""
+                ><img
+                        src="/assets/images/footer/logo-footer.svg" alt=""></a>
+                    <div class="footer__contacts"><a href="#"
+                                                     class="footer__contacts-link link link_light"
+                    ><i
+                            class="icon-location"></i>
+                        Санкт-Петербург,
+                        ул. Белоостровская,&nbsp;37
+                    </a> <a href="tel:+7(812)-123-45-67" class="footer__contacts-link link link_light"
+                    ><i class="icon-phone"></i>
+                        +7 (812) 123 45 67
+                    </a> <a href="mailto:info@company.ru" class="footer__contacts-link link link_light"
+                    ><i class="icon-mail"></i>
+                        info@company.ru
+                    </a></div>
+                </div>
+                <div class="col-lg-2 col-6 d-none d-sm-block">
+                    <div class="footer__group">
+                        <div class="footer__group-title">
+                            О компании
+                        </div>
+                        <a href="/about-company/services" aria-current="page"
+                           class="footer__group-link"
+                        >
+                            Услуги
+                        </a> <a href="/about-company/certifications" aria-current="page"
+                                class="footer__group-link"
+                    >
+                        Сертификаты
+                    </a> <a href="/about-company/reviews" aria-current="page"
+                            class="footer__group-link"
+                    >
+                        Отзывы
+                    </a> <a href="/about-company/partners" aria-current="page"
+                            class="footer__group-link"
+                    >
+                        Партнеры
+                    </a></div>
+                </div>
+                <div class="col-lg-2 col-6 d-none d-sm-block">
+                    <div class="footer__group">
+                        <div class="footer__group-title">
+                            Клиенту
+                        </div>
+                        <a href="/for-client/documentation" aria-current="page"
+                           class="footer__group-link"
+                        >
+                            Доставка
+                        </a> <a href="/for-client/guarantee" aria-current="page"
+                                class="footer__group-link"
+                    >
+                        Гарантии
+                    </a> <a href="/for-client/faq" aria-current="page"
+                            class="footer__group-link"
+                    >
+                        Вопросы и ответы
+                    </a> <a href="/for-client/technologies" aria-current="page"
+                            class="footer__group-link"
+                    >
+                        Технологии
+                    </a> <a href="/for-client/documentation" aria-current="page"
+                            class="footer__group-link"
+                    >
+                        Документации
+                    </a></div>
+                </div>
+                <div class="col-lg-2 col-6 d-none d-sm-block">
+                    <div class="footer__group">
+                        <div class="footer__group-title">
+                            Цены
+                        </div>
+                        <a href="/prices/loan" aria-current="page"
+                           class="footer__group-link"
+                        >
+                            Кредит
+                        </a> <a href="/prices/maternal-capital" aria-current="page"
+                                class="footer__group-link"
+                    >
+                        Маткапитал
+                    </a></div>
+                </div>
+                <div class="col-lg-3 col-6 d-none d-sm-block">
+                    <div class="footer__other"><a href="/projects" aria-current="page"
+                                                  class="footer__other-link"
+                    >
+                        Проекты
+                    </a> <a href="/about-company/completed-projects" aria-current="page"
+                            class="footer__other-link"
+                    >
+                        Реализованные проекты
+                    </a> <a href="/blog" aria-current="page"
+                            class="footer__other-link"
+                    >
+                        Блог
+                    </a> <a href="/promotions" aria-current="page"
+                            class="footer__other-link"
+                    >
+                        Акции
+                    </a> <a href="/contacts" aria-current="page"
+                            class="footer__other-link"
+                    >
+                        Контакты
+                    </a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="row gy-lg-0 gy-3 text-lg-start text-center">
+                <div class="col-lg-9 order-lg-0 order-1">
+                    © 2002 - 2021 Frame House
+                </div>
+                <div class="col-lg-3 order-lg-1 order-0"><a href="/" aria-current="page"
+                                                            class="footer__bottom-privacy"
+                >
+                    Политика конфиденциальности
+                </a></div>
+            </div>
+        </div>
+    </div>
+</footer><div class="modal fade" id="feedback-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Заявка на звонок</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="feedback-form" method="POST" action="">
+                    <p class="mb-4">
+                        Оставьте заявку и специалист нашей компании перезвонит в течение 15 минут!
+                    </p>
+                    <input required placeholder="Ваше имя"
+                           type="text"
+                           class="form-control mb-3"
+                    />
+                    <input required placeholder="Номер телефона"
+                           type="tel"
+                           class="form-control mb-3"
+                           data-mask="+{7}(000)000-00-00" />
+                    <button class="button w-100 mb-2 button_primary text-uppercase"
+                            type="submit">
+                        Оставить заявку
+                    </button>
+                    <div class="feedback-form__signing gray">
+                        Нажимая на кнопку "Оставить заявку" Вы соглашаетесь на обработку персональных данных в
+                        соответствии с
+                        <a href="#">
+                            условиями политики конфиденциальности
+                        </a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="quiz-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered quiz-modal container">
+        <div class="modal-content">
+            <button type="button" class="quiz-modal__close btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            <div class="modal-body p-0">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="swiper-container quiz-modal__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex flex-column">
+                                    <span class="quiz-modal__number">01</span>
+                                    <h4 class="text-primary">Как планируете использовать дом?</h4>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio"
+                                               name="flexRadioDefault"
+                                               id="summer-1" checked="">
+                                        <label class="form-check-label" for="summer-1">
+                                            Для проживания в летний период (одноэтажный дом)
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio"
+                                               name="flexRadioDefault"
+                                               id="summer-2" checked="">
+                                        <label class="form-check-label" for="summer-2">
+                                            Для проживания в летний период (двухэтажный дом)
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio"
+                                               name="flexRadioDefault"
+                                               id="year-1" checked="">
+                                        <label class="form-check-label" for="year-1">
+                                            Для круглогодичного проживания (одноэтажный дом)
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio"
+                                               name="flexRadioDefault"
+                                               id="year-2" checked="">
+                                        <label class="form-check-label" for="year-2">
+                                            Для круглогодичного проживания (двухэтажный дом)
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio"
+                                               name="flexRadioDefault"
+                                               id="other" checked="">
+                                        <label class="form-check-label" for="other">
+                                            Другое
+                                        </label>
+                                    </div>
+                                    <input class="form-control mb-5 mb-lg-auto" type="text"
+                                           placeholder="Любой текст">
+                                    <button class="button button_primary quiz__next">
+                                        Далее
+                                    </button>
+                                </div>
+                                <div class="swiper-slide d-flex flex-column">
+                                    <span class="quiz-modal__number">02</span>
+                                    <h4 class="text-primary">Укажите желаемое количество спален</h4>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio"
+                                               name="flexRadioDefault"
+                                               id="one-bedroom" checked="">
+                                        <label class="form-check-label" for="one-bedroom">
+                                            Одна
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio"
+                                               name="flexRadioDefault"
+                                               id="two-bedroom" checked="">
+                                        <label class="form-check-label" for="two-bedroom">
+                                            Две
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio"
+                                               name="flexRadioDefault"
+                                               id="three-bedroom" checked="">
+                                        <label class="form-check-label" for="three-bedroom">
+                                            Три
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio"
+                                               name="flexRadioDefault"
+                                               id="other-bedroom" checked="">
+                                        <label class="form-check-label" for="other-bedroom">
+                                            Другое
+                                        </label>
+                                    </div>
+                                    <input class="form-control mb-5 mb-lg-auto" placeholder="Любой текст"
+                                           type="text">
+                                    <div class="d-flex">
+                                        <button class="button quiz__prev me-3">
+                                            Назад
+                                        </button>
+                                        <button class="button button_primary quiz__next">
+                                            Далее
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex flex-column">
+                                    <span class="quiz-modal__number">03</span>
+                                    <h4 class="text-primary">На какой бюджет рассчитываете?</h4>
+                                    <div class="range-inputs">
+                                        <div class="range-inputs__inputs">
+                                            <input class="range-inputs__input form-control" type="number" value="1500000" min="1500000" max="65000000">
+                                            <span class="range-inputs__delimiter">—</span>
+                                            <input class="range-inputs__input form-control" type="number" value="65000000" min="1500000" max="65000000">
+                                        </div>
+                                        <input type="range" multiple value="1500000,65000000" min="1500000" max="65000000" />
+                                    </div>
+                                    <div class="d-flex mt-5">
+                                        <button class="button quiz__prev me-3">
+                                            Назад
+                                        </button>
+                                        <button class="button button_primary quiz__next">
+                                            Далее
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex flex-column">
+                                    <span class="quiz-modal__number">04</span>
+                                    <h4 class="text-primary">Нужна ли терраса?</h4>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="terrace-yes" checked="">
+                                        <label class="form-check-label" for="terrace-yes">
+                                            Да
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="terrace-no" checked="">
+                                        <label class="form-check-label" for="terrace-no">
+                                            Нет
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-5 mb-lg-auto">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="terrace-dont-know" checked="">
+                                        <label class="form-check-label" for="terrace-dont-know">
+                                            Не знаю
+                                        </label>
+                                    </div>
+                                    <div class="d-flex">
+                                        <button class="button quiz__prev me-3">
+                                            Назад
+                                        </button>
+                                        <button class="button button_primary quiz__next">
+                                            Далее
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex flex-column">
+                                    <span class="quiz-modal__number">05</span>
+                                    <h4 class="text-primary">В каком районе Ленинградской области планируете постройку
+                                        дома?</h4>
+                                    <select class="form-select mb-3">
+                                        <option selected disabled>Выберите район постройки</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <input class="form-control mb-5 mb-lg-auto" type="text">
+                                    <div class="d-flex">
+                                        <button class="button quiz__prev me-3">
+                                            Назад
+                                        </button>
+                                        <button class="button button_primary quiz__next">
+                                            Далее
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex flex-column">
+                                    <div class="h1 text-primary mb-3">Отлично</div>
+                                    <p class="mb-3">Вы ответили на 5 вопросов и остался последний шаг</p>
+                                    <div class="h4 text-primary mb-4">Оставьте контактные данные, чтобы мы могли
+                                        связаться с
+                                        Вами, а также выслать подборку проектов
+                                    </div>
+                                    <input class="form-control mb-2" type="text" placeholder="Ваше имя">
+                                    <input class="form-control mb-2" type="text" placeholder="Номер телефона">
+                                    <input class="form-control mb-3 mb-lg-auto" type="email" placeholder="Email">
+
+                                    <button class="button quiz__submit button_primary text-uppercase">
+                                        Оставить заявку
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-none d-lg-flex align-items-center justify-content-center">
+                        <div class="quiz-modal__logo-wrap">
+                            <img src="/assets/images/logo-white.svg" alt="Frame House">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination quiz-modal__pagination"></div>
+            </div>
+        </div>
+    </div>
+</div><script src="https://api-maps.yandex.ru/2.1/?apikey=4dc8d814-d9b9-4702-8f72-762542d03619&lang=ru_RU"></script>
+<script src="/assets/js/manifest.js"></script>
+<script src="/assets/js/vendor.js"></script>
+<script src="/assets/js/app.js"></script>
+</body>
+</html>

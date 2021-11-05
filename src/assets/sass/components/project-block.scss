@@ -21,7 +21,7 @@
 
     .main {
         grid-area: main;
-        background: url("/images/site/card/house.jpg") center no-repeat;
+        background: url("/images/site/card/house.webp") center no-repeat;
         background-size: cover;
         @include media-breakpoint-down(md) {
             height: 320px;

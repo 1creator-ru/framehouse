@@ -1,0 +1,1738 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>Контакты</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="/assets/css/vendor.css">
+    <link type="text/css" rel="stylesheet" href="/assets/css/app.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="container navbar__top">
+        <div class="d-flex align-items-center justify-content-end">
+            <i class="icon-location-pin link__icon"></i>
+            <a href="/map" class="small link link_lined">
+                Карта строящихся объектов
+            </a>
+        </div>
+    </div>
+    <div class="container navbar__middle">
+        <div class="navbar__middle-content">
+            <button class="button d-block d-lg-none button_navbar-sm"
+                    type="button" aria-expanded="false" aria-controls="mobileCollapseNavbar"
+                    data-bs-toggle="collapse" data-bs-target="#mobileCollapseNavbar"
+            ><i class="icon-menu-btn"></i>
+            </button>
+            <a href="/" aria-current="page"
+               class="navbar__logo"><img src="/assets/images/logo.svg" alt="">
+                <div class="navbar__logo-text">
+                    <div>Строительство каркасных домов</div>
+                    <div>ДОСТУПНО И КАЧЕСТВЕННО</div>
+                </div>
+            </a>
+            <div class="navbar__middle-buttons-sm">
+                <button type="button" class="button me-2 button_navbar-sm" data-bs-toggle="modal"
+                        data-bs-target="#quiz-modal">
+                    <i class="icon-calculator"></i>
+                </button>
+                <button type="button" class="button button_navbar-sm">
+                    <i class="icon-find-house"></i>
+                </button>
+            </div>
+            <div class="navbar__middle-buttons">
+                <button type="button" class="button me-xl-2 mb-2 mb-xl-0 button_primary" data-bs-toggle="modal"
+                        data-bs-target="#quiz-modal">
+                    Расчет Вашего проекта
+                </button>
+                <button type="button" class="button button_outline">
+                    Посмотреть строящийся объект
+                </button>
+            </div>
+            <div class="navbar__middle-phone">
+                <a href="tel:+7(812)-123-45-67"
+                   class="link link_gray navbar__middle-phone-link">
+                    +7 (812) 123 45 67
+                </a>
+                <span class="link link_lined small d-none d-lg-inline" data-bs-toggle="modal"
+                      data-bs-target="#feedback-modal">
+                        Заказать звонок
+                    </span>
+            </div>
+        </div>
+    </div>
+    <div class="container navbar__bottom collapse" id="mobileCollapseNavbar">
+        <button class="button button_navbar-close"
+                type="button" aria-expanded="false" aria-controls="mobileCollapseNavbar"
+                data-bs-toggle="collapse" data-bs-target="#mobileCollapseNavbar"
+        ><i class="icon-close"></i></button>
+        <ul class="navbar__bottom-content">
+            <li class="dropdown navbar-dropdown">
+                <a href="/about-company" class="navbar-dropdown__toggle navbar__bottom-link link link_dark">
+                    О компании
+                </a>
+                <ul class="dropdown-menu navbar-dropdown__items">
+                    <li><a class="navbar__dropdown-link" href="/about-company/services">Услуги</a></li>
+                    <li><a class="navbar__dropdown-link" href="/about-company/certifications">Сертификаты</a></li>
+                    <li><a class="navbar__dropdown-link" href="/about-company/partners">Партнеры</a></li>
+                    <li><a class="navbar__dropdown-link" href="/about-company/reviews">Отзывы</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/projects" class="navbar__bottom-link link link_dark">
+                    Проекты
+                </a>
+            </li>
+            <li class="dropdown navbar-dropdown">
+                <a href="/for-client" class="navbar-dropdown__toggle navbar__bottom-link link link_dark">
+                    Клиенту
+                </a>
+                <ul class="dropdown-menu navbar-dropdown__items">
+                    <li><a class="navbar__dropdown-link" href="/for-client/payment">Оплата</a></li>
+                    <li><a class="navbar__dropdown-link" href="/for-client/guarantee">Гарантии</a></li>
+                    <li><a class="navbar__dropdown-link" href="/for-client/faq">Вопросы и ответы</a></li>
+                    <li><a class="navbar__dropdown-link" href="/for-client/engineering">Инженерия</a></li>
+                    <li><a class="navbar__dropdown-link" href="/for-client/technologies">Технологии</a></li>
+                    <li><a class="navbar__dropdown-link" href="/for-client/documentation">Документации</a></li>
+                    <li><a class="navbar__dropdown-link" href="/for-client/estimate">Смета</a></li>
+                </ul>
+            </li>
+            <li class="dropdown navbar-dropdown">
+                <a href="/prices" class="navbar-dropdown__toggle navbar__bottom-link link link_dark">
+                    Цены
+                </a>
+                <ul class="dropdown-menu navbar-dropdown__items">
+                    <li><a class="navbar__dropdown-link" href="/prices/loan">Кредит</a></li>
+                    <li><a class="navbar__dropdown-link" href="/prices/maternal-capital">Материнский капитал</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="/completed-projects" class="navbar__bottom-link link link_dark">
+                    Реализованные проекты
+                </a>
+            </li>
+            <li>
+                <a href="/blog" class="navbar__bottom-link link link_dark">
+                    Блог
+                </a>
+            </li>
+            <li>
+                <a href="/promotions" class="navbar__bottom-link link link_dark">
+                    Акции
+                </a>
+            </li>
+            <li>
+                <a href="/contacts" class="navbar__bottom-link link link_dark">
+                    Контакты
+                </a>
+            </li>
+        </ul>
+        <a href="/map" class="button button_navbar-primary mb-2">
+            <i class="icon-location-pin button__icon"></i>
+            Карта строящихся объектов
+        </a>
+        <a href="tel:+7(812)-123-45-67" class="button button_navbar-secondary mb-2">
+            <i class="icon-phone-in-talk button__icon"></i>
+            +7 (812) 123 45 67
+        </a>
+        <button type="button" class="button button_navbar-primary mb-2">
+            <i class="icon-phone-missed button__icon"></i>
+            Заказать звонок
+        </button>
+    </div>
+</nav>
+<div class="page ">
+            <div class="project">
+            <div class="container">
+                <div class="project-block__card project__project-block">
+                    <div class="row">
+                        <div class="col-xl-8">
+                            <h2 class="text-start mb-4">
+                                Каркасный дом Проект 345
+                            </h2>
+                            <div class="project-slider">
+                                <div class="project-thumbs-slider">
+                                    <div role="button" class="project-slider__prev  project-slider__button-wrap mb-2">
+                                        <i class="icon-arrow-up"></i>
+                                    </div>
+                                    <div class="swiper-container project-thumbs-slider__swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="/assets/images/site/project/house.webp"
+                                                     alt=""
+                                                     class="project-block__card-img"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/assets/images/site/project/house.webp"
+                                                     alt=""
+                                                     class="project-block__card-img"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/assets/images/site/project/house.webp"
+                                                     alt=""
+                                                     class="project-block__card-img"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/assets/images/site/documentation/doc.webp"
+                                                     alt=""
+                                                     class="project-block__card-img"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/assets/images/site/documentation/doc.webp"
+                                                     alt=""
+                                                     class="project-block__card-img"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/assets/images/site/project/house.webp"
+                                                     alt=""
+                                                     class="project-block__card-img"
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="button" class="project-slider__next project-slider__button-wrap mt-2">
+                                        <i class="icon-arrow-down"></i>
+                                    </div>
+                                </div>
+                                <div class="swiper-container project-slider-content__swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="/assets/images/site/project/house.webp"
+                                                 alt=""
+                                                 class="project-block__card-img"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/assets/images/site/project/house.webp"
+                                                 alt=""
+                                                 class="project-block__card-img"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/assets/images/site/project/house.webp"
+                                                 alt=""
+                                                 class="project-block__card-img"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/assets/images/site/documentation/doc.webp"
+                                                 alt=""
+                                                 class="project-block__card-img"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/assets/images/site/documentation/doc.webp"
+                                                 alt=""
+                                                 class="project-block__card-img"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/assets/images/site/project/house.webp"
+                                                 alt=""
+                                                 class="project-block__card-img"
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="project-block__card-info">
+                                <div class="project-block__card-info-top">
+                                    Проект реализован 17 раз
+                                    <button class="button">
+                                        <i class="icon-like"></i>
+                                    </button>
+                                    <button class="button">
+                                        <i class="icon-print"></i>
+                                    </button>
+                                </div>
+                                <ul class="project-block__card-info-advantages mb-4">
+                                    <li>
+                                        <i class="icon-videocamera"></i> Видеонаблюдение 24/7 за процессом стройки
+                                        вашего дома
+                                    </li>
+                                    <li>
+                                        <i class="icon-money"></i> Работаем без предоплаты
+                                    </li>
+                                </ul>
+                                <div class="project-block__card-info-item mb-2">
+                                    <h5 class="mb-2"> Общая информация </h5>
+                                    <div class="row">
+                                        <div class="col-6 mb-3">
+                                            <div class="project-block__card-info-label">
+                                                Площадь
+                                            </div>
+                                            <span>154,2 м2</span>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <div class="project-block__card-info-label">
+                                                Размеры
+                                            </div>
+                                            <span>10х13</span>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <div class="project-block__card-info-label">
+                                                Этажей
+                                            </div>
+                                            <span>2</span>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <div class="project-block__card-info-label">
+                                                Высота этажей
+                                            </div>
+                                            <span>2,80 м | 2,60 м</span>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <div class="project-block__card-info-label">
+                                                Спален
+                                            </div>
+                                            <span>6</span>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <div class="project-block__card-info-label">
+                                                Сроки
+                                            </div>
+                                            <span>25 дней</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-block__card-info-item mb-4">
+                                    <h5 class="mb-3 d-flex align-items-center justify-content-between gap-2">
+                                        Комплектации
+                                        <a href="#details" class="link link_gray text-decoration-underline text-end">
+                                            Подробнее о комплектациях</a>
+                                    </h5>
+                                    <ul class="nav nav-pills nav-pills_outline project-block__card-info-tabs nav-pills_small mb-3"
+                                        role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" data-bs-toggle="pill"
+                                                    data-bs-target="#set1" type="button" role="tab"
+                                                    aria-selected="true"
+                                            >
+                                                Под ключ
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" data-bs-toggle="pill"
+                                                    data-bs-target="#set2" type="button" role="tab"
+                                                    aria-selected="false"
+                                            >
+                                                Закрытый контур
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" data-bs-toggle="pill"
+                                                    data-bs-target="#set3" type="button" role="tab"
+                                                    aria-selected="false"
+                                            >
+                                                Силовой каркас
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="set1" role="tabpanel">
+                                            <div class="project-block__card-info-item project-block__card-info-price">
+                                                <div>
+                                                    <h5 class="mb-0"> Стоимость дома </h5>
+                                                    <div class="project-block__card-info-price-text">
+                                                        Комплектация "Под ключ"
+                                                    </div>
+                                                </div>
+                                                <strong> 1 425 000 Р </strong>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="set2" role="tabpanel">
+                                            <div class="project-block__card-info-item project-block__card-info-price">
+                                                <div>
+                                                    <h5 class="mb-0">
+                                                        Стоимость дома
+                                                    </h5>
+                                                    <div class="project-block__card-info-price-text">
+                                                        Комплектация "Закрытый контур"
+                                                    </div>
+                                                </div>
+                                                <strong>
+                                                    1 450 000 Р
+                                                </strong>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="set3" role="tabpanel">
+                                            <div class="project-block__card-info-item project-block__card-info-price">
+                                                <div>
+                                                    <h5 class="mb-0">
+                                                        Стоимость дома
+                                                    </h5>
+                                                    <div class="project-block__card-info-price-text">
+                                                        Комплектация "Силовой каркас"
+                                                    </div>
+                                                </div>
+                                                <strong>
+                                                    1 480 000 Р
+                                                </strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="button w-100 button_primary">
+                                    ОСТАВИТЬ ЗАЯВКУ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project__gifts">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="project__gifts-group">
+                                <div class="project__gifts-text">
+                                    <h3 class="text-primary mb-2">
+                                        Дарим подарки всем </h3>
+                                    Предоставляем возможность получить любой подарок при заключении договора на
+                                    строительство
+                                </div>
+                                <ul class="project__gifts-list">
+                                    <li>3% скидка от стоимости договора</li>
+                                    <li>
+                                        Каркас из сухой, строганной доски
+                                    </li>
+                                    <li>
+                                        Дополнительное перекрестные утепление
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="/assets/images/site/project/present.webp" alt />
+                        </div>
+                    </div>
+                </div>
+                <div class="project__description">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h2 class="mb-4">
+                                Описание и характеристики проекта </h2>
+                            <p>
+                                Проект одноэтажного загородного дома c тщательно продуманной планировкой позволит
+                                жильцам
+                                использовать каждый метр с максимальной отдачей. Дом рассчитан на круглогодичное
+                                проживание
+                                семьи 3-4 человек, с просторной кухней-гостиной, отдельными комнатами, террасой и
+                                тамбуром. Этот
+                                деревянный дом идеально подойдет для тех, кто ценит комфорт и свободное пространство: 4
+                                комнаты,
+                                санузел, гардероб и техническое помещение (котельную). Одну из комнат можно
+                                использовать, как
+                                гостевую спальню или рабочий кабинет. </p>
+                            <p>
+                                Архитектуру дома отличают большие панорамные окна, которые помогают решить проблему
+                                естественного освещения и экономить ресурсы. Вашим гостям будет удобно расположиться на
+                                диванах
+                                у камина, вокруг большого стола, а летом вы можете устроить праздник под открытым небом.
+                                Большая
+                                терраса вместит всех – она обязательно станет любимым местом и для ваших детей. Перед
+                                террасой
+                                удобно установить детскую площадку или бассейн. Дети будут под присмотром </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-plan">
+                    <div class="row">
+                        <div class="col-lg-5 order-1 order-lg-0">
+                            <div class="project-plan__top">
+                                <div class="project-plan__top-item">
+                                    <div class="project-plan__top-label">
+                                        Высота стен
+                                    </div>
+                                    <strong> 3.1/2.6 </strong>
+                                </div>
+                                <div class="project-plan__top-item">
+                                    <div class="project-plan__top-label">
+                                        Габариты
+                                    </div>
+                                    <strong> 10.0 х 13.0 </strong>
+                                </div>
+                                <div class="project-plan__top-item">
+                                    <div class="project-plan__top-label">
+                                        Общая площадь
+                                    </div>
+                                    <strong> 150.6 м2 </strong>
+                                </div>
+                            </div>
+                            <ul class="nav nav-pills nav-pills_outline nav-pills_small mb-5" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" data-bs-toggle="pill"
+                                            data-bs-target="#tab1" type="button" role="tab"
+                                            aria-selected="true"
+                                    >
+                                        1 этаж
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#tab2" type="button" role="tab"
+                                            aria-selected="false"
+                                    >
+                                        2 этаж
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                                    <div class="project-plan-tab__content-title">
+                                        Площадь 1 этажа <strong> 73.4 м2 </strong>
+                                    </div>
+                                    <ul class="project-plan-tab__content-list">
+                                        <li>
+                                            Прихожая <strong> 8.36 м2 </strong>
+                                        </li>
+                                        <li>
+                                            Кладовая <strong> 4.95 м2 </strong>
+                                        </li>
+                                        <li>
+                                            Гардероб <strong> 3.29 м2 </strong>
+                                        </li>
+                                        <li>
+                                            Санузел <strong> 3.77 м2 </strong>
+                                        </li>
+                                        <li>
+                                            Кухня гостинная <strong> 21.4 м2 </strong>
+                                        </li>
+                                        <li>
+                                            Спальня <strong> 13.3 м2 </strong>
+                                        </li>
+                                        <li>
+                                            Котельная <strong> 4.92 м2 </strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="tab2" role="tabpanel">
+                                    <div class="project-plan-tab__content-title">
+                                        Площадь 2 этажа <strong> 71.4 м2 </strong>
+                                    </div>
+                                    <ul class="project-plan-tab__content-list">
+                                        <li>
+                                            Прихожая <strong> 8.36 м2 </strong>
+                                        </li>
+                                        <li>
+                                            Кладовая <strong> 4.95 м2 </strong>
+                                        </li>
+                                        <li>
+                                            Гардероб <strong> 3.29 м2 </strong>
+                                        </li>
+                                        <li>
+                                            Санузел <strong> 3.77 м2 </strong>
+                                        </li>
+                                        <li>
+                                            Кухня гостинная <strong> 21.4 м2 </strong>
+                                        </li>
+                                        <li>
+                                            Спальня <strong> 13.3 м2 </strong>
+                                        </li>
+                                        <li>
+                                            Котельная <strong> 4.92 м2 </strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 order-0 order-lg-1">
+                            <h3 class="d-block d-lg-none">
+                                Планировочные решения </h3>
+                            <img src="/assets/assets/images/site/documentation/doc.webp" alt />
+                        </div>
+                    </div>
+                </div>
+                <div class="project-variants">
+                    <a id="details" class="anchor"></a>
+                    <h2>Варианты комплектаций </h2>
+                    <ul class="nav nav-pills nav-pills_outline nav-pills_small mb-5" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" data-bs-toggle="pill"
+                                    data-bs-target="#set1Details" type="button" role="tab"
+                                    aria-selected="true"
+                            >
+                                Под ключ
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="pill"
+                                    data-bs-target="#set2Details" type="button" role="tab"
+                                    aria-selected="true"
+                            >
+                                Закрытый контур
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="pill"
+                                    data-bs-target="#set3Details" type="button" role="tab"
+                                    aria-selected="true"
+                            >
+                                Силовой каркас
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="set1Details" role="tabpanel">
+                            <div class="row project-variants__row">
+                                <div class="project-variants-tab__content col-12 col-xl-7 mb-5 mb-xl-0">
+                                    <div class="project-variants-tab__list">
+                                        <div class="project-variants-tab__list-item">
+                                            <div class="project-variants-tab__list-number">
+                                                01
+                                            </div>
+                                            <div class="project-variants-tab__list-text">
+                                                Фундамент свайный 2.5 м. бетон, механизированный способ монтажа
+                                            </div>
+                                        </div>
+                                        <div class="project-variants-tab__list-item">
+                                            <div class="project-variants-tab__list-number">
+                                                02
+                                            </div>
+                                            <div class="project-variants-tab__list-text">
+                                                Дом - все пиломатериалы сухие заводской сушки: каркас дома 200 мм
+                                                перекрестный +
+                                                ОСП 9мм E1 + обрешетка, перекрытия - 200х40, крыша 200 мм + обрешеткой +
+                                                контр.обр., технологии вентилируемая кровля и фасад, лестница
+                                            </div>
+                                        </div>
+                                        <div class="project-variants-tab__list-item">
+                                            <div class="project-variants-tab__list-number">
+                                                03
+                                            </div>
+                                            <div class="project-variants-tab__list-text">
+                                                Покрытие кровли металлочерепица GL PE 0,5 с карнизными свесами - 500 мм,
+                                                подшив
+                                                свесов - софиты перфорированные ПВХ Docke вент
+                                            </div>
+                                        </div>
+                                        <div class="project-variants-tab__list-item">
+                                            <div class="project-variants-tab__list-number">
+                                                04
+                                            </div>
+                                            <div class="project-variants-tab__list-text">
+                                                Тепловой контур - ветро защитные мембраны, паро и гидро изоляция;
+                                                утепление -
+                                                пол, крыша, стены 200 мм, шумоизоляция - 150 мм, ПВХ окна Rehau Thermo 3
+                                                стекла,
+                                                отливы и откосы металл, дверь металлическая входная
+                                            </div>
+                                        </div>
+                                        <div class="project-variants-tab__list-item">
+                                            <div class="project-variants-tab__list-number">
+                                                05
+                                            </div>
+                                            <div class="project-variants-tab__list-text">
+                                                Отделка фасада сайдинг DockePremium, с аксессуарами, цокольный сайдинг
+                                            </div>
+                                        </div>
+                                        <div class="project-variants-tab__list-item">
+                                            <div class="project-variants-tab__list-number">
+                                                06
+                                            </div>
+                                            <div class="project-variants-tab__list-text">
+                                                Внутренняя отделка - полы фанера 18 мм (ЦСП под плитку во влажных
+                                                помещениях);
+                                                стены и потолок ГКЛВ 12.5 мм
+                                            </div>
+                                        </div>
+                                        <div class="project-variants-tab__list-item">
+                                            <div class="project-variants-tab__list-number">
+                                                07
+                                            </div>
+                                            <div class="project-variants-tab__list-text">
+                                                Инженерные коммуникации - вентиляция с выводом через крышу вытяжная,
+                                                ввод
+                                                коммуникаций - септик, вода, электричество
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-variants-tab__footer">
+                                        <div class="project-variants-tab__footer-price">
+                                            Стоимость <strong> 1 425 000 ₽ </strong>
+                                        </div>
+                                        <div class="project-variants-tab__footer-btns">
+                                            <button class="button button_primary">
+                                                <i class="icon-adobe button__icon"></i> Скачать смету
+                                            </button>
+                                            <a class="button button_dark" href="#make-own">
+                                                <i class="icon-edit"></i> Модифицировать комплектацию
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-variants__form col-12 offset-xl-1 col-xl-4">
+                                    <form class="form" method="POST" action="">
+                                        <h4 class="text-primary mb-4 text-center">
+                                            Мне понравился проект, но хочу внести изменения </h4>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox"
+                                                   value="Изменить материал внешней отделки"
+                                                   id="square"
+                                            >
+                                            <label class="form-check-label" for="square">
+                                                Увеличить площадь
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox"
+                                                   value="Изменить материал внешней отделки"
+                                                   id="plan"
+                                            >
+                                            <label class="form-check-label" for="plan">
+                                                Сделать перепланировку
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox"
+                                                   value="Изменить материал внешней отделки"
+                                                   id="window"
+                                            >
+                                            <label class="form-check-label" for="window">
+                                                Увеличить окна
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox"
+                                                   value="Изменить материал внешней отделки"
+                                                   id="material"
+                                            >
+                                            <label class="form-check-label" for="material">
+                                                Изменить материал внешней отделки
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox"
+                                                   value="Добавить или убрать веранду, крыльцо, террасу, балкон"
+                                                   id="add"
+                                            >
+                                            <label class="form-check-label" for="add">
+                                                Добавить или убрать веранду, крыльцо, террасу, балкон
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox"
+                                                   value="Изменить высоту потолков"
+                                                   id="Height"
+                                            >
+                                            <label class="form-check-label" for="Height">
+                                                Изменить высоту потолков
+                                            </label>
+                                        </div>
+                                        <div class="input mb-3">
+                                            <input class="form-control"
+                                                   type="text"
+                                                   placeholder="Ваше имя">
+                                        </div>
+                                        <div class="input mb-3">
+                                            <input class="form-control"
+                                                   type="tel"
+                                                   data-mask="+{7}(000)000-00-00"
+                                                   placeholder="Номер телефона">
+                                        </div>
+                                        <button type="submit" class="button w-100 mb-2 button_primary">
+                                            ОСТАВИТЬ ЗАЯВКУ
+                                        </button>
+                                        <div class="form__agreement primary">
+                                            Нажимая на кнопку "Оставить заявку" Вы соглашаетесь на обработку
+                                            персональных данных в соответствии с
+                                            <a href="#" class="link link_primary">
+                                                условиями политики конфиденциальности
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show" id="set2Details" role="tabpanel">
+                            2
+                        </div>
+                        <div class="tab-pane fade show" id="set3Details" role="tabpanel">
+                            3
+                        </div>
+                    </div>
+                </div>
+                <div class="table-comparison">
+                    <h2>
+                        Сравнение комплектаций </h2>
+                    <div class="table-comparison__wrap">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th class="fz-14 font-weight-medium">
+                                    Возможна перепланировка по данному проекту, а также изменение в комплектации
+                                </th>
+                                <th class="fz-18 text-center">
+                                    "Под ключ"
+                                </th>
+                                <th class="fz-18 text-center">
+                                    "Закрытый контур"
+                                </th>
+                                <th class="fz-18 text-center">
+                                    "Силовой каркас"
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="p-0">
+                                    Пиломатериал
+                                </td>
+                                <td class="fz-14">
+                                    Строганный камерной сушки/антисептик
+                                </td>
+                                <td class="fz-14">
+                                    Строганный камерной сушки
+                                </td>
+                                <td class="fz-14">
+                                    Строганный камерной сушки
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-0">
+                                    Основание дома (обвязка)
+                                </td>
+                                <td class="fz-14">
+                                    Брус сечением 145*145 и 45*195 мм
+                                </td>
+                                <td class="fz-14">
+                                    Брус сечением 145*145 и 45*195 мм
+                                </td>
+                                <td class="fz-14">
+                                    Брус сечением 145*145 и 45*195 мм
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-0">
+                                    Силовые конструкции
+                                </td>
+                                <td class="fz-14">
+                                    Наружные стены: доска 40×200 мм; Перегородки: доска 40×150 мм; Балки перекрытия:
+                                    доска
+                                    50×200 мм; Стропильная система: доска 50×200 мм
+                                </td>
+                                <td class="fz-14">
+                                    Наружные стены: доска 40×200 мм; Перегородки: доска 40×150 мм; Балки перекрытия:
+                                    доска
+                                    50×200 мм; Стропильная система: доска 50×200 мм
+                                </td>
+                                <td class="fz-14">
+                                    Наружные стены: доска 40×200 мм; Перегородки: доска 40×150 мм; Балки перекрытия:
+                                    доска
+                                    50×200 мм; Стропильная система: доска 50×200 мм
+                                </td>
+                            </tr>
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <td class="fz-18">
+                                    Стоимость
+                                </td>
+                                <td class="text-center">
+                                    <strong> 1 425 000 Р </strong>
+                                </td>
+                                <td class="text-center">
+                                    <strong> 1 425 000 Р </strong>
+                                </td>
+                                <td class="text-center">
+                                    <strong> 1 425 000 Р </strong>
+                                </td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="table-extra">
+                    <h2>Дополнительно </h2>
+                    <div class="table-extra__content">
+                        <div class="table-extra__row">
+                            <div class="table-extra__item">
+                                Фундамент
+                            </div>
+                            <div class="table-extra__item text-center small">
+                                Ж/Б сваи
+                            </div>
+                            <div class="table-extra__item text-end">
+                                170 000 рублей
+                            </div>
+                        </div>
+                        <div class="table-extra__row">
+                            <div class="table-extra__item">
+                                Водосточная система
+                            </div>
+                            <div class="table-extra__item text-center small">
+                                ПВХ Технониколь
+                            </div>
+                            <div class="table-extra__item text-end">
+                                42 000 рублей
+                            </div>
+                        </div>
+                        <div class="table-extra__row">
+                            <div class="table-extra__item">
+                                Цокольные панели
+                            </div>
+                            <div class="table-extra__item text-center small">
+                                Облицовка фундамента цокольными панелями Docke
+                            </div>
+                            <div class="table-extra__item text-end">
+                                70 000 рублей
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-promotions">
+                    <h2>На этот проект действуют акции </h2>
+                    <div class="row gap-3 gap-lg-0">
+                        <div class="col-lg-6">
+                            <div class="project-promotions__item-left">
+                                <h3>Дарим подарки всем</h3>
+                                <div>
+                                    Предоставляем возможность получить любой подарок при заключении договора на
+                                    строительство
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="project-promotions__item-right">
+                                <ul class="project-promotions__item-list">
+                                    <li>3% скидка от стоимости договора</li>
+                                    <li>
+                                        Каркас из сухой, строганной доски
+                                    </li>
+                                    <li>
+                                        Дополнительное перекрестные утепление
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-equipment">
+                <div class="container">
+                    <a id="make-own" class="anchor"></a>
+                    <h2>
+                        Сделайте свою комплектацию "под ключ" </h2>
+                    <div class="custom-equipment__content">
+                        <div class="custom-equipment__item">
+                            <img src="/assets/images/site/project/custom1.webp" alt />
+                            <div class="custom-equipment__item-content">
+                                <h5>Кровля</h5>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="roof"
+                                           id="flexible" checked
+                                    >
+                                    <label class="form-check-label" for="flexible">
+                                        Гибкая черепица
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="roof"
+                                           id="ondulin"
+                                    >
+                                    <label class="form-check-label" for="ondulin">
+                                        Ондулин
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="roof"
+                                           id="metallo"
+                                    >
+                                    <label class="form-check-label" for="metallo">
+                                        Металлочерепица
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-equipment__item">
+                            <img src="/assets/images/site/project/custom2.webp" alt />
+                            <div class="custom-equipment__item-content">
+                                <h5>
+                                    Дополнительное перекрестное утепление </h5>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="insulation"
+                                           id="no" checked
+                                    >
+                                    <label class="form-check-label" for="no">
+                                        нет
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="insulation"
+                                           id="knauf"
+                                    >
+                                    <label class="form-check-label" for="knauf">
+                                        KNAUF 50 мм
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="insulation"
+                                           id="beltermo"
+                                    >
+                                    <label class="form-check-label" for="beltermo">
+                                        Белтермо 20 мм
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-equipment__item">
+                            <img src="/assets/images/site/project/custom3.webp" alt />
+                            <div class="custom-equipment__item-content">
+                                <h5>Внешняя отделка</h5>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="out"
+                                           id="decover" checked
+                                    >
+                                    <label class="form-check-label" for="decover">
+                                        Decover
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="out"
+                                           id="brus"
+                                    >
+                                    <label class="form-check-label" for="brus">
+                                        Имитация бруса
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="out"
+                                           id="docke"
+                                    >
+                                    <label class="form-check-label" for="docke">
+                                        Панели Docke (имитация кирпича)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-equipment__item">
+                            <img src="/assets/images/site/project/custom4.webp" alt />
+                            <div class="custom-equipment__item-content">
+                                <h5>Дверь</h5>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="door"
+                                           id="jeld" checked
+                                    >
+                                    <label class="form-check-label" for="jeld">
+                                        Jeld-WEN Basic (Финляндия)
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="door"
+                                           id="granit"
+                                    >
+                                    <label class="form-check-label" for="granit">
+                                        Гранит М-2
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="door"
+                                           id="doorhan"
+                                    >
+                                    <label class="form-check-label" for="doorhan">
+                                        DoorHAN
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-equipment__item">
+                            <img src="/assets/images/site/project/custom5.webp" alt />
+                            <div class="custom-equipment__item-content">
+                                <h5>Внутренняя отделка</h5>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="into"
+                                           id="brus-18" checked
+                                    >
+                                    <label class="form-check-label" for="brus-18">
+                                        Имитация бруса 18мм, сорт А-Б
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="into"
+                                           id="gips"
+                                    >
+                                    <label class="form-check-label" for="gips">
+                                        Гипсокартон 12,5 мм, 2 слоя
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="into"
+                                           id="shtil"
+                                    >
+                                    <label class="form-check-label" for="shtil">
+                                        Панели Штиль 12,5 мм
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-equipment__item">
+                            <img src="/assets/images/site/project/custom6.webp" alt />
+                            <div class="custom-equipment__item-content">
+                                <h5>Водосточная система</h5>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="gutter"
+                                           id="metal" checked
+                                    >
+                                    <label class="form-check-label" for="metal">
+                                        Металл
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="gutter"
+                                           id="plastic"
+                                    >
+                                    <label class="form-check-label" for="plastic">
+                                        Пластик
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-equipment__item">
+                            <img src="/assets/images/site/project/custom7.webp" alt />
+                            <div class="custom-equipment__item-content">
+                                <h5>Окна</h5>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="window"
+                                           id="veka-70" checked=""
+                                    >
+                                    <label class="form-check-label" for="veka-70">
+                                        Veka профиль 70 мм
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="window"
+                                           id="veka-82"
+                                    >
+                                    <label class="form-check-label" for="veka-82">
+                                        Veka профиль 82 мм
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio"
+                                           name="window"
+                                           id="veka-58"
+                                    >
+                                    <label class="form-check-label" for="veka-58">
+                                        Veka профиль 58 мм
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-equipment__item custom-equipment__item-final">
+                            <div class="project-block__card-info-price mb-4">
+                                <div>
+                                    <h5 class="mb-1 mb-md-0">
+                                        Стоимость дома </h5>
+                                    <div class="project-block__card-info-price-text">
+                                        Комплектация "Под ключ"
+                                    </div>
+                                </div>
+                                <strong> 1 425 000 Р </strong>
+                            </div>
+                            <button class="button button_primary">
+                                ХОЧУ ДОМ В ТАКОЙ КОМПЛЕКТАЦИИ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="completed-house">
+                    <img src="/assets/images/site/project/completed-house.webp" alt class="d-lg-block d-none" /> <img
+                        src="/assets/images/site/project/completed-house-sm.webp" alt class="d-lg-none d-block"
+                />
+                    <div class="completed-house__content">
+                        <div class="mb-4">
+                            <h3 class="mb-md-1 mb-3">
+                                Готовый дом для жизни всего за 25 дней </h3>
+                            Все коммуникации, отопление, септик, сантехника и отделка по фиксированной цене
+                        </div>
+                        <div class="completed-house__items">
+                            <div class="completed-house__item">
+                                <i class="icon-list-numbered mb-3"></i>
+                                <h5 class="mb-3">
+                                    Детальная смета </h5>
+                                <div class="completed-house__item-text">
+                                    Цена фиксируется в договоре до старта работ
+                                </div>
+                            </div>
+                            <div class="completed-house__item">
+                                <i class="icon-guarantee1 mb-3"></i>
+                                <h5 class="mb-3">
+                                    Гарантия 10 лет </h5>
+                                <div class="completed-house__item-text">
+                                    По договору на весь дом и отдельные эелементы
+                                </div>
+                            </div>
+                            <div class="completed-house__item">
+                                <i class="icon-timer mb-3"></i>
+                                <h5 class="mb-3">
+                                    100 % соблюдение сроков </h5>
+                                <div class="completed-house__item-text">
+                                    Сдаём день в день. Финансовые гарантии по договору
+                                </div>
+                            </div>
+                        </div>
+                        <div class="completed-house__btns">
+                            <button class="button button_primary">
+                                <i class="icon-calculate"></i> ПОЛУЧИТЬ ТОЧНЫЙ РАСЧЕТ
+                            </button>
+                            <button class="button button_dark">
+                                <i class="icon-adobe"></i> ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cooperation-advantages">
+                    <h2 class="text-start">Мы с вниманием относимся к чистоте и порядку </h2>
+                    <div class="cooperation-advantages__subtitle">
+                        Чтобы Вы были довольны сотрудничеством с нами
+                    </div>
+                    <div class="cooperation-advantages__items">
+                        <div class="cooperation-advantages__item">
+                            <div class="icon-wrap cooperation-advantages__item-img">
+                                <i class="icon-cleanliness"></i>
+                            </div>
+                            <div>
+                                <h5>
+                                    Идеальный порядок на участке </h5>
+                                <div class="cooperation-advantages__item-text">
+                                    На строительной площадке рабочие проводят ежедневную уборку и вывозят строительный
+                                    мусор и
+                                    остатки материалов раз в неделю
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cooperation-advantages__item">
+                            <div class="icon-wrap cooperation-advantages__item-img">
+                                <i class="icon-employee50"></i>
+                            </div>
+                            <div>
+                                <h5>
+                                    Профессиональный подход </h5>
+                                <div class="cooperation-advantages__item-text">
+                                    Ваш дом будут строить специалисты только с гражданством РФ, имеющие опыт в каркасном
+                                    домостроении от 5 лет
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cooperation-advantages__item">
+                            <div class="icon-wrap cooperation-advantages__item-img">
+                                <i class="icon-careful"></i>
+                            </div>
+                            <div>
+                                <h5>
+                                    Бережное отношение к материалам </h5>
+                                <div class="cooperation-advantages__item-text">
+                                    Корректное складирование и укрытие материалов от влаги и не погоды, обеспечивает их
+                                    сохранность и высокое качество вашего дома. Рабочие бережно используют материалы,
+                                    что
+                                    исключает избыточные затраты на стройматериалы
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cooperation-advantages__item">
+                            <div class="icon-wrap cooperation-advantages__item-img">
+                                <i class="icon-hygiene"></i>
+                            </div>
+                            <div>
+                                <h5>
+                                    Санитарно гигиенические нормы </h5>
+                                <div class="cooperation-advantages__item-text">
+                                    На весь период строительства вашего дома мы устанавливаем на участке бытовку для
+                                    рабочих и
+                                    технический блок. Личные вещи строителей и инструменты храниться только там. Рядом с
+                                    бытовкой мы размещаем биотуалет
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="house-projects project__house-projects">
+                    <div class="house-projects__header">
+                        <h2 class="mb-0 me-3 order-0">
+                            Похожие проекты </h2>
+                    </div>
+                    <div class="house-projects__items">
+                        <div class="house-project-card">
+                            <img src="/assets/images/site/catalogue/item.webp" alt="item" class="mb-3" />
+                            <div class="house-project-card__description">
+                                <div class="mb-3">
+                                    Каркасный дом Проект 345
+                                </div>
+                                <div>
+                                    Площадь: <span>138.2 м<sup>2</sup></span>
+                                </div>
+                                <div class="d-flex justify-content-between flex-xl-row flex-column">
+                                    <div>
+                                        Спальных комнат: <span>4</span>
+                                    </div>
+                                    <div>
+                                        от <span>1 450 000 Р</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="house-project-card">
+                            <img src="/assets/images/site/catalogue/item.webp" alt="item" class="mb-3" />
+                            <div class="house-project-card__description">
+                                <div class="mb-3">
+                                    Каркасный дом Проект 345
+                                </div>
+                                <div>
+                                    Площадь: <span>138.2 м<sup>2</sup></span>
+                                </div>
+                                <div class="d-flex justify-content-between flex-xl-row flex-column">
+                                    <div>
+                                        Спальных комнат: <span>4</span>
+                                    </div>
+                                    <div>
+                                        от <span>1 450 000 Р</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="house-project-card">
+                            <img src="/assets/images/site/catalogue/item.webp" alt="item" class="mb-3" />
+                            <div class="house-project-card__description">
+                                <div class="mb-3">
+                                    Каркасный дом Проект 345
+                                </div>
+                                <div>
+                                    Площадь: <span>138.2 м<sup>2</sup></span>
+                                </div>
+                                <div class="d-flex justify-content-between flex-xl-row flex-column">
+                                    <div>
+                                        Спальных комнат: <span>4</span>
+                                    </div>
+                                    <div>
+                                        от <span>1 450 000 Р</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="house-projects__footer">
+                        <a href="/projects" class="button button_light">
+                            <i class="icon-list-bold me-1"></i> В КАТАЛОГ ПРОЕКТОВ
+                        </a>
+                        <button class="button button_primary" data-bs-toggle="modal"
+                                data-bs-target="#feedback-modal">
+                            ХОЧУ ПОСЕТИТЬ СТРОЙКУ
+                        </button>
+                    </div>
+                </div>
+                <div class="get-consultation">
+                    <img src="/assets/images/site/for-client/consultation.webp" alt="" />
+                    <div class="get-consultation__content">
+                        <div class="get-consultation__text">
+                            <h3>Получите консультацию</h3>
+                            Консультация эксперта с 10 летним стажем
+                        </div>
+                        <button type="button" class="button button_primary" data-bs-toggle="modal"
+                                data-bs-target="#feedback-modal">
+                            ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="row gy-lg-0 gy-4 text-lg-start text-center">
+                <div class="col-lg-3"><a href="/" aria-current="page"
+                                         class=""
+                ><img
+                        src="/assets/images/footer/logo-footer.svg" alt=""></a>
+                    <div class="footer__contacts"><a href="#"
+                                                     class="footer__contacts-link link link_light"
+                    ><i
+                            class="icon-location"></i>
+                        Санкт-Петербург,
+                        ул. Белоостровская,&nbsp;37
+                    </a> <a href="tel:+7(812)-123-45-67" class="footer__contacts-link link link_light"
+                    ><i class="icon-phone"></i>
+                        +7 (812) 123 45 67
+                    </a> <a href="mailto:info@company.ru" class="footer__contacts-link link link_light"
+                    ><i class="icon-mail"></i>
+                        info@company.ru
+                    </a></div>
+                </div>
+                <div class="col-lg-2 col-6 d-none d-sm-block">
+                    <div class="footer__group">
+                        <div class="footer__group-title">
+                            О компании
+                        </div>
+                        <a href="/about-company/services" aria-current="page"
+                           class="footer__group-link"
+                        >
+                            Услуги
+                        </a> <a href="/about-company/certifications" aria-current="page"
+                                class="footer__group-link"
+                    >
+                        Сертификаты
+                    </a> <a href="/about-company/reviews" aria-current="page"
+                            class="footer__group-link"
+                    >
+                        Отзывы
+                    </a> <a href="/about-company/partners" aria-current="page"
+                            class="footer__group-link"
+                    >
+                        Партнеры
+                    </a></div>
+                </div>
+                <div class="col-lg-2 col-6 d-none d-sm-block">
+                    <div class="footer__group">
+                        <div class="footer__group-title">
+                            Клиенту
+                        </div>
+                        <a href="/for-client/documentation" aria-current="page"
+                           class="footer__group-link"
+                        >
+                            Доставка
+                        </a> <a href="/for-client/guarantee" aria-current="page"
+                                class="footer__group-link"
+                    >
+                        Гарантии
+                    </a> <a href="/for-client/faq" aria-current="page"
+                            class="footer__group-link"
+                    >
+                        Вопросы и ответы
+                    </a> <a href="/for-client/technologies" aria-current="page"
+                            class="footer__group-link"
+                    >
+                        Технологии
+                    </a> <a href="/for-client/documentation" aria-current="page"
+                            class="footer__group-link"
+                    >
+                        Документации
+                    </a></div>
+                </div>
+                <div class="col-lg-2 col-6 d-none d-sm-block">
+                    <div class="footer__group">
+                        <div class="footer__group-title">
+                            Цены
+                        </div>
+                        <a href="/prices/loan" aria-current="page"
+                           class="footer__group-link"
+                        >
+                            Кредит
+                        </a> <a href="/prices/maternal-capital" aria-current="page"
+                                class="footer__group-link"
+                    >
+                        Маткапитал
+                    </a></div>
+                </div>
+                <div class="col-lg-3 col-6 d-none d-sm-block">
+                    <div class="footer__other"><a href="/projects" aria-current="page"
+                                                  class="footer__other-link"
+                    >
+                        Проекты
+                    </a> <a href="/about-company/completed-projects" aria-current="page"
+                            class="footer__other-link"
+                    >
+                        Реализованные проекты
+                    </a> <a href="/blog" aria-current="page"
+                            class="footer__other-link"
+                    >
+                        Блог
+                    </a> <a href="/promotions" aria-current="page"
+                            class="footer__other-link"
+                    >
+                        Акции
+                    </a> <a href="/contacts" aria-current="page"
+                            class="footer__other-link"
+                    >
+                        Контакты
+                    </a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="row gy-lg-0 gy-3 text-lg-start text-center">
+                <div class="col-lg-9 order-lg-0 order-1">
+                    © 2002 - 2021 Frame House
+                </div>
+                <div class="col-lg-3 order-lg-1 order-0"><a href="/" aria-current="page"
+                                                            class="footer__bottom-privacy"
+                >
+                    Политика конфиденциальности
+                </a></div>
+            </div>
+        </div>
+    </div>
+</footer><div class="modal fade" id="feedback-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Заявка на звонок</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="feedback-form" method="POST" action="">
+                    <p class="mb-4">
+                        Оставьте заявку и специалист нашей компании перезвонит в течение 15 минут!
+                    </p>
+                    <input required placeholder="Ваше имя"
+                           type="text"
+                           class="form-control mb-3"
+                    />
+                    <input required placeholder="Номер телефона"
+                           type="tel"
+                           class="form-control mb-3"
+                           data-mask="+{7}(000)000-00-00" />
+                    <button class="button w-100 mb-2 button_primary text-uppercase"
+                            type="submit">
+                        Оставить заявку
+                    </button>
+                    <div class="feedback-form__signing gray">
+                        Нажимая на кнопку "Оставить заявку" Вы соглашаетесь на обработку персональных данных в
+                        соответствии с
+                        <a href="#">
+                            условиями политики конфиденциальности
+                        </a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="quiz-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered quiz-modal container">
+        <div class="modal-content">
+            <button type="button" class="quiz-modal__close btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            <div class="modal-body p-0">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="swiper-container quiz-modal__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex flex-column">
+                                    <span class="quiz-modal__number">01</span>
+                                    <h4 class="text-primary">Как планируете использовать дом?</h4>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio"
+                                               name="flexRadioDefault"
+                                               id="summer-1" checked="">
+                                        <label class="form-check-label" for="summer-1">
+                                            Для проживания в летний период (одноэтажный дом)
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio"
+                                               name="flexRadioDefault"
+                                               id="summer-2" checked="">
+                                        <label class="form-check-label" for="summer-2">
+                                            Для проживания в летний период (двухэтажный дом)
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio"
+                                               name="flexRadioDefault"
+                                               id="year-1" checked="">
+                                        <label class="form-check-label" for="year-1">
+                                            Для круглогодичного проживания (одноэтажный дом)
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio"
+                                               name="flexRadioDefault"
+                                               id="year-2" checked="">
+                                        <label class="form-check-label" for="year-2">
+                                            Для круглогодичного проживания (двухэтажный дом)
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio"
+                                               name="flexRadioDefault"
+                                               id="other" checked="">
+                                        <label class="form-check-label" for="other">
+                                            Другое
+                                        </label>
+                                    </div>
+                                    <input class="form-control mb-5 mb-lg-auto" type="text"
+                                           placeholder="Любой текст">
+                                    <button class="button button_primary quiz__next">
+                                        Далее
+                                    </button>
+                                </div>
+                                <div class="swiper-slide d-flex flex-column">
+                                    <span class="quiz-modal__number">02</span>
+                                    <h4 class="text-primary">Укажите желаемое количество спален</h4>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio"
+                                               name="flexRadioDefault"
+                                               id="one-bedroom" checked="">
+                                        <label class="form-check-label" for="one-bedroom">
+                                            Одна
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio"
+                                               name="flexRadioDefault"
+                                               id="two-bedroom" checked="">
+                                        <label class="form-check-label" for="two-bedroom">
+                                            Две
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio"
+                                               name="flexRadioDefault"
+                                               id="three-bedroom" checked="">
+                                        <label class="form-check-label" for="three-bedroom">
+                                            Три
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio"
+                                               name="flexRadioDefault"
+                                               id="other-bedroom" checked="">
+                                        <label class="form-check-label" for="other-bedroom">
+                                            Другое
+                                        </label>
+                                    </div>
+                                    <input class="form-control mb-5 mb-lg-auto" placeholder="Любой текст"
+                                           type="text">
+                                    <div class="d-flex">
+                                        <button class="button quiz__prev me-3">
+                                            Назад
+                                        </button>
+                                        <button class="button button_primary quiz__next">
+                                            Далее
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex flex-column">
+                                    <span class="quiz-modal__number">03</span>
+                                    <h4 class="text-primary">На какой бюджет рассчитываете?</h4>
+                                    <div class="range-inputs">
+                                        <div class="range-inputs__inputs">
+                                            <input class="range-inputs__input form-control" type="number" value="1500000" min="1500000" max="65000000">
+                                            <span class="range-inputs__delimiter">—</span>
+                                            <input class="range-inputs__input form-control" type="number" value="65000000" min="1500000" max="65000000">
+                                        </div>
+                                        <input type="range" multiple value="1500000,65000000" min="1500000" max="65000000" />
+                                    </div>
+                                    <div class="d-flex mt-5">
+                                        <button class="button quiz__prev me-3">
+                                            Назад
+                                        </button>
+                                        <button class="button button_primary quiz__next">
+                                            Далее
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex flex-column">
+                                    <span class="quiz-modal__number">04</span>
+                                    <h4 class="text-primary">Нужна ли терраса?</h4>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="terrace-yes" checked="">
+                                        <label class="form-check-label" for="terrace-yes">
+                                            Да
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="terrace-no" checked="">
+                                        <label class="form-check-label" for="terrace-no">
+                                            Нет
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-5 mb-lg-auto">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="terrace-dont-know" checked="">
+                                        <label class="form-check-label" for="terrace-dont-know">
+                                            Не знаю
+                                        </label>
+                                    </div>
+                                    <div class="d-flex">
+                                        <button class="button quiz__prev me-3">
+                                            Назад
+                                        </button>
+                                        <button class="button button_primary quiz__next">
+                                            Далее
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex flex-column">
+                                    <span class="quiz-modal__number">05</span>
+                                    <h4 class="text-primary">В каком районе Ленинградской области планируете постройку
+                                        дома?</h4>
+                                    <select class="form-select mb-3">
+                                        <option selected disabled>Выберите район постройки</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <input class="form-control mb-5 mb-lg-auto" type="text">
+                                    <div class="d-flex">
+                                        <button class="button quiz__prev me-3">
+                                            Назад
+                                        </button>
+                                        <button class="button button_primary quiz__next">
+                                            Далее
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex flex-column">
+                                    <div class="h1 text-primary mb-3">Отлично</div>
+                                    <p class="mb-3">Вы ответили на 5 вопросов и остался последний шаг</p>
+                                    <div class="h4 text-primary mb-4">Оставьте контактные данные, чтобы мы могли
+                                        связаться с
+                                        Вами, а также выслать подборку проектов
+                                    </div>
+                                    <input class="form-control mb-2" type="text" placeholder="Ваше имя">
+                                    <input class="form-control mb-2" type="text" placeholder="Номер телефона">
+                                    <input class="form-control mb-3 mb-lg-auto" type="email" placeholder="Email">
+
+                                    <button class="button quiz__submit button_primary text-uppercase">
+                                        Оставить заявку
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-none d-lg-flex align-items-center justify-content-center">
+                        <div class="quiz-modal__logo-wrap">
+                            <img src="/assets/images/logo-white.svg" alt="Frame House">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination quiz-modal__pagination"></div>
+            </div>
+        </div>
+    </div>
+</div><script src="https://api-maps.yandex.ru/2.1/?apikey=4dc8d814-d9b9-4702-8f72-762542d03619&lang=ru_RU"></script>
+<script src="/assets/js/manifest.js"></script>
+<script src="/assets/js/vendor.js"></script>
+<script src="/assets/js/app.js"></script>
+</body>
+</html>
