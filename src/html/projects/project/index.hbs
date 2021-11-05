@@ -54,7 +54,7 @@
                                         </div>
                                     </div>
                                     <div role="button" class="project-slider__next project-slider__button-wrap mt-2">
-                                      <i class="icon-arrow-down"></i>
+                                        <i class="icon-arrow-down"></i>
                                     </div>
                                 </div>
                                 <div class="swiper-container project-slider-content__swiper">
@@ -163,13 +163,14 @@
                                 <div class="project-block__card-info-item mb-4">
                                     <h5 class="mb-3 d-flex align-items-center justify-content-between gap-2">
                                         Комплектации
-                                        <a href="#" class="link link_gray text-decoration-underline text-end">
-                                        Подробнее о комплектациях</a>
+                                        <a href="#details" class="link link_gray text-decoration-underline text-end">
+                                            Подробнее о комплектациях</a>
                                     </h5>
-                                    <ul class="nav nav-pills nav-pills_outline project-block__card-info-tabs nav-pills_small mb-3" role="tablist">
+                                    <ul class="nav nav-pills nav-pills_outline project-block__card-info-tabs nav-pills_small mb-3"
+                                        role="tablist">
                                         <li class="nav-item" role="presentation">
                                             <button class="nav-link active" data-bs-toggle="pill"
-                                                    data-bs-target="#tab1" type="button" role="tab"
+                                                    data-bs-target="#set1" type="button" role="tab"
                                                     aria-selected="true"
                                             >
                                                 Под ключ
@@ -177,7 +178,7 @@
                                         </li>
                                         <li class="nav-item" role="presentation">
                                             <button class="nav-link" data-bs-toggle="pill"
-                                                    data-bs-target="#tab2" type="button" role="tab"
+                                                    data-bs-target="#set2" type="button" role="tab"
                                                     aria-selected="false"
                                             >
                                                 Закрытый контур
@@ -185,7 +186,7 @@
                                         </li>
                                         <li class="nav-item" role="presentation">
                                             <button class="nav-link" data-bs-toggle="pill"
-                                                    data-bs-target="#tab3" type="button" role="tab"
+                                                    data-bs-target="#set3" type="button" role="tab"
                                                     aria-selected="false"
                                             >
                                                 Силовой каркас
@@ -193,7 +194,7 @@
                                         </li>
                                     </ul>
                                     <div class="tab-content">
-                                        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                                        <div class="tab-pane fade show active" id="set1" role="tabpanel">
                                             <div class="project-block__card-info-item project-block__card-info-price">
                                                 <div>
                                                     <h5 class="mb-0"> Стоимость дома </h5>
@@ -204,7 +205,7 @@
                                                 <strong> 1 425 000 Р </strong>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="tab2" role="tabpanel">
+                                        <div class="tab-pane fade" id="set2" role="tabpanel">
                                             <div class="project-block__card-info-item project-block__card-info-price">
                                                 <div>
                                                     <h5 class="mb-0">
@@ -219,7 +220,7 @@
                                                 </strong>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="tab3" role="tabpanel">
+                                        <div class="tab-pane fade" id="set3" role="tabpanel">
                                             <div class="project-block__card-info-item project-block__card-info-price">
                                                 <div>
                                                     <h5 class="mb-0">
@@ -406,11 +407,12 @@
                     </div>
                 </div>
                 <div class="project-variants">
+                    <a id="details" class="anchor"></a>
                     <h2>Варианты комплектаций </h2>
                     <ul class="nav nav-pills nav-pills_outline nav-pills_small mb-5" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" data-bs-toggle="pill"
-                                    data-bs-target="#complect1" type="button" role="tab"
+                                    data-bs-target="#set1Details" type="button" role="tab"
                                     aria-selected="true"
                             >
                                 Под ключ
@@ -418,7 +420,7 @@
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" data-bs-toggle="pill"
-                                    data-bs-target="#complect2" type="button" role="tab"
+                                    data-bs-target="#set2Details" type="button" role="tab"
                                     aria-selected="true"
                             >
                                 Закрытый контур
@@ -426,7 +428,7 @@
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" data-bs-toggle="pill"
-                                    data-bs-target="#complect3" type="button" role="tab"
+                                    data-bs-target="#set3Details" type="button" role="tab"
                                     aria-selected="true"
                             >
                                 Силовой каркас
@@ -434,7 +436,7 @@
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane fade show active" id="complect1" role="tabpanel">
+                        <div class="tab-pane fade show active" id="set1Details" role="tabpanel">
                             <div class="row project-variants__row">
                                 <div class="project-variants-tab__content col-12 col-xl-7 mb-5 mb-xl-0">
                                     <div class="project-variants-tab__list">
@@ -510,15 +512,15 @@
                                     </div>
                                     <div class="project-variants-tab__footer">
                                         <div class="project-variants-tab__footer-price">
-                                            Стоимость <strong> 1 425 000 Р </strong>
+                                            Стоимость <strong> 1 425 000 ₽ </strong>
                                         </div>
                                         <div class="project-variants-tab__footer-btns">
                                             <button class="button button_primary">
-                                                <i class="icon-adobe"></i> Скачать смету
+                                                <i class="icon-adobe button__icon"></i> Скачать смету
                                             </button>
-                                            <button class="button button_dark">
+                                            <a class="button button_dark" href="#make-own">
                                                 <i class="icon-edit"></i> Модифицировать комплектацию
-                                            </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -587,8 +589,9 @@
                                         </div>
                                         <div class="input mb-3">
                                             <input class="form-control"
-                                                    type="tel"
-                                                    placeholder="Номер телефона">
+                                                   type="tel"
+                                                   data-mask="+{7}(000)000-00-00"
+                                                   placeholder="Номер телефона">
                                         </div>
                                         <button type="submit" class="button w-100 mb-2 button_primary">
                                             ОСТАВИТЬ ЗАЯВКУ
@@ -597,17 +600,17 @@
                                             Нажимая на кнопку "Оставить заявку" Вы соглашаетесь на обработку
                                             персональных данных в соответствии с
                                             <a href="#" class="link link_primary">
-                                            условиями политики конфиденциальности
+                                                условиями политики конфиденциальности
                                             </a>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade show" id="complect2" role="tabpanel">
+                        <div class="tab-pane fade show" id="set2Details" role="tabpanel">
                             2
                         </div>
-                        <div class="tab-pane fade show" id="complect3" role="tabpanel">
+                        <div class="tab-pane fade show" id="set3Details" role="tabpanel">
                             3
                         </div>
                     </div>
@@ -770,6 +773,7 @@
             </div>
             <div class="custom-equipment">
                 <div class="container">
+                    <a id="make-own" class="anchor"></a>
                     <h2>
                         Сделайте свою комплектацию "под ключ" </h2>
                     <div class="custom-equipment__content">

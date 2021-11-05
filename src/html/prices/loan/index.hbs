@@ -1,6 +1,6 @@
 {{#extend "layouts/default" title="Цены"}}
-{{#content "page"}}
-<div class="loan">
+    {{#content "page"}}
+        <div class="loan">
             <div class="container">
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">
@@ -11,236 +11,235 @@
                     </a></li>
                     <li class="breadcrumbs__item">Кредит</li>
                 </ul>
-              <div class="prices-header loan__header" data-v-115b6810>
-                <div class="prices-header__text" data-v-115b6810>
-                  <div class="mb-3" data-v-115b6810>
-                    <h2 data-v-115b6810>Строительство дома в кредит</h2>
-                    <h3 class="text-primary mb-3" data-v-115b6810>
-                      Собственный загородный дом от 8,4%
+                <div class="prices-header loan__header">
+                    <div class="prices-header__text">
+                        <div class="mb-3">
+                            <h2 data-v-115b6810>Строительство дома в кредит</h2>
+                            <h3 class="text-primary mb-3">
+                                Собственный загородный дом от 8,4%
+                            </h3>
+                            Получи кредит сейчас, и не откладывай мечту на завтра!
+                        </div>
+                        <div>
+                            <button
+                                    class="button prices-header__btn button_primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#feedback-modal"
+                            >
+                                РАСЧЕТ ИНДИВИДУАЛЬНЫХ ПАРАМЕТРОВ КРЕДИТА
+                            </button>
+                        </div>
+                    </div>
+                    <div class="prices-header__img">
+                        <i class="icon-loan"></i>
+                    </div>
+                </div>
+                <div class="loan__info">
+                    <div class="loan__info-header">
+                        <div class="row mb-2">
+                            <div class="col-lg-2 col-6">
+                                Кредит от
+                            </div>
+                            <div class="col-lg-2 col-6">
+                                Кредит от
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-lg-2 col-6">
+                                <i class="icon-sberbank"></i>
+                            </div>
+                            <div class="col-lg-2 col-6">
+                                <i class="icon-alfa-bank"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-xl-9">
+                            <div class="loan__info-body">
+                                <div class="loan__info-body-item">
+                                    <div class="mb-2">
+                                        Сумма кредита
+                                    </div>
+                                    <strong>от 300 000 Р</strong>
+                                </div>
+                                <div class="loan__info-body-item">
+                                    <div class="mb-2">
+                                        Ставка
+                                    </div>
+                                    <strong>от 9%</strong>
+                                </div>
+                                <div class="loan__info-body-item">
+                                    <div class="mb-2">
+                                        Срок
+                                    </div>
+                                    <strong>до 30 лет</strong>
+                                </div>
+                                <div class="loan__info-body-item">
+                                    <div class="mb-2">
+                                        Первоначальный взнос
+                                    </div>
+                                    <strong>от 10%</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="loan__lists">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h5 class="text-primary">
+                                Требования к заемщику
+                            </h5>
+                            <ul class="list">
+                                <li class="list-item">
+                                    <i class="icon-check-mark"></i>
+                                    Гражданство РФ
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-check-mark"></i>
+                                    Постоянная регистрация
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-check-mark"></i>
+                                    Возраст от 20 до 70 лет
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-check-mark"></i>
+                                    Постоянное место работы, стаж на котором составляет не
+                                    менее 3-х месяцев
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5 class="text-primary">
+                                Обязательные документы
+                            </h5>
+                            <ul class="list">
+                                <li class="list-item">
+                                    <i class="icon-check-mark"></i>
+                                    Гражданство РФ
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-check-mark"></i>
+                                    Свидетельство о праве собственности на землю
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-5">
+                            <h5 class="text-primary">
+                                Один из дополнительных документов
+                            </h5>
+                            <ul class="list">
+                                <li class="list-item">
+                                    <i class="icon-check-mark"></i>
+                                    ПТС/СТС на автотранспортное средство
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-check-mark"></i>
+                                    Справка по форме банка
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-check-mark"></i>
+                                    Заграничный паспорт
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-check-mark"></i>
+                                    Карта ДМС
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-check-mark"></i>
+                                    Пенсионное удостоверение или правка из ПФР
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="loan__advantages">
+                    <h3 class="text-primary">
+                        Кредит с нами это выгодно
                     </h3>
-                    Получи кредит сейчас, и не откладывай мечту на завтра!
-                  </div>
-                  <div data-v-115b6810>
-                    <button
-                      class="button prices-header__btn button_primary"
-                      data-v-115b6810
-                    >
-                      РАСЧЕТ ИНДИВИДУАЛЬНЫХ ПАРАМЕТРОВ КРЕДИТА
-                    </button>
-                  </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="loan__advantages-item">
+                                <div class="icon-wrap loan__advantages-item-img">
+                                    <i class="icon-success-stamp"></i>
+                                </div>
+                                <div>
+                                    <div class="loan__advantages-item-title">
+                                        Высокая одобряемость
+                                    </div>
+                                    <div class="loan__advantages-item-text">
+                                        Одобряем четыре из пяти заявок
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="loan__advantages-item">
+                                <div class="icon-wrap loan__advantages-item-img">
+                                    <i class="icon-fast-solution"></i>
+                                </div>
+                                <div>
+                                    <div class="loan__advantages-item-title">
+                                        Быстрое принятие решения
+                                    </div>
+                                    <div class="loan__advantages-item-text">
+                                        В этот же день подпишем договор на строительство
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="loan__advantages-item">
+                                <div class="icon-wrap loan__advantages-item-img">
+                                    <i class="icon-paper-info"></i>
+                                </div>
+                                <div>
+                                    <div class="loan__advantages-item-title">
+                                        Полная информация о кредитах
+                                    </div>
+                                    <div class="loan__advantages-item-text">
+                                        Предоставим развернутую информацию о кредитных
+                                        предложениях
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="loan__advantages-item">
+                                <div class="icon-wrap loan__advantages-item-img">
+                                    <i class="icon-minimum-paper"></i>
+                                </div>
+                                <div>
+                                    <div class="loan__advantages-item-title">
+                                        Минимум документов
+                                    </div>
+                                    <div class="loan__advantages-item-text">
+                                        Для одобрения кредита вам нужно два документа
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="prices-header__img" data-v-115b6810>
-                  <i class="icon-loan" data-v-115b6810></i>
+                <div class="send-order loan__send-order">
+                    <div class="row align-items-center justify-content-lg-between flex-column flex-lg-row">
+                        <div class="col-lg-4 mb-3 mb-lg-0">
+                            <h3>Получите расчет</h3>
+                        </div>
+                        <div class="col-lg-4 mb-3 mb-lg-0">
+                            Отправьте заявку на расчет индивидуальных параметров кредита
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <button class="button button_primary" data-bs-toggle="modal"
+                                    data-bs-target="#feedback-modal">
+                                ЗАПИСАТЬСЯ
+                            </button>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="loan__info">
-                <div class="loan__info-header">
-                  <div class="row mb-2">
-                    <div class="col-lg-2 col-6">
-                      Кредит от
-                    </div>
-                    <div class="col-lg-2 col-6">
-                      Кредит от
-                    </div>
-                  </div>
-                  <div class="row align-items-center">
-                    <div class="col-lg-2 col-6">
-                      <i class="icon-sberbank"></i>
-                    </div>
-                    <div class="col-lg-2 col-6">
-                      <i class="icon-alfa-bank"></i>
-                    </div>
-                  </div>
-                </div>
-                <hr />
-                <div class="row">
-                  <div class="col-xl-9">
-                    <div class="loan__info-body">
-                      <div class="loan__info-body-item">
-                        <div class="mb-2">
-                          Сумма кредита
-                        </div>
-                        <strong>от 300 000 Р</strong>
-                      </div>
-                      <div class="loan__info-body-item">
-                        <div class="mb-2">
-                          Ставка
-                        </div>
-                        <strong>от 9%</strong>
-                      </div>
-                      <div class="loan__info-body-item">
-                        <div class="mb-2">
-                          Срок
-                        </div>
-                        <strong>до 30 лет</strong>
-                      </div>
-                      <div class="loan__info-body-item">
-                        <div class="mb-2">
-                          Первоначальный взнос
-                        </div>
-                        <strong>от 10%</strong>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="loan__lists">
-                <div class="row">
-                  <div class="col-lg-3">
-                    <h5 class="text-primary">
-                      Требования к заемщику
-                    </h5>
-                    <ul class="list">
-                      <li class="list-item">
-                        <i class="icon-check-mark"></i>
-                        Гражданство РФ
-                      </li>
-                      <li class="list-item">
-                        <i class="icon-check-mark"></i>
-                        Постоянная регистрация
-                      </li>
-                      <li class="list-item">
-                        <i class="icon-check-mark"></i>
-                        Возраст от 20 до 70 лет
-                      </li>
-                      <li class="list-item">
-                        <i class="icon-check-mark"></i>
-                        Постоянное место работы, стаж на котором составляет не
-                        менее 3-х месяцев
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-4">
-                    <h5 class="text-primary">
-                      Обязательные документы
-                    </h5>
-                    <ul class="list">
-                      <li class="list-item">
-                        <i class="icon-check-mark"></i>
-                        Гражданство РФ
-                      </li>
-                      <li class="list-item">
-                        <i class="icon-check-mark"></i>
-                        Свидетельство о праве собственности на землю
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-5">
-                    <h5 class="text-primary">
-                      Один из дополнительных документов
-                    </h5>
-                    <ul class="list">
-                      <li class="list-item">
-                        <i class="icon-check-mark"></i>
-                        ПТС/СТС на автотранспортное средство
-                      </li>
-                      <li class="list-item">
-                        <i class="icon-check-mark"></i>
-                        Справка по форме банка
-                      </li>
-                      <li class="list-item">
-                        <i class="icon-check-mark"></i>
-                        Заграничный паспорт
-                      </li>
-                      <li class="list-item">
-                        <i class="icon-check-mark"></i>
-                        Карта ДМС
-                      </li>
-                      <li class="list-item">
-                        <i class="icon-check-mark"></i>
-                        Пенсионное удостоверение или правка из ПФР
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="loan__advantages">
-                <h3 class="text-primary">
-                  Кредит с нами это выгодно
-                </h3>
-                <div class="row">
-                  <div class="col-lg-3 col-md-6">
-                    <div class="loan__advantages-item">
-                      <div class="icon-wrap loan__advantages-item-img">
-                        <i class="icon-success-stamp"></i>
-                      </div>
-                      <div>
-                        <div class="loan__advantages-item-title">
-                          Высокая одобряемость
-                        </div>
-                        <div class="loan__advantages-item-text">
-                          Одобряем четыре из пяти заявок
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6">
-                    <div class="loan__advantages-item">
-                      <div class="icon-wrap loan__advantages-item-img">
-                        <i class="icon-fast-solution"></i>
-                      </div>
-                      <div>
-                        <div class="loan__advantages-item-title">
-                          Быстрое принятие решения
-                        </div>
-                        <div class="loan__advantages-item-text">
-                          В этот же день подпишем договор на строительство
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6">
-                    <div class="loan__advantages-item">
-                      <div class="icon-wrap loan__advantages-item-img">
-                        <i class="icon-paper-info"></i>
-                      </div>
-                      <div>
-                        <div class="loan__advantages-item-title">
-                          Полная информация о кредитах
-                        </div>
-                        <div class="loan__advantages-item-text">
-                          Предоставим развернутую информацию о кредитных
-                          предложениях
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6">
-                    <div class="loan__advantages-item">
-                      <div class="icon-wrap loan__advantages-item-img">
-                        <i class="icon-minimum-paper"></i>
-                      </div>
-                      <div>
-                        <div class="loan__advantages-item-title">
-                          Минимум документов
-                        </div>
-                        <div class="loan__advantages-item-text">
-                          Для одобрения кредита вам нужно два документа
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="send-order loan__send-order" data-v-3b394674>
-                <div
-                  class="row align-items-center justify-content-lg-between flex-column flex-lg-row"
-                  data-v-3b394674
-                >
-                  <div class="col-lg-4 mb-3 mb-lg-0" data-v-3b394674>
-                    <h3 data-v-3b394674>Получите расчет</h3>
-                  </div>
-                  <div class="col-lg-4 mb-3 mb-lg-0" data-v-3b394674>
-                    Отправьте заявку на расчет индивидуальных параметров кредита
-                  </div>
-                  <div class="col-lg-4 col-md-6" data-v-3b394674>
-                    <button class="button button_primary" data-v-3b394674>
-                      ЗАПИСАТЬСЯ
-                    </button>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-{{/content}}
+        </div>
+    {{/content}}
 {{/extend}}

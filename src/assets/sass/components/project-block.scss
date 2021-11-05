@@ -107,14 +107,14 @@
         li {
             padding: 0;
             display: grid;
-            grid-template-columns: auto auto;
+            grid-template-columns: max-content auto;
             grid-gap: 9px;
             align-items: center;
             font-size: 12px;
             line-height: 130%;
 
             @media (max-width: 374px) {
-                grid-template-columns: auto 1fr;
+                grid-template-columns: max-content 1fr;
             }
 
             i {

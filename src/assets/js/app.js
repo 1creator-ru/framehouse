@@ -4,7 +4,11 @@ import 'bootstrap/js/src/dropdown';
 import 'bootstrap/js/src/collapse';
 import 'bootstrap/js/src/tab';
 import multirange from 'multirange/multirange';
+import { Tab } from 'bootstrap';
+import GLightbox from 'glightbox/src/js/glightbox';
+import IMask from 'imask';
 
+GLightbox();
 multirange.init();
 Swiper.use([Navigation, Pagination, Controller, Thumbs]);
 
@@ -239,11 +243,37 @@ function initProjectsOnMap(mapSelector, projects) {
     }
 }
 
+function initProjectPage() {
+    const tabTriggers = document.querySelectorAll('.project-block__card-info-tabs .nav-link')
+    tabTriggers.forEach(trigger => {
+        trigger.addEventListener('shown.bs.tab', (event) => {
+            const detailsTriggerTarget = event.target.dataset.bsTarget + 'Details';
+            const detailsTriggerEl = document.querySelector(`[data-bs-target="${detailsTriggerTarget}"]`);
+            const tabDetails = Tab.getOrCreateInstance(detailsTriggerEl)
+            if (tabDetails) {
+                tabDetails.show();
+            }
+        })
+    })
+}
+
+function initMasks() {
+    const elements = document.querySelectorAll('[data-mask]');
+    elements.forEach(i => {
+        console.log(i)
+        IMask(i, {
+            mask: i.dataset.mask,
+        });
+    })
+}
+
+initMasks()
 initQuiz()
 initProjectSlider()
 initDocumentationSlider()
 initRangeInputs()
 initNavbar()
+initProjectPage()
 
 const buildingProjects = [
     {
@@ -308,3 +338,5 @@ const builtProjects = [
     },
 ];
 initProjectsOnMap('.projects-on-map__map_built', builtProjects)
+
+window.Tab = Tab;

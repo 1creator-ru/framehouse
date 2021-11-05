@@ -23,8 +23,12 @@
         &::after {
             content: '>';
             position: absolute;
-            right: -14px;
+            right: -24px;
             color: $dark;
+
+            @include media-breakpoint-down(sm) {
+                right: -14px;
+            }
         }
     }
 

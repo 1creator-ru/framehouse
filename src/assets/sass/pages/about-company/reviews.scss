@@ -77,11 +77,11 @@
     width: 100%;
     border-radius: 5px;
 
-    .review-card-video__video {
+    .review-card-video__preview {
         filter: brightness(60%);
-        background: url("/assets/images/site/reviews/review.png") center no-repeat;
-        background-size: cover;
+        display: block;
         height: 350px;
+        object-fit: cover;
 
         @include media-breakpoint-down(md) {
             height: 250px;

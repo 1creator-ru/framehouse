@@ -4,6 +4,24 @@
     border: 1px solid $border-color;
     background: white;
 
+    &:hover {
+        box-shadow: 0 4px 34px rgba(0, 0, 0, 0.25);
+    }
+
+    .blog-card__img-wrap {
+        display: block;
+
+        .blog-card__img {
+            height: 290px;
+            width: 100%;
+            object-fit: cover;
+
+            @include media-breakpoint-down(md) {
+                height: 180px;
+            }
+        }
+    }
+
     &.blog-card_aside {
         .blog-card__img-wrap {
             position: relative;
@@ -30,6 +48,8 @@
             font-size: 22px;
             margin-bottom: 16px;
             color: $primary;
+            text-decoration: none !important;
+            display: block;
         }
 
         .blog-card__text {
