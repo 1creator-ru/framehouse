@@ -1,1 +1,15 @@
-{}
+{
+    "/assets/js/app.js": "/assets/js/app.js",
+    "/assets/js/manifest.js": "/assets/js/manifest.js",
+    "/assets/css/vendor.css": "/assets/css/vendor.css",
+    "/assets/css/app.css": "/assets/css/app.css",
+    "/assets/js/vendor.js": "/assets/js/vendor.js",
+    "/assets/images/logo-white.svg": "/assets/images/logo-white.svg",
+    "/assets/images/logo.svg": "/assets/images/logo.svg",
+    "/assets/images/placemark.png": "/assets/images/placemark.png",
+    "/assets/images/placemark.svg": "/assets/images/placemark.svg",
+    "/assets/fonts/icomoon.eot": "/assets/fonts/icomoon.eot",
+    "/assets/fonts/icomoon.svg": "/assets/fonts/icomoon.svg",
+    "/assets/fonts/icomoon.ttf": "/assets/fonts/icomoon.ttf",
+    "/assets/fonts/icomoon.woff": "/assets/fonts/icomoon.woff"
+}
